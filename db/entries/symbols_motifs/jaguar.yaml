@@ -1,0 +1,65 @@
+id: meso.jaguar_motif
+type: symbol
+name: Jaguar
+aliases:
+  - Balam (Maya)
+  - Ocelotl (Nahuatl)
+  - Jaguar God of the Underworld
+culture_scope: [maya, aztec_mexica, olmec, general_mesoamerican]
+summary: >
+  The jaguar is the apex predator and premier power symbol of Mesoamerica —
+  associated with rulership, night, the underworld, warfare, and shamanic
+  transformation.
+description: |
+  Jaguars appear in Mesoamerican iconography from the Olmec period onward
+  and remain the dominant feline symbol throughout. Key visual elements:
+
+  - **Spot pattern**: rosette spots (hollow ring around a central dot) are
+    the definitive identifier; sometimes abstracted to simple circles or
+    cross-hatching.
+  - **Cleft head**: Olmec-era jaguars often have a cleft top of skull
+    (V-notch) associated with the maize deity; were-jaguar motif.
+  - **Pelt texture**: rosette field applied to any surface implies jaguar
+    — including thrones, costumes, and border bands.
+  - **Feline roar**: open-jawed profile, visible canine teeth, curling tongue.
+  - **Jaguar God of the Underworld (Maya)**: spotted body, large infixed eye,
+    "cruller" twisted element under eye; represents the night sun.
+  - **Warrior identity**: jaguar warrior order (Aztec); helmet = jaguar head,
+    suit = spotted pelt.
+
+  Functions: royal seat/throne cover, night/underworld avatar, warrior rank marker.
+tags:
+  culture_scope: [maya, aztec_mexica, olmec, general_mesoamerican]
+  medium: [stone_relief, ceramics, featherwork, codex_painting, jade]
+  motif_type: [animal, deity]
+  geometry: [symmetry, banded]
+  surface: [carved, painted, inlaid]
+  palette: [earthtones, obsidian_black, jade_turquoise]
+  composition: [emblem, central_mask, frieze]
+  mood: [martial, ceremonial, mythic]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, noise]
+constraints:
+  do:
+    - Use rosette spot pattern as primary identifier.
+    - Open jaw with prominent canines for active/warrior context.
+    - Apply spot texture to thrones, borders, and costume elements as well
+      as the animal itself.
+    - Distinguish Underworld Jaguar (Maya) by the infixed eye and cruller.
+  avoid:
+    - Do not depict as a generic big cat — the rosette pattern and cultural
+      framing are essential distinguishers.
+parameters:
+  spot_style: "rosette"      # rosette | solid | crosshatch | abstract
+  jaw_state: "open"          # open | closed
+compat:
+  - meso.olmec_colossal_head_style
+  - meso.were_jaguar_motif
+  - meso.earthtone_stone_palette
+provenance:
+  period: "Olmec through Aztec, 1500 BCE – 1521 CE"
+  sources:
+    - "Benson, E. P. (1998). The Lord, the Ruler: Jaguar Symbolism in the Americas."
+    - "Taube, K. (2003). Maws of Heaven and Hell: The Symbolism of the Centipede."
+version: "1.0"
+created_at: "2026-04-10"

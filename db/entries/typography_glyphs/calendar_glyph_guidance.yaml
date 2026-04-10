@@ -1,0 +1,94 @@
+id: meso.calendar_glyph_guidance
+type: glyph_guidance
+name: Calendar Glyph / Day-Sign Guidance
+aliases:
+  - Tonalpohualli day signs
+  - Tzolk'in day glyphs
+  - 20-day sign vocabulary
+culture_scope: [aztec_mexica, maya, general_mesoamerican]
+summary: >
+  Guidance for using the 20 Mesoamerican day-sign forms as decorative
+  elements — with respectful use rules and visual structure notes for each
+  of the major tradition's day-count glyph sets.
+description: |
+  ## The 20-day cycle
+
+  Both Maya (Tzolk'in) and Aztec (Tonalpohualli) calendars use a cycle of
+  20 named days that repeat continuously. The day signs are among the most
+  reproduced elements in popular culture — often stripped of context.
+
+  ## Aztec 20 day signs (Tonalpohualli) — visual descriptors
+
+  | # | Name | Image core | Shape note |
+  |---|------|-----------|------------|
+  | 1 | Cipactli (Crocodile) | Spiny back, saw teeth | Spiky bilateral |
+  | 2 | Ehecatl (Wind) | Wind jewel buccal mask | Circular bird-beak |
+  | 3 | Calli (House) | Gabled roof profile | Triangular roof |
+  | 4 | Cuetzpalin (Lizard) | Profile lizard | Curved body |
+  | 5 | Coatl (Serpent) | Profile serpent | S-curve or coil |
+  | 6 | Miquiztli (Death) | Skull face | Skull + lower jaw |
+  | 7 | Mazatl (Deer) | Profile deer head | Antler branching |
+  | 8 | Tochtli (Rabbit) | Profile rabbit head | Long ear, nose |
+  | 9 | Atl (Water) | Water stream + chalchihuitl | Curved streams |
+  | 10 | Itzcuintli (Dog) | Profile dog | Collar, snout |
+  | 11 | Ozomatli (Monkey) | Profile monkey | Curling tail |
+  | 12 | Malinalli (Grass) | Twisted grass bundle | Helix twist |
+  | 13 | Acatl (Reed) | Vertical reeds | Parallel vertical |
+  | 14 | Ocelotl (Jaguar) | Profile jaguar | Rosette spots |
+  | 15 | Cuauhtli (Eagle) | Profile eagle head | Hooked beak |
+  | 16 | Cozcacuauhtli (Vulture) | Profile vulture | Wrinkled neck |
+  | 17 | Ollin (Motion/Earthquake) | 4-part Ollin sign | Diagonal cross |
+  | 18 | Tecpatl (Flint knife) | Sacrificial blade | Angular blade |
+  | 19 | Quiahuitl (Rain) | Tlaloc head with rain | Goggle eyes |
+  | 20 | Xochitl (Flower) | Stylised flower | 4-petal radial |
+
+  ## Usage guidance
+
+  Day signs may be used as:
+  - Decorative compartment fills in a 20-unit ring (calendar round layout)
+  - Isolated emblem stamps for specific named entities
+  - Background texture in repeated 4×5 grid
+
+  **Do not use day signs to assign "real" dates or astrological meanings
+  in a commercial context without cultural consultation.**
+
+  ## Maya Tzolk'in day signs
+  The Maya equivalents share the same 20-day structure but use distinct
+  glyph forms — refer to a qualified Maya epigrapher or the Coe/Van Stone
+  reference for accurate visual forms before reproduction.
+tags:
+  culture_scope: [aztec_mexica, maya, general_mesoamerican]
+  medium: [codex_painting, stone_relief, ceramics]
+  motif_type: [glyphlike, celestial, pattern]
+  geometry: [radial, grid]
+  surface: [painted, carved]
+  palette: [mineral_pigments, limited]
+  composition: [emblem, register, border_band]
+  mood: [cosmic, ceremonial]
+  remix: [none]
+  shader_ops: [edge_ink, palette_map]
+constraints:
+  do:
+    - Use the 20 day signs as a decorative vocabulary — emblem stamps,
+      ring compartments, or grid-fill.
+    - Label clearly as "inspired by Aztec/Maya day-sign tradition."
+    - Reference published scholarly sources for accurate glyph forms.
+  avoid:
+    - Do not assign predictive or astrological readings to day signs in
+      a commercial or public-facing context without cultural consultation.
+    - Do not mix Aztec and Maya day-sign forms without clearly labelling
+      which tradition each comes from.
+parameters:
+  sign_count: 20
+  grid_arrangement: "4x5"    # 4x5 | 5x4 | ring_20 | ring_radial
+compat:
+  - meso.glyph_guidance_safe
+  - meso.radial_calendar_composition
+  - meso.aztec_codex_painting_style
+provenance:
+  period: "Aztec and Maya Pre-Columbian"
+  sources:
+    - "Caso, A. (1967). Los Calendarios Prehispánicos. UNAM."
+    - "Coe, M. D. & Van Stone, M. (2001). Reading the Maya Glyphs."
+version: "1.0"
+created_at: "2026-04-10"

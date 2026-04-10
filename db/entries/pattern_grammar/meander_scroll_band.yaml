@@ -1,0 +1,62 @@
+id: meso.border_band_meander_scroll
+type: pattern
+name: Meander Scroll / Volute Band
+aliases:
+  - Scrolling vine border
+  - Serpentine meander
+culture_scope: [maya, aztec_mexica, teotihuacan, general_mesoamerican]
+summary: >
+  A continuously scrolling vine or serpentine band used as a frame or
+  fill element — each loop terminates in a volute or small bud, creating
+  a rhythmic undulating border.
+description: |
+  The meander scroll is the curvilinear counterpart to the stepped fret —
+  where the greca is rectilinear and architectural, the scroll is organic
+  and naturalistic:
+
+  - **S-curve wave**: main axis runs horizontally; the scroll body makes
+    a continuous S-wave with each half-wave terminating in a tight spiral.
+  - **Bud / flower termination**: the innermost point of each scroll
+    typically resolves in a small blossom, jade bead, or abstract bud.
+  - **Interstitial fills**: negative spaces between scrolls filled with
+    smaller leaves, dots, or cross-hatching.
+  - **Variable thickness**: line weight increases toward the middle of each
+    curve and tapers at the extremes — a calligraphic quality.
+  - **Serpent body variant**: the scroll spine can be read as a serpent
+    body, with a head emerging from one end.
+
+  Applications: vessel rim bands, stela borders, manuscript page frames,
+  architectural cornice decoration.
+tags:
+  culture_scope: [maya, aztec_mexica, teotihuacan, general_mesoamerican]
+  medium: [stone_relief, ceramics, codex_painting, stucco_mural]
+  motif_type: [pattern, plant]
+  geometry: [meander, spiral, banded]
+  surface: [carved, painted]
+  palette: [mineral_pigments, jade_turquoise]
+  composition: [border_band, frieze]
+  mood: [vibrant, ceremonial]
+  remix: [none]
+  shader_ops: [edge_ink, relief_shading]
+constraints:
+  do:
+    - Maintain consistent S-wave rhythm — spacing between spirals should be equal.
+    - Vary line weight along the curve for calligraphic quality.
+    - Terminate each scroll with a bud, bead, or small flower.
+    - Fill negative spaces with small secondary marks to avoid emptiness.
+  avoid:
+    - Avoid using as a simple sine wave — the spiral terminations are essential.
+parameters:
+  scroll_frequency: 4     # number of full S-wave cycles per unit length
+  termination: "bud"      # bud | bead | flower | open
+  has_fill_marks: true
+compat:
+  - meso.feathered_serpent
+  - meso.speech_scroll_motif
+  - meso.maya_polychrome_ceramic_style
+provenance:
+  period: "Classic period, 250–900 CE"
+  sources:
+    - "Schele, L. & Miller, M. (1986). The Blood of Kings. Kimbell Art Museum."
+version: "1.0"
+created_at: "2026-04-10"

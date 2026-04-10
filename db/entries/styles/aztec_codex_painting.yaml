@@ -1,0 +1,67 @@
+id: meso.aztec_codex_painting_style
+type: style
+name: Aztec / Mexica Codex Painting Style
+aliases:
+  - Mexica screenfold style
+  - Nahuatl pictographic tradition
+culture_scope: [aztec_mexica]
+summary: >
+  The vivid flat-colour pictographic tradition of Aztec screenfold manuscripts
+  (codices), using bold outlines, restricted pigment sets, and additive
+  iconographic stacking.
+description: |
+  Aztec codex painting is a pictographic communication system as much as an
+  art form. Surviving examples (Borgia, Mendoza, Florentine Codex, etc.) share:
+
+  - **Flat fill**: figures rendered as hard-edged silhouettes with solid colour
+    fills; no shading or modelling of form.
+  - **Black outline**: heavy uniform-width ink contour binds every element.
+  - **Iconographic stacking**: attributes added to figures by attaching symbols
+    (speech scrolls, footprints, fire, water) rather than depicting action in
+    space.
+  - **Footprint paths**: direction of travel shown by a trail of footprints.
+  - **Day/year signs**: calendar glyphs integrated as event markers.
+  - **Page grid**: content reads in columns (boustrophedon or one direction)
+    with border bands framing each page.
+  - **Palette**: mineral pigments — red (cochineal / hematite), blue (indigo /
+    Maya Blue), yellow (limonite), green (malachite), black (carbon ink),
+    white (lime/chalk).
+
+  Primary codices: Borgia Group, Codex Mendoza, Codex Borbonicus.
+tags:
+  culture_scope: [aztec_mexica]
+  medium: [codex_painting]
+  motif_type: [deity, animal, glyphlike, celestial]
+  geometry: [grid, banded]
+  surface: [painted]
+  palette: [mineral_pigments, limited]
+  composition: [register, border_band]
+  mood: [ceremonial, mythic, cosmic]
+  remix: [none]
+  shader_ops: [edge_ink, palette_map]
+constraints:
+  do:
+    - Keep all fills hard-edged and flat; avoid gradients entirely.
+    - Use a limited palette (5–8 colours maximum including black/white).
+    - Integrate calendrical or directional glyphs as event markers.
+    - Maintain heavy uniform outline weight relative to figure scale.
+  avoid:
+    - Do not fabricate readable Nahuatl text or day-sign sequences that imply
+      real calendrical dates without scholarly verification.
+    - Avoid mixing perspective conventions (no foreshortening or shadows).
+parameters:
+  outline_weight_relative: 0.03   # 3% of figure height
+  palette_size_max: 8
+  fill_type: "flat"
+compat:
+  - meso.aztec_mineral_palette
+  - meso.footprint_path_motif
+  - meso.border_band_stepped_fret
+  - meso.calendar_glyph_guidance
+provenance:
+  period: "Late Postclassic Aztec, 1300–1521 CE"
+  sources:
+    - "Boone, E. H. (2000). Stories in Red and Black. U of Texas Press."
+    - "Berdan, F. & Anawalt, P. (1997). The Essential Codex Mendoza. UC Press."
+version: "1.0"
+created_at: "2026-04-10"

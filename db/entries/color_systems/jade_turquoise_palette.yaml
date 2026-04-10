@@ -1,0 +1,71 @@
+id: meso.jade_turquoise_palette
+type: color_system
+name: Jade and Turquoise Prestige Palette
+aliases:
+  - Chalchihuitl-xiuitl palette
+  - Greenstone accent palette
+culture_scope: [general_mesoamerican]
+summary: >
+  A prestige palette centred on the jade and turquoise colour family —
+  the colours of water, breath, and divinity — anchored by a warm stone
+  ground and black accents.
+description: |
+  Jade and turquoise were the two most precious materials in Mesoamerican
+  culture, and their colour family carries maximum symbolic weight:
+
+  - **Jade green** (`#4A9A6B`): the prized cool green of high-quality jadeite;
+    associated with maize, breath, precious blood, water, royalty.
+  - **Turquoise blue** (`#3EB0A0`): slightly bluer than jade; used for
+    mosaic inlay on prestige objects; Aztec Xiuhuitzolli crown colour.
+  - **Deep sea green** (`#2A6B55`): darker undersaturated green; shadow
+    areas on jade objects; underworld/water depth.
+  - **Warm stone ground** (`#C8B89A`): limestone buff; the carved stone
+    context these colours sit against.
+  - **Black** (`#1A0F00`): incised lines, shadow.
+  - **Cinnabar red accent** (`#C0392B`): red ochre / cinnabar for power
+    and blood — the complementary accent that "wakes up" the green-blue field.
+  - **Cream** (`#F5E6C8`): negative space, paper, or bright highlight.
+
+  Use case: mask surfaces, deity costumes, water-world scenes, feather
+  headdress compositions, luxury-object rendering.
+tags:
+  culture_scope: [general_mesoamerican]
+  medium: [jade, featherwork, ceramics, stone_relief]
+  motif_type: [pattern]
+  geometry: [radial]
+  surface: [inlaid, painted]
+  palette: [jade_turquoise, limited]
+  composition: [emblem]
+  mood: [ceremonial, cosmic]
+  remix: [none]
+  shader_ops: [palette_map]
+constraints:
+  do:
+    - Use jade green as the primary mid-range accent.
+    - Pair with warm stone ground — the contrast is critical.
+    - Add cinnabar red only as a small accent (< 10% of composition).
+    - Keep the palette cool-dominated (green/blue/teal range).
+  avoid:
+    - Avoid yellow or orange as primary colours — this is a cool prestige palette.
+parameters:
+  swatches:
+    jade_green: "#4A9A6B"
+    turquoise: "#3EB0A0"
+    deep_sea: "#2A6B55"
+    warm_stone: "#C8B89A"
+    black: "#1A0F00"
+    cinnabar_red: "#C0392B"
+    cream: "#F5E6C8"
+  dominant: "jade_green"
+  total_colours: 7
+compat:
+  - meso.jade_greenstone_material
+  - meso.feathered_serpent
+  - meso.feathered_headdress_motif
+  - meso.maya_blue_palette
+provenance:
+  period: "General Mesoamerican"
+  sources:
+    - "Taube, K. (2005). The Symbolism of Jade. Ancient Mesoamerica 16."
+version: "1.0"
+created_at: "2026-04-10"

@@ -1,0 +1,69 @@
+id: meso.border_band_stepped_fret
+type: pattern
+name: Stepped Fret / Greca Border Band
+aliases:
+  - Xicalcoliuhqui (Nahuatl)
+  - Stepped meander
+  - Greca
+culture_scope: [aztec_mexica, zapotec, mixtec, teotihuacan, general_mesoamerican]
+summary: >
+  The stepped-fret (greca) is the defining geometric ornament of Mesoamerican
+  architecture and textile design — an angular spiral stepping outward and
+  inward in a continuous interlocking band.
+description: |
+  The stepped fret / greca is arguably the single most recognisable
+  Mesoamerican geometric motif:
+
+  - **Structure**: a squared spiral — each turn is a right-angle step
+    (not a curve), creating a staircase-like unwinding.
+  - **Interlocking pair**: two mirror-image frets often interlock to fill
+    a band without negative space — positive fret + negative space together
+    form a seamless tessellation.
+  - **Directional variants**: clockwise and counter-clockwise versions;
+    sometimes alternated in sequence.
+  - **Scale independence**: works as a micro-pattern (1 cm tile) or as a
+    giant architectural frieze (Mitla, Oaxaca — room-sized stone mosaic).
+  - **Symbolic reading**: sometimes interpreted as a stylised feathered-
+    serpent eye, or as a sky-earth axis; but primarily functions as a
+    prestigious geometric ornament.
+  - **Mitla, Oaxaca**: the most elaborate surviving example — entire palace
+    walls covered in interlocking stepped-fret stone mosaic panels.
+
+  Generative use: seamless tile pattern, border/frame element, shader
+  displacement pattern, SVG/canvas drawing primitive.
+tags:
+  culture_scope: [aztec_mexica, zapotec, mixtec, teotihuacan, general_mesoamerican]
+  medium: [architecture, stone_relief, ceramics, codex_painting]
+  motif_type: [pattern]
+  geometry: [stepped_fret, meander, grid]
+  surface: [carved, inlaid, painted]
+  palette: [earthtones, obsidian_black, mineral_pigments]
+  composition: [border_band, frieze]
+  mood: [ceremonial, austere, vibrant]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, displacement]
+constraints:
+  do:
+    - Keep all angles strictly 90° — no curved steps.
+    - Use as a seamless repeating tile for borders and backgrounds.
+    - Alternate orientation (CW/CCW) to fill bands without gaps.
+    - Can be rectilinear (equal arm length) or elongated (longer horizontal).
+  avoid:
+    - Avoid softening corners into curves — that creates a different motif.
+parameters:
+  step_count: 3           # number of steps per arm (2–5 typical)
+  arm_ratio: 1.0          # horizontal:vertical arm length ratio
+  interlock: true         # use interlocking positive/negative pair
+  tile_width_px: 64       # reference tile size
+compat:
+  - meso.classic_maya_relief_style
+  - meso.aztec_codex_painting_style
+  - meso.earthtone_stone_palette
+  - meso.shader_relief_chisel
+provenance:
+  period: "Classic through Postclassic, 250–1521 CE"
+  sources:
+    - "Kubler, G. (1984). The Art and Architecture of Ancient America. Penguin."
+    - "Marquina, I. (1964). Arquitectura Prehispánica. INAH."
+version: "1.0"
+created_at: "2026-04-10"

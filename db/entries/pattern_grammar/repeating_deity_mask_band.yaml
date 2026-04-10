@@ -1,0 +1,67 @@
+id: meso.repeating_deity_mask_band
+type: pattern
+name: Repeating Deity Mask Band
+aliases:
+  - Witz mask frieze
+  - Monster-mask façade band
+  - Earth-monster border
+culture_scope: [maya, aztec_mexica, general_mesoamerican]
+summary: >
+  A horizontal band of repeated frontal deity or monster masks — a common
+  architectural and ceramic decorative program where stylised faces tile
+  across a frieze, each mask identical or alternating two variants.
+description: |
+  Repeated mask friezes appear prominently in Maya Puuc-style architecture
+  (Kabah, Uxmal) and on many painted vessel bands:
+
+  - **Chaac-mask stacks**: Puuc architecture stacks hundreds of Chaac
+    (rain deity) masks vertically on building corners and horizontally
+    across façades; each mask is modular (nose/eye/mouth as separate
+    stone elements assembled in situ).
+  - **Mask structure**: frontal face, prominent hooked nose (Chaac) or
+    fang mouth (earth monster), decorative elements attached above/below.
+  - **Alternation**: two mask variants may alternate (e.g., open/closed
+    mouth, or two deity-types) to prevent monotony.
+  - **Ceramic band**: painted vessels show a series of repeated profiles
+    or frontals as the main-scene band; can be schematised to a single
+    repeated iconic face.
+  - **Symmetry**: each individual mask is bilaterally symmetric; the band
+    has a translational repeating symmetry.
+
+  Generative parameters: tile-size, variant-count, face-complexity,
+  spacer-element between masks.
+tags:
+  culture_scope: [maya, aztec_mexica, general_mesoamerican]
+  medium: [architecture, ceramics, stone_relief]
+  motif_type: [deity, pattern]
+  geometry: [banded, symmetry, grid]
+  surface: [carved, painted]
+  palette: [mineral_pigments, earthtones]
+  composition: [border_band, frieze, central_mask]
+  mood: [ceremonial, austere]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, displacement]
+constraints:
+  do:
+    - Build each mask as a modular unit (nose, eyes, mouth as sub-elements).
+    - Use strict bilateral symmetry within each mask.
+    - Space masks with a consistent narrow gutter; allow them to nearly touch.
+    - Can be used as a repeating tile at any scale.
+  avoid:
+    - Avoid making each mask unique — regularity and repetition are the
+      defining aesthetic quality.
+parameters:
+  mask_variant_count: 1     # 1 = all identical; 2 = alternating
+  spacing_fraction: 0.1     # gap as fraction of mask width
+  nose_type: "hooked"       # hooked (Chaac) | fanged | plain
+compat:
+  - meso.tlaloc_rain_deity
+  - meso.classic_maya_relief_style
+  - meso.border_band_stepped_fret
+provenance:
+  period: "Classic Maya Puuc, 700–1000 CE"
+  sources:
+    - "Kowalski, J. K. (ed.) (1999). Mesoamerican Architecture as a Cultural Symbol. Oxford UP."
+    - "Pollock, H. E. D. (1980). The Puuc: An Architectural Survey. Peabody Museum."
+version: "1.0"
+created_at: "2026-04-10"

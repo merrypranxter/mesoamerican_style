@@ -1,0 +1,64 @@
+id: meso.obsidian_mirror_motif
+type: symbol
+name: Obsidian Mirror
+aliases:
+  - Tezcatlipoca's smoking mirror
+  - Itztli
+  - Tezcat (short form)
+culture_scope: [aztec_mexica, general_mesoamerican]
+summary: >
+  The obsidian mirror is both a ritual object and cosmological symbol —
+  a portal for prophecy, associated with Tezcatlipoca (Smoking Mirror),
+  darkness, fate, and the night sky.
+description: |
+  Obsidian mirrors were highly polished discs of volcanic glass used for
+  divination. The symbol/motif carries:
+
+  - **Circular disc form**: round, highly polished; reflective black surface.
+  - **Smoke scroll**: "smoking mirror" — a distinctive curling smoke/mist
+    tendril emerging from the mirror surface indicates the prophetic vision.
+  - **Tezcatlipoca context**: the god's severed foot is replaced by a smoking
+    mirror (the foot was bitten off by the earth monster); he peers into
+    it to see all events past and future.
+  - **Surface visual**: in 2D representations, the mirror face is filled with
+    a cross-hatched or stepped spiral pattern suggesting reflection/depth.
+  - **Night sky link**: the Milky Way or dark cloud constellations visible
+    in polished obsidian at night.
+  - **Mosaic variant**: some mirrors decorated with turquoise/pyrite mosaic
+    frames.
+
+  Used as: deity attribute, cosmological portal, power emblem, surface texture.
+tags:
+  culture_scope: [aztec_mexica]
+  medium: [obsidian, jade, ceramics, codex_painting]
+  motif_type: [deity, celestial, weapon]
+  geometry: [radial, spiral]
+  surface: [inlaid, carved]
+  palette: [obsidian_black, jade_turquoise]
+  composition: [emblem]
+  mood: [cosmic, mythic, ceremonial]
+  remix: [none]
+  shader_ops: [relief_shading, palette_map, noise]
+constraints:
+  do:
+    - Use a deep reflective black (obsidian) for mirror face.
+    - Add smoke/mist scroll curling from one edge.
+    - Frame with turquoise/pyrite mosaic border where luxe treatment needed.
+    - Cross-hatch or concentric ring fill implies depth/reflection.
+  avoid:
+    - Avoid depicting as a literal magic 8-ball or Western mirror — maintain
+      round disc form with smoke attribute.
+parameters:
+  surface_fill: "crosshatch"   # crosshatch | stepped_spiral | plain_black
+  smoke_scroll: true
+compat:
+  - meso.obsidian_material
+  - meso.aztec_codex_painting_style
+  - meso.jade_turquoise_palette
+provenance:
+  period: "Aztec Late Postclassic, 1300–1521 CE"
+  sources:
+    - "Klein, C. (2000). The Devil and the Skirt: An Iconographic Inquiry into the Pre-Hispanic Nature of the Tzitzimimeh."
+    - "Olivier, G. (2003). Mockeries and Metamorphoses of an Aztec God. U Colorado Press."
+version: "1.0"
+created_at: "2026-04-10"

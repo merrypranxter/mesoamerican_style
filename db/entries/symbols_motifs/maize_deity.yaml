@@ -1,0 +1,67 @@
+id: meso.maize_deity_motif
+type: symbol
+name: Maize / Maize Deity
+aliases:
+  - Hunahpu (K'iche')
+  - Hun Hunahpu
+  - First Father
+  - Centeotl (Nahuatl)
+  - Cintéotl
+culture_scope: [maya, aztec_mexica, general_mesoamerican]
+summary: >
+  Maize is the founding crop and cosmological axis of Mesoamerican civilisation.
+  The Maize Deity is a young, idealised male figure with a cob-shaped head,
+  associated with regeneration, abundance, and the cycle of death and rebirth.
+description: |
+  The Maize Deity is among the most frequently depicted supernaturals in
+  Classic Maya art. Key visual elements:
+
+  - **Tonsured head**: back of skull shaped like the husked top of a maize
+    cob; hair swept up and back; sometimes literal cob attached.
+  - **Young, idealised male form**: slender elongated proportions; smooth
+    features; contrasts with aged or skeletal deity companions.
+  - **Foliated headdress**: leafy maize-plant crown; cob can emerge from
+    water-lily pad in Classic Maya versions.
+  - **Emergence from turtle / earth**: creation narrative shows First Father
+    being reborn from a cracked turtle shell (the earth), often surrounded
+    by the Hero Twins.
+  - **Water-lily and cacao**: companion plants in the cosmic scene.
+  - **Aztec Centeotl**: young male with yellow-painted face, maize-cob
+    headdress, carrying mature cobs.
+
+  Symbolic register: fertility, cyclic time, the act of cultivation as
+  cosmological metaphor.
+tags:
+  culture_scope: [maya, aztec_mexica, general_mesoamerican]
+  medium: [stone_relief, ceramics, codex_painting, jade]
+  motif_type: [deity, plant]
+  geometry: [axial, symmetry]
+  surface: [carved, painted]
+  palette: [mineral_pigments, jade_turquoise]
+  composition: [central_mask, emblem]
+  mood: [cosmic, mythic, ceremonial]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink]
+constraints:
+  do:
+    - Show the tonsured/cob-shaped skull as the primary identifier.
+    - Include leafy maize-plant emanations from headdress.
+    - Use soft jade green and warm yellow tones for deity skin/costume.
+    - Depict in upright emerging pose for rebirth/creation contexts.
+  avoid:
+    - Avoid generic "corn" representations (Western-style ear of corn) —
+      always contextualise with Mesoamerican iconographic grammar.
+parameters:
+  head_form: "tonsured_cob"
+  headdress_type: "foliated_maize"
+compat:
+  - meso.classic_maya_relief_style
+  - meso.turtle_earth_motif
+  - meso.underworld_scene_composition
+provenance:
+  period: "Classic Maya and Postclassic Aztec, 250–1521 CE"
+  sources:
+    - "Taube, K. (1985). The Classic Maya Maize God. Fifth Palenque Round Table."
+    - "Quenon, M. & Le Fort, G. (1997). Rebirth and Resurrection in Maize God Iconography."
+version: "1.0"
+created_at: "2026-04-10"

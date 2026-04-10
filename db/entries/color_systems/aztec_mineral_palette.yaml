@@ -1,0 +1,71 @@
+id: meso.aztec_mineral_palette
+type: color_system
+name: Aztec / Mexica Mineral Pigment Palette
+aliases:
+  - Nahua codex palette
+  - Mesoamerican mineral pigments
+culture_scope: [aztec_mexica, mixtec, general_mesoamerican]
+summary: >
+  The full mineral and organic pigment palette of Aztec codex painting —
+  a vibrant, warm-dominant set of 6–8 standardised colours derived from
+  mineral and organic sources.
+description: |
+  Aztec codex painters worked with a consistent palette derived from
+  geographically specific mineral and organic sources:
+
+  - **Red** (Rojo — hematite or cochineal): the most important colour;
+    used for blood, fire, the sun, speech; two variants:
+    - Cochineal red: vivid crimson, slightly warm pink-red (`#C0392B`)
+    - Hematite red: earthier, more orange-red (`#A0522D`)
+  - **Blue** (Azul — indigo-based or Maya Blue): range from light cerulean
+    to deep blue-green.
+  - **Yellow** (Amarillo — limonite): warm golden yellow; ochre-leaning.
+  - **Green** (Verde — malachite or plant-based): range from vivid malachite
+    green to darker forest green.
+  - **Black** (Negro — carbon/charcoal + manganese): outlines, text, shadow.
+  - **White** (Blanco — chalk/lime): background/light areas.
+  - **Brown/Tan** (amate paper ground): implicit neutral.
+  - **Turquoise** (optional accent): jade-green blue for precious materials.
+
+  Palette is *flat and uniform* — no gradients; each colour fully saturated.
+tags:
+  culture_scope: [aztec_mexica, mixtec, general_mesoamerican]
+  medium: [codex_painting]
+  motif_type: [pattern]
+  geometry: [banded]
+  surface: [painted]
+  palette: [mineral_pigments, full_ceremonial]
+  composition: [register]
+  mood: [vibrant, ceremonial]
+  remix: [none]
+  shader_ops: [palette_map]
+constraints:
+  do:
+    - Use flat, uniform fills — no gradients or blending.
+    - Apply black as the universal outline colour.
+    - Use red as the highest-frequency warm accent.
+    - Keep total colour count to 7–8 max.
+  avoid:
+    - Avoid pastels, desaturated versions, or modern paint-mixing neutrals.
+parameters:
+  swatches:
+    cochineal_red: "#C0392B"
+    hematite_red: "#A0522D"
+    blue: "#2E75B6"
+    yellow: "#D4A017"
+    malachite_green: "#3D9970"
+    black: "#1A0F00"
+    white: "#F5EEE0"
+    turquoise_accent: "#4EC3C0"
+  total_colours: 8
+  fill_type: "flat"
+compat:
+  - meso.aztec_codex_painting_style
+  - meso.mixtec_codex_style
+  - meso.bark_paper_codex_material
+provenance:
+  period: "Aztec Postclassic, 1300–1521 CE"
+  sources:
+    - "Berdan, F. & Anawalt, P. (1997). The Essential Codex Mendoza. UC Press."
+version: "1.0"
+created_at: "2026-04-10"

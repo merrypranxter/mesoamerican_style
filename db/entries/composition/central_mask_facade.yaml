@@ -1,0 +1,65 @@
+id: meso.central_mask_facade_composition
+type: composition
+name: Central Mask / Façade Composition
+aliases:
+  - Deity-mask façade
+  - Witz-monster face
+  - Monster-mouth doorway
+culture_scope: [maya, aztec_mexica, general_mesoamerican]
+summary: >
+  A frontal, bilaterally symmetric composition dominated by a massive deity
+  or earth-monster face — often so large it becomes the architectural
+  element itself (doorway as mouth, building as deity body).
+description: |
+  Central mask compositions are among the most dramatic in Mesoamerican art:
+
+  - **Bilateral symmetry**: the face is perfectly or near-perfectly symmetric
+    about a vertical axis.
+  - **Scale**: the mask/face fills the compositional space almost entirely;
+    minimal negative space.
+  - **Mouth as portal**: in architectural contexts, the open jaw becomes a
+    doorway — entering the building is entering the deity's mouth (cave,
+    underworld portal).
+  - **Component stacking**: nose/snout, eye, brow, ear-flare, chin/jaw are
+    each distinct compositional units that stack and overlap.
+  - **Additive complexity**: each zone of the face carries its own internal
+    ornament — scrolls, secondary glyphs, feathers, serpents.
+  - **Framing elements**: flanking the central face are often vertical bands,
+    serpent bodies, or smaller flanking figures.
+  - **Examples**: Rio Bec tower faces, Copán Altar Q, Codz Poop Chaac masks,
+    Aztec Coatlicue (masked frontal deity figure).
+tags:
+  culture_scope: [maya, aztec_mexica, general_mesoamerican]
+  medium: [architecture, stone_relief, ceramics]
+  motif_type: [deity, pattern]
+  geometry: [symmetry, radial, axial]
+  surface: [carved, painted]
+  palette: [earthtones, mineral_pigments]
+  composition: [central_mask, axial, emblem]
+  mood: [ceremonial, mythic, austere]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, displacement]
+constraints:
+  do:
+    - Maintain strict bilateral symmetry.
+    - Fill each facial zone with appropriate ornamental sub-elements.
+    - Allow the open jaw to function as a compositional portal/frame.
+    - Flank the face with vertical border bands.
+  avoid:
+    - Avoid "off-centre" or tilted face compositions — centrality is sacred.
+parameters:
+  symmetry_axis: "vertical"
+  mouth_state: "open"       # open | closed | fanged
+  fill_complexity: "high"   # low | medium | high
+compat:
+  - meso.repeating_deity_mask_band
+  - meso.tlaloc_rain_deity
+  - meso.classic_maya_relief_style
+  - meso.border_band_stepped_fret
+provenance:
+  period: "Classic Maya and general Mesoamerican, 250–1521 CE"
+  sources:
+    - "Kowalski, J. K. (ed.) (1999). Mesoamerican Architecture as a Cultural Symbol."
+    - "Taube, K. (2004). Flower Mountain: Concepts of Life, Beauty, and Paradise."
+version: "1.0"
+created_at: "2026-04-10"

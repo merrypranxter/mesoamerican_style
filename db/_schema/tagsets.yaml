@@ -1,0 +1,115 @@
+# db/_schema/tagsets.yaml
+# Canonical tag axes for the Mesoamerican Style Database.
+# Every YAML entry's `tags:` block should draw values from these axes.
+
+version: "1.0"
+description: >
+  Tag taxonomy for the Mesoamerican Style Database.
+  Axes define controlled vocabularies; entries may use one or more values per axis.
+
+axes:
+
+  culture_scope:
+    description: Primary cultural tradition(s) referenced.
+    values:
+      - maya            # Classic/Postclassic Maya civilizations
+      - aztec_mexica    # Aztec / Mexica (Tenochtitlan era)
+      - olmec           # Olmec (Gulf Coast, formative period)
+      - mixtec          # Mixtec (codex tradition, Oaxaca)
+      - zapotec         # Zapotec (Monte Albán)
+      - teotihuacan     # Teotihuacan city-state tradition
+      - general_mesoamerican  # Pan-regional or cross-cultural
+
+  medium:
+    description: Original material / production context.
+    values:
+      - stone_relief    # Carved monumental stone (stela, altar, panel)
+      - codex_painting  # Screenfold book, pigment on bark/deer skin
+      - ceramics        # Painted or modeled clay vessels
+      - jade            # Jade and greenstone carving/inlay
+      - obsidian        # Obsidian blades, mirrors, mosaics
+      - featherwork     # Woven feather mosaic (iridescent)
+      - architecture    # Friezes, façades, murals in situ
+      - stucco_mural    # Painted plaster relief
+
+  motif_type:
+    description: Semantic category of the depicted element.
+    values:
+      - deity           # Divine beings, avatar manifestations
+      - animal          # Zoomorphic forms (jaguar, serpent, eagle, etc.)
+      - plant           # Botanical motifs (maize, cacao, copal)
+      - celestial       # Sun, moon, stars, planets, comets
+      - weapon          # Sacrificial knives, atlatl, shields
+      - pattern         # Non-representational repeating design
+      - glyphlike       # Logographic or calendar-related marks
+
+  geometry:
+    description: Dominant spatial / structural geometry.
+    values:
+      - stepped_fret    # Greca / stepped meander (xicalcoliuhqui)
+      - meander         # Continuous key/spiral scrolling band
+      - spiral          # Individual or repeated volutes
+      - banded          # Horizontal registers / frieze strips
+      - grid            # Orthogonal block layouts
+      - radial          # Wheel / calendar / sunburst arrangements
+      - symmetry        # Bilateral or rotational symmetry emphasis
+
+  surface:
+    description: How the design is applied to its substrate.
+    values:
+      - carved          # Bas-relief, high relief, incised
+      - painted         # Flat pigment application
+      - inlaid          # Mosaic, turquoise/pyrite inlay
+      - weathered       # Visible erosion, lichen, patina
+
+  palette:
+    description: Characteristic color palette family.
+    values:
+      - mineral_pigments  # Ochre, hematite, azurite, malachite
+      - earthtones        # Terracotta, sand, umber, warm neutrals
+      - jade_turquoise    # Greens, teals, blue-green emphasis
+      - obsidian_black    # Near-black, dark grey, charcoal
+      - limited           # 2–4 color restricted palette
+      - full_ceremonial   # Saturated polychrome (Maya Blue, cinnabar red)
+
+  composition:
+    description: Overall layout / compositional structure.
+    values:
+      - frieze            # Continuous horizontal narrative band
+      - register          # Stacked horizontal zones
+      - emblem            # Isolated central motif / badge
+      - border_band       # Frame / perimeter decoration
+      - central_mask      # Large face dominating composition
+      - axial             # Strong vertical axis with mirroring
+
+  mood:
+    description: Expressive / tonal quality.
+    values:
+      - ceremonial   # Ritual, sacred, formal
+      - martial      # Warfare, power, conquest iconography
+      - cosmic       # Sky, time, cosmological themes
+      - mythic       # Narrative scene from myth or legend
+      - austere      # Minimal, monumental, restrained
+      - vibrant      # Energetic, polychrome, decorative exuberance
+
+  remix:
+    description: Modern overlay / reinterpretation approach.
+    values:
+      - modern_fusion  # Blends historical grammar with contemporary aesthetics
+      - cyber          # Digital glitch, circuit-board, neon accents
+      - street_art     # Mural, spray-paint, stencil, urban context
+      - sci_fi         # Speculative / futurist extrapolation
+      - popculture     # Licensed characters, fan-art integration
+      - none           # No modern remix elements
+
+  shader_ops:
+    description: Rendering / post-processing operations applicable.
+    values:
+      - relief_shading  # Directional light simulating carved surface
+      - edge_ink        # High-contrast edge detection as ink outline
+      - halftone        # Dot/line screen for printed feel
+      - dither          # Ordered or error-diffusion dithering
+      - palette_map     # Force output to target color palette
+      - noise           # Grain, film noise, stone texture overlay
+      - normal_map      # Surface normals from height/depth data
+      - displacement    # Geometric displacement for carved surfaces

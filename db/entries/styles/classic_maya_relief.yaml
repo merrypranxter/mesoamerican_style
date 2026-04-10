@@ -1,0 +1,67 @@
+id: meso.classic_maya_relief_style
+type: style
+name: Classic Maya Stone Relief Style
+aliases:
+  - Maya bas-relief
+  - Low-relief carving style
+culture_scope: [maya]
+summary: >
+  The hallmark carved-stone aesthetic of the Classic Maya period (250–900 CE),
+  characterised by intricate low-relief figures, dense iconographic programs,
+  and hieroglyphic text blocks.
+description: |
+  Classic Maya stone relief carving represents one of the most sophisticated
+  pictorial traditions in the ancient Americas. Produced primarily on stelae,
+  altars, lintels, and architectural panels, the style exhibits:
+
+  - **Figure canon**: frontal torso with profile head and legs; elaborate
+    headdresses that often exceed figure height; stacked costume elements.
+  - **Space logic**: no single-point perspective; hierarchical scaling
+    (larger = more important); overlapping bands create spatial layering.
+  - **Line quality**: varying-depth incision creates tonal contrast; crisp
+    interior detail lines within heavier outline grooves.
+  - **Glyph integration**: hieroglyphic captions woven into or flanking
+    figural scenes; caption blocks use a column-pair reading order.
+  - **Symmetry**: bilateral symmetry common for frontal deity masks;
+    narrative scenes more asymmetric.
+
+  Primary sites: Palenque, Copán, Quiriguá, Yaxchilán, Piedras Negras.
+tags:
+  culture_scope: [maya]
+  medium: [stone_relief]
+  motif_type: [deity, animal, glyphlike]
+  geometry: [banded, symmetry, radial]
+  surface: [carved]
+  palette: [obsidian_black]
+  composition: [frieze, register, central_mask]
+  mood: [ceremonial, mythic, cosmic]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, noise]
+constraints:
+  do:
+    - Vary incision depth to simulate light-catching relief planes.
+    - Use a narrow near-black + warm stone mid-tone + highlight palette.
+    - Reference headdress silhouette as the primary identifying shape.
+    - Include caption-block rectangles even if glyph content is abstract.
+  avoid:
+    - Do not fabricate legible hieroglyphic inscriptions — use abstracted
+      glyph-inspired marks only (see meso.glyph_guidance_safe).
+    - Avoid photorealistic rendering; the style reads best in mid-contrast
+      flat planes with crisp edge lines.
+parameters:
+  relief_depth_levels: 3          # shallow / mid / deep
+  outline_weight_px: 2.5
+  stone_colour_hex: "#C8B89A"
+  shadow_colour_hex: "#2E1F0F"
+compat:
+  - meso.maya_blue_palette
+  - meso.border_band_stepped_fret
+  - meso.shader_relief_chisel
+  - meso.glyph_guidance_safe
+provenance:
+  period: "Classic Maya, 250–900 CE"
+  sources:
+    - "Schele, L. & Miller, M. (1986). The Blood of Kings. Kimbell Art Museum."
+    - "Martin, S. & Grube, N. (2000). Chronicle of the Maya Kings and Queens."
+version: "1.0"
+created_at: "2026-04-10"

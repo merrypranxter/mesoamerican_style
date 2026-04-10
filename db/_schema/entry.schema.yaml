@@ -1,0 +1,153 @@
+# db/_schema/entry.schema.yaml
+# Universal schema for all database entries.
+# Every file under db/entries/**/*.yaml must conform to this structure.
+
+version: "1.0"
+description: >
+  Defines the required and optional fields for every entry in the
+  Mesoamerican Style Database. All top-level keys are documented below.
+
+fields:
+
+  id:
+    type: string
+    required: true
+    pattern: "^meso\\.[a-z0-9_]+$"
+    description: >
+      Unique identifier for this entry. Must begin with the `meso.` prefix
+      followed by a lowercase snake_case slug.
+    example: "meso.feathered_serpent"
+
+  type:
+    type: enum
+    required: true
+    values:
+      - style
+      - symbol
+      - motif
+      - pattern
+      - material
+      - color_system
+      - composition
+      - glyph_guidance
+      - shader
+      - remix
+      - pipeline
+      - reference
+    description: Semantic category of this entry.
+
+  name:
+    type: string
+    required: true
+    description: Human-readable display name (English preferred, with native term noted in aliases).
+
+  aliases:
+    type: list[string]
+    required: false
+    description: Alternate names, native-language terms, transliterations, common English variants.
+    example:
+      - "Quetzalcóatl"
+      - "Kukulcan (Maya)"
+
+  culture_scope:
+    type: list[enum]  # values from tagsets.yaml axes.culture_scope
+    required: true
+    description: Which cultural traditions this entry is associated with.
+
+  summary:
+    type: string
+    required: true
+    max_length: 200
+    description: One- or two-sentence plain-language summary for search/index use.
+
+  description:
+    type: string
+    required: true
+    description: >
+      Detailed description. Include historical context, visual characteristics,
+      symbolic meaning, and usage notes. Markdown supported.
+
+  tags:
+    type: object
+    required: true
+    description: >
+      Structured tag block. Each key is a tag axis from tagsets.yaml;
+      each value is a list of values from that axis.
+    example:
+      culture_scope: [maya, aztec_mexica]
+      medium: [stone_relief, codex_painting]
+      motif_type: [deity, animal]
+      geometry: [spiral, symmetry]
+      surface: [carved, painted]
+      palette: [jade_turquoise, mineral_pigments]
+      composition: [central_mask]
+      mood: [ceremonial, mythic]
+      remix: [none]
+      shader_ops: [relief_shading, edge_ink]
+
+  constraints:
+    type: object
+    required: false
+    description: Usage guidance for generative / AI workflows.
+    fields:
+      do:
+        type: list[string]
+        description: Encouraged practices when using this entry.
+      avoid:
+        type: list[string]
+        description: >
+          Practices to avoid — especially culturally sensitive areas
+          (fake inscriptions, misrepresentation of sacred elements, etc.).
+
+  parameters:
+    type: object
+    required: false
+    description: >
+      Numeric or enum parameters specific to this entry type
+      (e.g., stroke_weight, relief_depth_mm, palette_hex_values).
+
+  compat:
+    type: list[string]
+    required: false
+    description: >
+      IDs of other entries this entry works well with or is designed to pair with.
+
+  provenance:
+    type: object
+    required: false
+    description: Academic / source attribution.
+    fields:
+      sources:
+        type: list[string]
+        description: Reference titles, URLs, or DB reference entry IDs.
+      period:
+        type: string
+        description: >
+          Approximate cultural period (e.g., "Classic Maya, 250–900 CE").
+      notes:
+        type: string
+        description: Additional scholarly notes or caveats.
+
+  version:
+    type: string
+    required: true
+    default: "1.0"
+    description: Entry version string for change tracking.
+
+  created_at:
+    type: date
+    required: true
+    format: "YYYY-MM-DD"
+    description: ISO-8601 date the entry was first created.
+
+  updated_at:
+    type: date
+    required: false
+    format: "YYYY-MM-DD"
+    description: ISO-8601 date of last significant update.
+
+# --- Validation notes ---
+# 1. `id` uniqueness is enforced at index build time (tools/build_index.js).
+# 2. Tag values must match the controlled vocabularies in tagsets.yaml.
+# 3. The `constraints.avoid` list is strongly encouraged for any entry that
+#    touches sacred, ceremonial, or inscription-adjacent subject matter.
