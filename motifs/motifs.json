@@ -1,0 +1,40 @@
+{
+  "schema": "motifs/v1",
+  "motifs": [
+    {
+      "id": "step_fret",
+      "name": "Step-fret (key) pattern",
+      "keywords": ["step", "fret", "key", "stair", "meander"],
+      "shape_notes": "Orthogonal stair-stepped turns; nested rectangles; good for borders.",
+      "generative_hint": "Create a polyline that alternates horizontal/vertical segments with quantized lengths; mirror for symmetry; tile in bands."
+    },
+    {
+      "id": "glyph_block",
+      "name": "Glyph block",
+      "keywords": ["glyph", "cartouche", "codex"],
+      "shape_notes": "Compact modular symbol inside a bounded block; often with inner subdivisions.",
+      "generative_hint": "Use a grid subdivision (3x3 to 7x7) and fill cells with rectangles/hooks/S-curves; add an incised outline channel around the block."
+    },
+    {
+      "id": "feather_bundle",
+      "name": "Feather bundle",
+      "keywords": ["feather", "plume", "bundle"],
+      "shape_notes": "Repeating tapered strokes grouped like a fan.",
+      "generative_hint": "Radial array of tapered quads with slight noise in angle; outline as a single carved silhouette; internal grooves for separations."
+    },
+    {
+      "id": "serpent_curve",
+      "name": "Serpent S-curve",
+      "keywords": ["serpent", "s-curve", "coil"],
+      "shape_notes": "Sinuous body with strong silhouette; often segmented.",
+      "generative_hint": "Use a spline centerline; extrude width; segment with repeating notches; add head as a geometric hook + eye socket circle."
+    },
+    {
+      "id": "sun_disk_simple",
+      "name": "Sun disk (simple)",
+      "keywords": ["sun", "disk", "circle"],
+      "shape_notes": "Concentric rings with radial ticks; use sparingly.",
+      "generative_hint": "Concentric circles + quantized radial spikes; erode edges with noise; carve grooves between rings."
+    }
+  ]
+}

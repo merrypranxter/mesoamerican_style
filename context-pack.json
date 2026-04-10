@@ -1,0 +1,36 @@
+{
+  "schema": "context-pack/v1",
+  "id": "mesoamerican_style",
+  "name": "Mesoamerican Style",
+  "version": "0.1.0",
+  "description": "A structured context pack for Mesoamerican-inspired visual design: motifs, palette, prompts, and generative hints.",
+  "recommended_use": [
+    "prompting",
+    "generative-art",
+    "shaders",
+    "javascript-canvas",
+    "visual-style"
+  ],
+  "tags": [
+    "mesoamerican",
+    "glyph",
+    "bas-relief",
+    "step-fret",
+    "jade",
+    "obsidian",
+    "maize",
+    "temple-geometry",
+    "stone-carving"
+  ],
+  "files": {
+    "overview": "CONTEXT_PACK.md",
+    "style_guide": "STYLE_GUIDE.md",
+    "motifs": "motifs/motifs.json",
+    "palettes": "palette/palettes.json",
+    "prompt_templates": "prompts/prompt_templates.md",
+    "negative_prompts": "prompts/negative_prompts.md",
+    "shader_hints": "generative/shader_hints.md",
+    "js_visual_patterns": "generative/js_visual_patterns.md",
+    "examples": "EXAMPLES.md"
+  }
+}

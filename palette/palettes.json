@@ -1,0 +1,31 @@
+{
+  "schema": "palettes/v1",
+  "palettes": [
+    {
+      "id": "stone_jade_cinnabar",
+      "name": "Stone / Jade / Cinnabar",
+      "colors": [
+        {"name": "Basalt", "hex": "#2B2B2B"},
+        {"name": "Limestone", "hex": "#C9C2B3"},
+        {"name": "Jade", "hex": "#1E8F6A"},
+        {"name": "Cinnabar", "hex": "#B1322E"},
+        {"name": "Obsidian", "hex": "#0D0D12"},
+        {"name": "Maize", "hex": "#D6B14A"}
+      ],
+      "usage": "Use stone neutrals as base; pigments appear in recesses or as accent bands."
+    },
+    {
+      "id": "codex_pigments",
+      "name": "Codex pigments",
+      "colors": [
+        {"name": "Indigo", "hex": "#233A7A"},
+        {"name": "Cochenille", "hex": "#A2173A"},
+        {"name": "Turquoise", "hex": "#2AA8A1"},
+        {"name": "Ochre", "hex": "#B07A2A"},
+        {"name": "Bone", "hex": "#E7DCC8"},
+        {"name": "Charcoal", "hex": "#2A2A30"}
+      ],
+      "usage": "Flatter, painted feel—good for posterized or vector-style outputs."
+    }
+  ]
+}
