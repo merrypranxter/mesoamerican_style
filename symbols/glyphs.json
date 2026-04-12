@@ -1,0 +1,173 @@
+{
+  "schema": "symbols/glyphs/v1",
+  "description": "Mesoamerican glyph systems — structure, conventions, and generative notes for each culture's writing tradition.",
+  "glyph_systems": [
+    {
+      "id": "maya_hieroglyphic",
+      "culture": "Maya",
+      "type": "Full writing system — logographic + syllabic (CV syllabary)",
+      "decipherment_status": "Largely deciphered (90%+); ongoing refinement",
+      "visual_structure": {
+        "block_shape": "Roughly square cartouche; rounded corners; slight border channel around each block",
+        "reading_order": "Left to right, top to bottom, in paired vertical columns (L-R across the pair, then down)",
+        "internal_subdivision": "Main sign in center; affixes at top-left (superfix), bottom-right (subfix), or infixed inside main sign",
+        "size_variation": "Large main sign with small affixes; or full-body head variant filling entire block",
+        "line_weight": "Consistent medium weight; no thick-thin calligraphic variation (unlike Chinese brush)"
+      },
+      "sign_types": [
+        {
+          "type": "Logograms (word signs)",
+          "description": "A single glyph represents an entire word; e.g., the AJAW (lord) glyph = face with cruller + dotted cheek",
+          "examples": ["AJAW (lord)", "K'IN (sun/day)", "HAB' (year)", "PAKAL (shield)", "CHAN (sky)"]
+        },
+        {
+          "type": "Syllabograms (CV signs)",
+          "description": "Each sign represents a consonant-vowel combination; ~100 signs in the syllabary; stacked to spell words phonetically",
+          "syllable_types": ["ka, ki, ku, ke, ko", "ba, bi, bu, be", "ma, mi, mu, me", "etc."]
+        },
+        {
+          "type": "Head variants",
+          "description": "Numbers 1–13 and some day names can be written as deity head profiles; stylized deity head fills the glyph block",
+          "character": "Highly individual and calligraphic; each head has specific diagnostic marks (cruller under eye, flower, dots, infixes)"
+        },
+        {
+          "type": "Full-figure variants",
+          "description": "Especially elaborate inscriptions show full body figures interacting, with entire bodies as glyphs; rare luxury feature",
+          "examples": ["Full-figure number series at Quirigua, Copan"]
+        }
+      ],
+      "number_system": {
+        "base": 20,
+        "symbols": {
+          "dot": 1,
+          "bar": 5,
+          "shell": 0
+        },
+        "example": "17 = 3 bars + 2 dots stacked; 20 = 1 dot in next position with shell below"
+      },
+      "calendrical_glyphs": "See calendars.json for Tzolk'in day signs, Haab' months, Long Count periods",
+      "generative_hint": "Each glyph block is a contained unit — roughly square, with a thick outer border channel. Internal design uses complex interlocking curves. For a 'Maya text wall': arrange in a 2-column grid, left column then right column, reading L-R then repeat. Allow about 40% of the internal area for the main sign, 20% for affixes. Rounded cartouche corners are important — they soften the otherwise angular grid."
+    },
+    {
+      "id": "aztec_pictographic",
+      "culture": "Aztec (Mexica)",
+      "type": "Pictographic with limited phonetic rebus elements; not a full writing system",
+      "decipherment_status": "Largely interpretable; phonetic system partially reconstructed",
+      "visual_structure": {
+        "block_shape": "Variable — name-glyphs tend to be roughly square; place-glyphs are hillform; event-glyphs are pictographic",
+        "reading_order": "No strict linear order for most texts; following a visual narrative; codex books read along a red line path",
+        "labeling_convention": "Figures are identified by labels attached near the head; place of action is labeled with place-glyph near scene"
+      },
+      "sign_types": [
+        {
+          "type": "Name-glyphs",
+          "description": "Each person has a pictographic name composed of day-sign + personal marker; phonetic rebus encoding common",
+          "examples": [
+            "Motecuhzoma = anger (motequi) + noble (zoma) — a frowning face + noble dress",
+            "8-Deer = deer head + 8 dots",
+            "Tlacaelel = human (tlacatl) + head (elel) components"
+          ]
+        },
+        {
+          "type": "Place-glyphs",
+          "description": "Mountain/hill (tepetl) form as base + attribute on top; e.g., Tenochtitlan = cactus (nochtli) + rock (tetl) on a hill",
+          "shape": "Inverted trapezoid (hill form) with identifying element at top or on face"
+        },
+        {
+          "type": "Day signs",
+          "description": "The 20 day signs of the Tonalpohualli (see calendars.json); pictographic",
+          "usage": "Personal birth-date names; calendar dates; integrated into codex narrative"
+        },
+        {
+          "type": "Event glyphs",
+          "description": "Specific pictographs encode recurring events: footprints = journey, fire drilling = new year, severed head = conquest, speech scroll = speech/naming, shield+spear = war"
+        },
+        {
+          "type": "Number system",
+          "description": "Dots (1), flags (20), feathers (400), incense bags (8000); different from Maya bar-dot system",
+          "colors": "Flags/banners in yellow; feathers in green; bags in turquoise; dots in white or red"
+        }
+      ],
+      "codex_types": [
+        {"name": "Codex Borgia", "type": "Ritual/divinatory; tonalamatl pages; deity images", "style": "Rich colors; symbolic density; western Nahua origin"},
+        {"name": "Codex Mendoza", "type": "Historical + tribute record; commissioned after Conquest; bilingual", "style": "Codex style with Spanish annotations"},
+        {"name": "Codex Borbonicus", "type": "Ritual calendar; Aztec origin; two sections: tonalpohualli + xiuhpohualli", "style": "Bold, vigorous; possibly pre-Conquest"},
+        {"name": "Tonalamatl Aubin", "type": "Sacred almanac; trecena patrons and auguries", "style": "Simplified but vivid"}
+      ],
+      "generative_hint": "For Aztec glyph generation: start with a strong silhouette (recognizable outline = the meaning). Fill with flat color. Add phonetic attribute as a small attached element. Black outline must be bold and decisive. Place-glyphs: hill silhouette as base, attribute on top. Day-signs: 20 distinctive compact pictographs (see aztec.md for list)."
+    },
+    {
+      "id": "zapotec_script",
+      "culture": "Zapotec",
+      "type": "Early logographic/syllabic; one of the oldest scripts in the Americas",
+      "decipherment_status": "Partially deciphered; ongoing; ~3–4 centuries older than Maya script evidence",
+      "visual_structure": {
+        "context": "Primarily carved into stone slabs and monument sides; not organized in tight grid columns",
+        "block_shape": "Variable; some signs are oval cartouche, some are more free-form",
+        "reading_direction": "Not fully established; possibly top-to-bottom or context-dependent"
+      },
+      "sign_types": [
+        {
+          "type": "Capture/conquest glyphs",
+          "description": "Upside-down or scroll-identified head below a figure = captive's name or origin; hill glyph with suffix = place name"
+        },
+        {
+          "type": "Day signs",
+          "description": "Zapotec 260-day calendar equivalents; distinct forms from Aztec; 52-year calendar shared"
+        },
+        {
+          "type": "Title/name compounds",
+          "description": "Combinations identifying political figures; visible in Monte Albán III period"
+        }
+      ],
+      "generative_hint": "Zapotec glyphs appear as carved bas-relief elements alongside figural compositions, not in a separate text zone. For generation: attach simple geometric cartouche elements near figures as labels; use hillform base for place references. Style is simpler/blockier than Maya — fewer internal subdivisions."
+    },
+    {
+      "id": "mixtec_pictographic",
+      "culture": "Mixtec",
+      "type": "Pictographic narrative; phonetic rebus elements; strip-format codex reading",
+      "decipherment_status": "Substantially interpreted; place-glyph system well documented",
+      "visual_structure": {
+        "format": "Accordion-folded deer-skin strip; both sides painted; follows a winding red-line path (boustrophedon)",
+        "reading_path": "A bold red line (or band) indicates the sequence; figures and events occur within this path frame",
+        "figure_style": "Articulated, stiff figures with precise costume details; never obscured or partially hidden"
+      },
+      "sign_types": [
+        {
+          "type": "Place-glyphs",
+          "description": "Hill/mountain base (ñuu) + distinctive attribute: stripe color, element on top, mouth element",
+          "examples": [
+            "Tilantongo = black-and-white striped hill",
+            "Jaltepec = sand-stone hill (jalquahuitl)",
+            "Yuta Tnoho (Apoala) = river + human feet"
+          ]
+        },
+        {
+          "type": "Day-name signs",
+          "description": "260-day calendar day signs used as birth-name components; e.g., 8-Deer = 8 dots + deer head"
+        },
+        {
+          "type": "Year signs",
+          "description": "Year bundles = bound reed bundle with year-sign flag; 52-year cycle; embedded in narrative along the red path"
+        },
+        {
+          "type": "Event conventions",
+          "description": "Marriage = rope connecting two figures; war = spear and shield; death = body in burial bundle; speech = scroll"
+        }
+      ],
+      "generative_hint": "Mixtec text is not a text-wall — it is a flowing picture strip. For generation: place figures along a winding path; attach day-sign name labels near each figure's head; show event symbols between figures (rope for marriage, spear for war). The red path line is always visible as a structural element. Landscape = minimal; place-glyphs as compact labels."
+    },
+    {
+      "id": "epi_olmec_isthmian",
+      "culture": "Epi-Olmec / Isthmian (Gulf Coast, Isthmus of Tehuantepec)",
+      "type": "Syllabic + logographic; possibly the earliest true writing in the Americas",
+      "decipherment_status": "Partially deciphered (one key text); related to proto-Zoquean language",
+      "visual_structure": {
+        "key_artifacts": ["La Mojarra Stela 1 (150 CE)", "Tuxtla Statuette", "Cascajal Block (earlier, Olmec-related)"],
+        "block_shape": "Rectangular cartouches in vertical columns; some integration with figural imagery",
+        "style": "Blocky, rigid; some resemblance to early Maya forms"
+      },
+      "generative_hint": "Treat Epi-Olmec as a transitional style between Olmec visual mass and Maya glyph grids. Use rectangular block columns with heavy borders, simple internal geometric patterns. Useful for conveying 'ancient' Gulf Coast aesthetic."
+    }
+  ]
+}

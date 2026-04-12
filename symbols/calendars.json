@@ -1,0 +1,182 @@
+{
+  "schema": "symbols/calendars/v1",
+  "description": "Mesoamerican calendar systems — visual structures, cycle names, and generative notes for each tradition.",
+  "calendars": [
+    {
+      "id": "tonalpohualli",
+      "culture": "Aztec (Mexica)",
+      "also_used_by": ["Zapotec", "Mixtec", "Teotihuacan (proto-form)", "Huastec"],
+      "name": "Tonalpohualli",
+      "meaning": "Count of days",
+      "cycle_length": 260,
+      "structure": {
+        "components": ["20 day signs", "13 number coefficients"],
+        "day_signs": [
+          {"number": 1, "nahuatl": "Cipactli", "english": "Crocodile", "patron": "Tonacatecuhtli", "direction": "East"},
+          {"number": 2, "nahuatl": "Ehecatl", "english": "Wind", "patron": "Quetzalcoatl", "direction": "North"},
+          {"number": 3, "nahuatl": "Calli", "english": "House", "patron": "Tepeyollotl", "direction": "West"},
+          {"number": 4, "nahuatl": "Cuetzpalin", "english": "Lizard", "patron": "Huehuecoyotl", "direction": "South"},
+          {"number": 5, "nahuatl": "Coatl", "english": "Serpent", "patron": "Chalchiuhtlicue", "direction": "East"},
+          {"number": 6, "nahuatl": "Miquiztli", "english": "Death", "patron": "Tecciztecatl", "direction": "North"},
+          {"number": 7, "nahuatl": "Mazatl", "english": "Deer", "patron": "Tlaloc", "direction": "West"},
+          {"number": 8, "nahuatl": "Tochtli", "english": "Rabbit", "patron": "Mayahuel", "direction": "South"},
+          {"number": 9, "nahuatl": "Atl", "english": "Water", "patron": "Xiuhtecuhtli", "direction": "East"},
+          {"number": 10, "nahuatl": "Itzcuintli", "english": "Dog", "patron": "Mictlantecuhtli", "direction": "North"},
+          {"number": 11, "nahuatl": "Ozomatli", "english": "Monkey", "patron": "Xochipilli", "direction": "West"},
+          {"number": 12, "nahuatl": "Malinalli", "english": "Grass", "patron": "Patecatl", "direction": "South"},
+          {"number": 13, "nahuatl": "Acatl", "english": "Reed", "patron": "Tezcatlipoca", "direction": "East"},
+          {"number": 14, "nahuatl": "Ocelotl", "english": "Jaguar", "patron": "Tlazolteotl", "direction": "North"},
+          {"number": 15, "nahuatl": "Cuauhtli", "english": "Eagle", "patron": "Xipe Totec", "direction": "West"},
+          {"number": 16, "nahuatl": "Cozcacuauhtli", "english": "Vulture", "patron": "Itzpapalotl", "direction": "South"},
+          {"number": 17, "nahuatl": "Ollin", "english": "Movement", "patron": "Xolotl", "direction": "East"},
+          {"number": 18, "nahuatl": "Tecpatl", "english": "Flint knife", "patron": "Chalchiuhtotolin", "direction": "North"},
+          {"number": 19, "nahuatl": "Quiahuitl", "english": "Rain", "patron": "Chantico", "direction": "West"},
+          {"number": 20, "nahuatl": "Xochitl", "english": "Flower", "patron": "Xochiquetzal", "direction": "South"}
+        ],
+        "trecenas": "13 trecenas of 20 days each; each trecena ruled by a patron deity",
+        "directional_colors": {
+          "East": "#D9A824",
+          "North": "#1A1208",
+          "West": "#EFE6D0",
+          "South": "#1F9BA3"
+        }
+      },
+      "visual_format": "Wheel or grid; day signs arranged around perimeter; numbers as dot-bar coefficients in center or along inner ring",
+      "generative_hint": "Array the 20 day-sign glyphs in a 4×5 or 5×4 grid, or radially around a central axis. Use directional color coding for the four quadrants. Number coefficients as 1–4 dots or 1 bar. Each day sign is roughly square (a glyph block)."
+    },
+    {
+      "id": "xiuhpohualli",
+      "culture": "Aztec (Mexica)",
+      "also_used_by": ["Most Central Mexican cultures"],
+      "name": "Xiuhpohualli",
+      "meaning": "Count of years",
+      "cycle_length": 365,
+      "structure": {
+        "months": 18,
+        "days_per_month": 20,
+        "extra_days": 5,
+        "extra_day_name": "Nemontemi (useless/unlucky)",
+        "month_names": [
+          "Atlcahualo", "Tlacaxipehualiztli", "Tozoztontli", "Huey Tozoztli",
+          "Toxcatl", "Etzalcualiztli", "Tecuilhuitontli", "Huey Tecuilhuitl",
+          "Tlaxochimaco", "Xocotlhuetzi", "Ochpaniztli", "Teotleco",
+          "Tepeilhuitl", "Quecholli", "Panquetzaliztli", "Atemoztli",
+          "Tititl", "Izcalli"
+        ]
+      },
+      "visual_format": "Linear band of 18 month-glyph blocks; often shown as stacked registers in codices",
+      "generative_hint": "18 equal-width panels in a horizontal strip; each panel contains the month glyph (distinctive symbol) and a label. Nemontemi = 5 narrow blank or crossed panels at the end."
+    },
+    {
+      "id": "calendar_round",
+      "culture": "Pan-Mesoamerican",
+      "name": "Calendar Round",
+      "meaning": "52-year cycle when Tonalpohualli and Xiuhpohualli align",
+      "cycle_length_years": 52,
+      "structure": {
+        "description": "The Calendar Round is the interlocking of the 260-day and 365-day cycles. A specific date in both cycles only repeats every 52 years (18,980 days). Called the xiuhmolpilli (year-binding) by the Aztec.",
+        "year_bearers": ["Reed (Acatl)", "Flint (Tecpatl)", "House (Calli)", "Rabbit (Tochtli)"],
+        "new_fire_ceremony": "At end of each 52-year cycle; all fires extinguished; new fire drilled on chest of sacrificial victim atop Huixachtlan hill"
+      },
+      "visual_format": "Two interlocking gear/wheel diagrams; or a bound bundle of 52 reeds (xiuhmolpilli glyph)",
+      "generative_hint": "Two interlocking rings (gears); the inner ring rotates through 260 positions, outer through 365. A coincidence marker at the single overlap point. Alternatively: a simple bound-reed bundle as a single glyph."
+    },
+    {
+      "id": "tzolkin",
+      "culture": "Maya",
+      "also_used_by": ["All Maya-speaking groups", "Zapotec (parallel system)"],
+      "name": "Tzolk'in",
+      "meaning": "Count of days",
+      "cycle_length": 260,
+      "structure": {
+        "day_names_maya": [
+          "Imix", "Ik'", "Ak'bal", "K'an", "Chikchan", "Kimi", "Manik'",
+          "Lamat", "Muluk", "Ok", "Chuwen", "Eb'", "Ben", "Ix", "Men",
+          "Kib'", "Kaban", "Etz'nab'", "Kawak", "Ahaw"
+        ],
+        "number_coefficients": "1–13",
+        "glyph_style": "Each day name is a distinct glyph block; may be shown as head variant (deity head) or geometric abstract sign"
+      },
+      "visual_format": "Paired columns of glyph blocks; numbers as Maya bar-and-dot system; or wheel diagram; or linear strip",
+      "generative_hint": "For Maya style: arrange as two parallel vertical columns of day-sign blocks, each block roughly square with internal geometric design. Numbers as dots (1–4) and bars (5) attached to left of each glyph block."
+    },
+    {
+      "id": "haab",
+      "culture": "Maya",
+      "name": "Haab'",
+      "meaning": "Vague solar year",
+      "cycle_length": 365,
+      "structure": {
+        "months": 18,
+        "days_per_month": 20,
+        "extra_period": "Wayeb' (5 dangerous unnamed days)",
+        "month_names": [
+          "Pop", "Wo", "Sip", "Sotz'", "Sek", "Xul", "Yaxk'in", "Mol",
+          "Ch'en", "Yax", "Sak", "Keh", "Mak", "K'ank'in", "Muwan",
+          "Pax", "K'ayab'", "Kumk'u", "Wayeb'"
+        ]
+      },
+      "visual_format": "Linear sequence of month glyphs with coefficient numbers; each month glyph is distinct geometric/figurative form",
+      "generative_hint": "19 distinct glyph blocks in sequence; Wayeb' is a narrow/partial block (5 days). Use as a horizontal border band with alternating month glyphs."
+    },
+    {
+      "id": "long_count",
+      "culture": "Maya",
+      "also_used_by": ["Epi-Olmec", "Isthmian cultures"],
+      "name": "Long Count",
+      "meaning": "Absolute date count from mythological creation date (4 Ahaw 8 Kumk'u = Aug 11, 3114 BCE)",
+      "structure": {
+        "units": [
+          {"name": "K'in", "days": 1, "position": 5},
+          {"name": "Winal", "days": 20, "position": 4},
+          {"name": "Tun", "days": 360, "position": 3},
+          {"name": "K'atun", "days": 7200, "position": 2},
+          {"name": "Bak'tun", "days": 144000, "position": 1}
+        ],
+        "example_date": "9.17.0.0.0",
+        "notation": "Five period glyphs stacked vertically; each with a coefficient (Maya dot-bar number)"
+      },
+      "visual_format": "Vertical stack of 5 glyph blocks; top = Bak'tun, bottom = K'in; each block has a period glyph on the right and a coefficient on the left",
+      "generative_hint": "A vertical column of 5 equal-height glyph blocks. Left half of each block = number (dots stacked above bars). Right half = period glyph. Use as a decorative column element in Maya-style compositions. The period glyphs have head-variant forms (deity heads) or abstract geometric forms."
+    },
+    {
+      "id": "sun_stone",
+      "culture": "Aztec (Mexica)",
+      "name": "Aztec Sun Stone (Sunstone / Piedra del Sol)",
+      "date": "Carved ~1427 CE under Moctezuma I; dedicated 1479",
+      "dimensions": "Diameter 3.58 m, weight ~24 tonnes",
+      "function": "Cosmological monument, not a functional calendar",
+      "ring_structure": [
+        {
+          "ring": "Center",
+          "content": "Tonatiuh (sun god) face — tongue extended as sacrificial flint knife, clawed hands holding hearts, surrounded by 4 square cartouches"
+        },
+        {
+          "ring": "Ring 2",
+          "content": "Four previous suns (Nahui Ocelotl, Nahui Ehecatl, Nahui Quiahuitl, Nahui Atl) in square cartouches at the four cardinal positions; Ollin glyph framing them"
+        },
+        {
+          "ring": "Ring 3",
+          "content": "20 day sign glyphs in trapezoidal cells arrayed around the circle"
+        },
+        {
+          "ring": "Ring 4",
+          "content": "Turquoise sky band (xiuhpohualli band) with star-eye symbols and calendar/sky symbols"
+        },
+        {
+          "ring": "Ring 5",
+          "content": "Ring of jade/precious stone chalchihuitl glyphs (circles with cross)"
+        },
+        {
+          "ring": "Ring 6",
+          "content": "Sun ray alternating triangles and trapezoidal elements"
+        },
+        {
+          "ring": "Outer",
+          "content": "Two fire serpents (xiuhcoatl) facing each other at bottom; their bodies curl around the entire outer edge; both heads meet at 6 o'clock position"
+        }
+      ],
+      "generative_hint": "Concentric ring composition. Each ring has its own motif density. Center face is the most detailed. Rings alternate between dense glyph registers and simpler geometric bands. The outer two serpents create a circular frame. Overall: dark basalt with pigment traces in carved channels."
+    }
+  ]
+}

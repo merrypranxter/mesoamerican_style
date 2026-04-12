@@ -1,40 +1,231 @@
 {
-  "schema": "motifs/v1",
+  "schema": "motifs/v2",
+  "description": "Mesoamerican visual motifs with culture attribution and generative hints. Each motif can tile, repeat, or combine. Culture tags indicate where the motif is most characteristic.",
   "motifs": [
     {
       "id": "step_fret",
-      "name": "Step-fret (key) pattern",
-      "keywords": ["step", "fret", "key", "stair", "meander"],
-      "shape_notes": "Orthogonal stair-stepped turns; nested rectangles; good for borders.",
-      "generative_hint": "Create a polyline that alternates horizontal/vertical segments with quantized lengths; mirror for symmetry; tile in bands."
+      "name": "Step-fret (key/meander) pattern",
+      "cultures": ["Aztec", "Maya", "Zapotec", "Mixtec", "Teotihuacan", "Toltec"],
+      "keywords": ["step", "fret", "key", "stair", "meander", "greek-key"],
+      "shape_notes": "Orthogonal stair-stepped turns; right-angle L-turns alternating direction; nested when interlocked. The universal Mesoamerican border pattern.",
+      "tiling": "Repeating; mirror-symmetry pairs for full band",
+      "generative_hint": "Create a polyline that alternates horizontal/vertical segments with quantized equal lengths; mirror about a vertical axis; tile horizontally in bands. Two interleaved mirror versions create the interlocking variant."
+    },
+    {
+      "id": "xicalcoliuhqui",
+      "name": "Xicalcoliuhqui (stepped spiral / scroll-fret)",
+      "cultures": ["Aztec"],
+      "keywords": ["xicalcoliuhqui", "scroll", "spiral", "stepped-spiral", "aztec-scroll"],
+      "shape_notes": "The defining Aztec geometric border: a step-fret with a curved scroll at the turn, rather than a sharp corner. Combines the step-fret angle logic with a U-curve termination.",
+      "tiling": "Repeating; each unit is a step that ends in a rounded curl",
+      "generative_hint": "Construct as a step-fret but replace the inner corner with a small semicircle curl (radius = 1/3 of step width). Tile horizontally. The curl can face inward or outward alternating."
+    },
+    {
+      "id": "interlocking_scroll",
+      "name": "Interlocking double scroll",
+      "cultures": ["Veracruz/Tajín", "Gulf Coast"],
+      "keywords": ["scroll", "s-curve", "double-scroll", "volute", "tajin", "veracruz"],
+      "shape_notes": "Two S-curves or C-curves interlocked at their midpoints; can tile infinitely to fill a surface. Represents wind, water, and lightning simultaneously.",
+      "tiling": "All-over fill; infinite tiling in both axes",
+      "generative_hint": "Construct a single S-curve; lock a second rotated 90° or 180° to the first at the midpoint intersection. Repeat in a grid. The negative space between scrolls forms matching shapes (figure-ground reversal)."
     },
     {
       "id": "glyph_block",
-      "name": "Glyph block",
-      "keywords": ["glyph", "cartouche", "codex"],
-      "shape_notes": "Compact modular symbol inside a bounded block; often with inner subdivisions.",
-      "generative_hint": "Use a grid subdivision (3x3 to 7x7) and fill cells with rectangles/hooks/S-curves; add an incised outline channel around the block."
+      "name": "Glyph block (Maya-style)",
+      "cultures": ["Maya"],
+      "keywords": ["glyph", "cartouche", "codex", "maya", "hieroglyph"],
+      "shape_notes": "Compact modular symbol inside a roughly-square rounded-corner cartouche. Internal design: main sign (60% area) with superfix at top-left and subfix at bottom-right. Classic Maya reading structure.",
+      "tiling": "Grid; paired columns (L-R reading in pairs)",
+      "generative_hint": "Use a rounded square cartouche. Subdivide interior: top-left corner (20%) = superfix element (small abstract form); bottom-right (20%) = subfix; center and rest = main sign (interlocking curves, face, or geometric form). Pair two columns; read L-R, T-B."
+    },
+    {
+      "id": "aztec_day_sign",
+      "name": "Aztec day sign (tonalpohualli glyph)",
+      "cultures": ["Aztec", "Mexica"],
+      "keywords": ["day sign", "tonalpohualli", "cipactli", "ehecatl", "aztec glyph", "pictograph"],
+      "shape_notes": "20 distinct compact pictographic symbols; each represents one of the 20 named days. Range from simple (rabbit profile) to complex (crocodile body). Designed to fit in a roughly square cell.",
+      "tiling": "4×5 or 5×4 grid for all 20; or radial ring for wheel format",
+      "generative_hint": "Each day sign is a distinct silhouette-first design: start with a recognizable outline, then add internal detail. See cultures/aztec.md for all 20. Arrange as a 4×5 grid (4 directions × 5 signs each) or in a ring for circular calendar formats."
     },
     {
       "id": "feather_bundle",
-      "name": "Feather bundle",
-      "keywords": ["feather", "plume", "bundle"],
-      "shape_notes": "Repeating tapered strokes grouped like a fan.",
-      "generative_hint": "Radial array of tapered quads with slight noise in angle; outline as a single carved silhouette; internal grooves for separations."
+      "name": "Feather bundle / quetzal fan",
+      "cultures": ["Aztec", "Maya", "Toltec", "Mixtec"],
+      "keywords": ["feather", "plume", "bundle", "quetzal", "fan"],
+      "shape_notes": "Repeating tapered strokes grouped like a fan; outer strokes are longest; inner progressively shorter. Quetzal feathers are long (60–90 cm) and iridescent green.",
+      "tiling": "Radial fan; or stacked horizontal bundle",
+      "generative_hint": "Radial array of tapered quads with slight noise in angle; longest at edges, shortest at center. Quetzal color: gradient from deep jade green to iridescent lighter green at tip. Add a small 'eye' circle near each tip for quetzal feather eye markings. Bind with a band at base."
+    },
+    {
+      "id": "feathered_serpent",
+      "name": "Feathered Serpent (Quetzalcoatl / Kukulkan)",
+      "cultures": ["Aztec", "Teotihuacan", "Toltec", "Maya"],
+      "keywords": ["feathered serpent", "quetzalcoatl", "kukulkan", "serpent", "plumed"],
+      "shape_notes": "A rattlesnake body with quetzal feathers replacing or supplementing the dorsal scales. Feathers arranged as overlapping U-shaped chevrons along the back. Rattle-tail terminus. Head with open jaw and feather collar.",
+      "tiling": "Undulating S-curve centerline; good as border or central element",
+      "generative_hint": "Construct a sinuous S or C-curve centerline; extrude to a tapering cylinder; along the dorsal surface, place overlapping chevron shapes (feathers) pointing backward; each feather = iridescent green; head = open snake jaw with fangs + surrounding feather collar ring; tail = stacked cone rattles."
     },
     {
       "id": "serpent_curve",
-      "name": "Serpent S-curve",
-      "keywords": ["serpent", "s-curve", "coil"],
-      "shape_notes": "Sinuous body with strong silhouette; often segmented.",
-      "generative_hint": "Use a spline centerline; extrude width; segment with repeating notches; add head as a geometric hook + eye socket circle."
+      "name": "Serpent S-curve body",
+      "cultures": ["Pan-Mesoamerican"],
+      "keywords": ["serpent", "s-curve", "coil", "snake", "body"],
+      "shape_notes": "Sinuous body with strong silhouette; segmented with repeating scale notches; used for borders, cosmic diagrams (xiuhcoatl), and body-fillers.",
+      "tiling": "Horizontal S-band; or circular frame",
+      "generative_hint": "Use a spline centerline; extrude with varying width (widest at mid-body, tapering at ends); segment with repeating V-notches along sides; add head as a geometric hook + eye socket circle; rattle as stacked cones at tail. In fire-serpent (xiuhcoatl) form: add star/trapezoid segments on back."
     },
     {
-      "id": "sun_disk_simple",
-      "name": "Sun disk (simple)",
-      "keywords": ["sun", "disk", "circle"],
-      "shape_notes": "Concentric rings with radial ticks; use sparingly.",
-      "generative_hint": "Concentric circles + quantized radial spikes; erode edges with noise; carve grooves between rings."
+      "id": "sun_disk_concentric",
+      "name": "Sun disk (concentric ring composition)",
+      "cultures": ["Aztec"],
+      "keywords": ["sun", "disk", "circle", "calendar stone", "solar", "concentric"],
+      "shape_notes": "Multiple concentric rings each carrying a distinct motif type. Center = deity face. Each ring has its own density and motif. Outer rings = framing serpents.",
+      "tiling": "Not a tile; a complete radial composition",
+      "generative_hint": "Define 6–8 concentric rings of increasing radius. Ring 1 (center): deity face occupying a circle. Ring 2: 4 cartouches at cardinal positions. Ring 3: 20 equal-width cells for day signs. Ring 4: celestial band with star elements. Ring 5: jade/precious symbols. Ring 6: sun ray spikes. Outer: two serpent bodies completing the frame."
+    },
+    {
+      "id": "chalchihuitl",
+      "name": "Chalchihuitl (jade/water symbol)",
+      "cultures": ["Aztec", "Teotihuacan"],
+      "keywords": ["chalchihuitl", "jade", "water", "precious", "circle", "dot"],
+      "shape_notes": "A circle with four outer bumps or dots at cardinal positions, plus an interior cross or circle. Signals preciousness, water, and life.",
+      "tiling": "Repeating spot/medallion; good for scattered fill or row border",
+      "generative_hint": "Draw a circle; add 4 small circles tangent to the outer edge at N/S/E/W; add a small cross or inner circle inside. Use jade green (#226B45) or turquoise. Space as scattered dots or linear row for border fill."
+    },
+    {
+      "id": "ollin_movement",
+      "name": "Ollin (movement/earthquake glyph)",
+      "cultures": ["Aztec"],
+      "keywords": ["ollin", "movement", "earthquake", "cross", "motion"],
+      "shape_notes": "Four arms meeting at a central point; each arm ends in a scroll or hook; the arms are NOT straight (unlike a plus sign) but curve slightly. Also: two diagonal bars crossing with elongated ends.",
+      "tiling": "Single centered motif; or 4-directional pattern",
+      "generative_hint": "Two crossing diagonal bands; each end terminates in a hooked curl or round scroll. The center where they cross is a small circle or void. Proportions: 4 arms of equal length; arms slightly taper from center. This is the 5th Sun glyph in the Sun Stone."
+    },
+    {
+      "id": "mat_pattern",
+      "name": "Mat pattern (pop / woven mat)",
+      "cultures": ["Maya"],
+      "keywords": ["mat", "pop", "throne", "weave", "interlace", "ruler"],
+      "shape_notes": "A woven mat pattern: diagonal interlacing strands forming a diamond grid. The symbol of rulership in Maya culture — the mat is the throne.",
+      "tiling": "Diagonal diamond grid; infinite all-over fill",
+      "generative_hint": "Construct two sets of parallel diagonal stripes at 45° and 135°; alternate over-under weaving at intersections (every other intersection one stripe passes over). The diamond-shaped gaps can be left open or filled with a small inner diamond. Use ochre/tan (#D4A878) and dark brown (#5A3A1A) for a natural woven appearance."
+    },
+    {
+      "id": "cauac_sky_band",
+      "name": "Cauac sky / celestial band",
+      "cultures": ["Maya"],
+      "keywords": ["sky", "celestial", "band", "cauac", "kin", "star", "akbal", "imix"],
+      "shape_notes": "A horizontal band divided into sections, each containing a celestial symbol (kin=sun, akbal=night, imix=water/cloud, star). Used as a framing element at the top of compositions or around monuments.",
+      "tiling": "Horizontal repeating strip; each section = one celestial symbol in a cartouche",
+      "generative_hint": "A horizontal band divided into equal-width cartouche cells. Each cell alternates through 4 celestial signs: 1) kin = circle with cross; 2) akbal = dark trapezoidal interior; 3) imix = watery/curved interior; 4) star = 4-pointed star or cross. Alternate or rotate through these. Border the band with simple lines top and bottom."
+    },
+    {
+      "id": "tlaloc_goggle_eye",
+      "name": "Tlaloc / Chaac goggle eye",
+      "cultures": ["Aztec", "Teotihuacan", "Maya"],
+      "keywords": ["tlaloc", "goggle", "rain deity", "eye", "circle", "water"],
+      "shape_notes": "Concentric circles forming a 'goggle' ring around each eye. The double-ring eye is the single most diagnostic element of the rain deity across cultures. In Maya: a single large circular eye.",
+      "tiling": "Face motif; or eye-pair as standalone design element",
+      "generative_hint": "For each eye: draw a central pupil circle, surrounded by a thick ring (the goggle), then an outer thin circle. The two goggle-eyes are the defining feature. Below: a fanged jaw (horizontal wavy lower lip with exposed teeth). In 2D/flat: just use the two concentric circles as the eye symbol."
+    },
+    {
+      "id": "quetzal_eye",
+      "name": "Quetzal feather eye circle",
+      "cultures": ["Aztec", "Maya", "Mixtec"],
+      "keywords": ["quetzal", "eye", "circle", "feather", "iridescent"],
+      "shape_notes": "A small circle near the tip of a quetzal feather that resembles an eye; also used standalone as a preciousness/feather symbol. Creates a visual rhythm in feather-fan compositions.",
+      "tiling": "Scattered across feather-filled surfaces",
+      "generative_hint": "Small circle with inner dot; placed near the tip of each feather stroke in a quetzal feather bundle or fan. When many are combined, they create a shimmering pattern of eye-spots across the surface."
+    },
+    {
+      "id": "skull_motif",
+      "name": "Skull (death symbol / Mictlantecuhtli)",
+      "cultures": ["Aztec", "Toltec", "Maya"],
+      "keywords": ["skull", "death", "Mictlan", "tzompantli", "bone"],
+      "shape_notes": "Frontal skull with open eye sockets (often spiral or hook-shaped in Maya style), exposed nasal cavity, and visible teeth. Not horror — an integrated cosmological symbol. In Aztec: skulls appear in rows (tzompantli), as deity heads, and as belt elements.",
+      "tiling": "Horizontal row for tzompantli; or single centered motif",
+      "generative_hint": "For Aztec style: frontal skull; circular or large eye sockets; simple nasal cavity triangle; two rows of upper and lower teeth. For tzompantli: repeat at equal intervals in horizontal row; add crossed long bones below each. For Maya: eye sockets are more elaborate (cruller or cross markings); cheek may have spots."
+    },
+    {
+      "id": "were_jaguar",
+      "name": "Were-jaguar face (Olmec)",
+      "cultures": ["Olmec"],
+      "keywords": ["were-jaguar", "olmec", "jaguar", "baby face", "cleft", "snarl"],
+      "shape_notes": "A face combining infant human features (bald, fat cheeks, infantile proportions) with jaguar characteristics (downturned trapezoidal snarl mouth, thick lips, large eyes, cleft/notched head). The primary Olmec supernatural figure.",
+      "tiling": "Single centered motif; standalone face",
+      "generative_hint": "Start with a round, chubby face shape (like an infant). Add a DOWNTURNED trapezoidal open mouth with thick, projecting upper and lower lips (the opposite of a smile). Large almond eyes, possibly with crossed-band markings. A V-notch at the crown of the head (the cleft). Flame-like or irregular brow ridges. Surface should be smooth, rounded — no sharp angles."
+    },
+    {
+      "id": "speech_scroll",
+      "name": "Speech scroll / thought scroll",
+      "cultures": ["Aztec", "Maya", "Mixtec", "Zapotec"],
+      "keywords": ["speech", "scroll", "volute", "thought", "talk", "breath"],
+      "shape_notes": "A curled volute emerging from a figure's mouth. Small = simple speech. Large = important declaration or song. Filled with dots, flowers, symbols = specific type of speech. Codex-universal convention.",
+      "tiling": "Attached to figures in narrative compositions",
+      "generative_hint": "A spiral or J-curve emerging from the open mouth of a figure. Starts narrow at the lips, spirals outward. May end with a small curl or loop. May be filled with dots (song), symbols (prophecy), or left plain (speech). Scale scroll to the importance of the utterance."
+    },
+    {
+      "id": "footprint_path",
+      "name": "Footprint path (journey indicator)",
+      "cultures": ["Aztec", "Mixtec"],
+      "keywords": ["footprint", "sandal", "journey", "path", "walk"],
+      "shape_notes": "A series of overlapping sandaled footprints indicating direction of movement. Used in both narrative codices (to show a figure's journey) and as a spatial indicator in maps.",
+      "tiling": "Linear path; diagonal or horizontal sequence",
+      "generative_hint": "Alternating left/right footprints (slightly asymmetric sandal shapes); overlap each pair by 30%; indicate direction with consistent left-right alternation. Often shown as a dotted trail rather than fully drawn footprints in small-scale contexts."
+    },
+    {
+      "id": "witz_mountain_monster",
+      "name": "Witz mountain monster face",
+      "cultures": ["Maya"],
+      "keywords": ["witz", "mountain", "temple", "monster", "doorway", "cave"],
+      "shape_notes": "An animate mountain face whose open mouth forms a doorway or cave entrance. The forehead shows the 'witz' (mountain) head marking. Eyes and nose flanking the central mouth/door. Standard motif above Maya temple doorways.",
+      "tiling": "Doorway frame; single centered monumental element",
+      "generative_hint": "Build as a frontal face wider than tall. The doorway IS the open mouth — size the mouth to fill the architectural opening. Eyes flanking above; large nose/brow ridge above. Forehead has three stacked rectangular markings (the witz sign). The face appears to swallow you as you enter."
+    },
+    {
+      "id": "stacked_chac_masks",
+      "name": "Stacked Chac masks (Puuc column)",
+      "cultures": ["Maya", "Puuc style"],
+      "keywords": ["chac", "puuc", "uxmal", "mask stack", "corner", "rain"],
+      "shape_notes": "Multiple Chac (rain deity) profile-face masks stacked vertically, creating a column of masks at building corners. Each mask: large hook/scroll nose, circular eye, fang teeth, assembled from modular stone elements.",
+      "tiling": "Vertical stack; repeating upward to fill a corner column",
+      "generative_hint": "Each mask element = profile face. Most prominent element: the large downward-curving NOSE, a scroll that projects from the face. Eye = large circle or square. Teeth below. Assemble 3–7 of these stacked vertically. Each mask is separated by a narrow horizontal stone band. Often placed at building corners so the nose projects outward at 45°."
+    },
+    {
+      "id": "talud_tablero_profile",
+      "name": "Talud-tablero architectural profile",
+      "cultures": ["Teotihuacan", "Aztec", "Monte Albán"],
+      "keywords": ["talud", "tablero", "architecture", "pyramid", "slope", "panel"],
+      "shape_notes": "Alternating sloped base (talud) and vertical panel (tablero) stacked to form pyramid stages. The tablero is framed with a molding and is the primary decorated zone. The talud slopes inward.",
+      "tiling": "Repeating vertical stack for pyramid elevation",
+      "generative_hint": "Construct as alternating: a sloped trapezoid (wider at base, narrower at top, 45–60° angle) followed by a vertical rectangle (tablero, framed with thin border molding) above it. Stack multiple pairs. In Teotihuacan: tablero is wider/taller than talud. In Aztec: more elongated talud. The tablero face is where carving/painting lives."
+    },
+    {
+      "id": "niched_pyramid",
+      "name": "Niched pyramid surface (Tajín)",
+      "cultures": ["Veracruz", "Totonac"],
+      "keywords": ["niche", "pyramid", "tajin", "shadow", "recess", "veracruz"],
+      "shape_notes": "A pyramid face covered with regularly spaced rectangular recesses (niches). Each niche is deeper than wide, creating a strong shadow square. The entire surface is a pattern of shadow-squares and their surrounding raised frames.",
+      "tiling": "Grid across a stepped pyramid surface",
+      "generative_hint": "Divide each pyramid tier face into a regular grid; each cell is a rectangular niche (depth approximately = 1.5× width); the shadow inside each niche is uniformly dark; the raised frame around each niche catches light. In 2D: just a grid of dark rectangles on a lighter background — but with the pyramid step-silhouette. 365 niches total."
+    },
+    {
+      "id": "pyramid_silhouette",
+      "name": "Stepped pyramid profile silhouette",
+      "cultures": ["Pan-Mesoamerican"],
+      "keywords": ["pyramid", "temple", "silhouette", "teocalli", "steps", "profile"],
+      "shape_notes": "The fundamental Mesoamerican architectural silhouette: stepped platform pyramid profile. Variations range from very steep (Maya Petén) to wide and shallow (Teotihuacan) to twin-summit (Aztec Templo Mayor).",
+      "tiling": "Single monumental element; centered horizontally",
+      "generative_hint": "Construct from the center: place a vertical stairway on the front face. Build symmetrically outward with 3–7 steps, each step slightly wider and taller as you go down. For Maya: very steep, narrow; add tall roof comb on top. For Aztec twin: duplicate the summit element side by side. For Teotihuacan: wider base, more gradual steps."
+    },
+    {
+      "id": "codex_register_band",
+      "name": "Codex register band composition",
+      "cultures": ["Aztec", "Maya", "Mixtec", "Teotihuacan"],
+      "keywords": ["register", "band", "codex", "horizon", "composition", "row"],
+      "shape_notes": "Horizontal parallel bands stacking the visual composition. Each band is its own scene or motif strip. The most fundamental Mesoamerican composition structure.",
+      "tiling": "Vertical stacking of equal-height horizontal bands",
+      "generative_hint": "Divide the composition into 3–7 equal-height horizontal bands. Each band has its own background color (or all same color). Each band contains one type of motif or figure (deity register, glyph register, geometric border). Band widths can vary by register importance. Top band = sky; middle = earth/scene; bottom = underworld/ground."
     }
   ]
 }

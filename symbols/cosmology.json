@@ -1,0 +1,157 @@
+{
+  "schema": "symbols/cosmology/v1",
+  "description": "Mesoamerican cosmological visual structures — world models, directional systems, and cosmic diagram types for generative AI reference.",
+  "cosmological_models": [
+    {
+      "id": "five_directions",
+      "name": "Quincunx / Five-Direction World Model",
+      "culture": "Pan-Mesoamerican",
+      "description": "The fundamental Mesoamerican spatial model: four cardinal directions plus the center. The center is the most sacred and connects all levels (sky, earth, underworld). All cosmological diagrams derive from this structure.",
+      "directions": {
+        "East": {
+          "nahuatl": "Tlapallan / Tlapco",
+          "color_aztec": "#D9A824",
+          "color_hex": "#D9A824",
+          "color_name": "Yellow/Red",
+          "associations": ["dawn", "sun rising", "maize", "life", "Cipactli", "Quetzalcoatl"],
+          "tree": "Tlapalizquixochicuahuitl (red flower tree)"
+        },
+        "North": {
+          "nahuatl": "Mictlampa",
+          "color_hex": "#1A1208",
+          "color_name": "Black",
+          "associations": ["death", "underworld", "Mictlan", "Tezcatlipoca", "cold", "dark"],
+          "tree": "Black-painted tree"
+        },
+        "West": {
+          "nahuatl": "Cihuatlampa",
+          "color_hex": "#EFE6D0",
+          "color_name": "White",
+          "associations": ["sunset", "women warriors (Cihuateteo)", "moon", "Quetzalcoatl (west form)", "maize storage"],
+          "tree": "White tree"
+        },
+        "South": {
+          "nahuatl": "Huitztlampa",
+          "color_hex": "#1F9BA3",
+          "color_name": "Blue/Green",
+          "associations": ["Huitzilopochtli", "left side", "thorns", "thorn bush", "sacrifice"],
+          "tree": "Blue-green tree"
+        },
+        "Center": {
+          "nahuatl": "Tlaltecpac",
+          "color_hex": "#226B45",
+          "color_name": "Jade Green",
+          "associations": ["axis mundi", "World Tree", "navel of the earth", "Xiuhtecuhtli (fire deity)", "connection of all layers"]
+        }
+      },
+      "visual_format": "Cross or plus shape (+) or X shape; central medallion + four radiating sections; or four quadrant grid with central space; or circular disk with four sections",
+      "generative_hint": "The quincunx is the template for nearly every cosmological diagram. Build as a cross with 5 equal zones: center square or circle + 4 extending arms. Color each arm by directional color. Center = jade green or gold. For circular versions: 4 quarters + center disk. This is the skeleton of the Sun Stone, Aztec cosmograms, and Maya directional pages."
+    },
+    {
+      "id": "three_cosmic_levels",
+      "name": "Three-Layer Cosmos (Sky / Earth / Underworld)",
+      "culture": "Pan-Mesoamerican",
+      "description": "Mesoamerica universally depicts the cosmos as three vertical levels: the celestial realm above (multiple layers of sky), the earth surface (middle world), and the underworld below (also multiple layers).",
+      "layers": {
+        "sky": {
+          "nahuatl": "Ilhuicatl",
+          "maya": "Kan (sky)",
+          "levels": "13 levels of heaven in Aztec tradition",
+          "visual_markers": ["star eyes", "celestial band (cauac band in Maya, star strip in Aztec)", "sun/moon/Venus symbols", "eagle/bird associations"],
+          "colors": ["blue", "turquoise", "gold/yellow"]
+        },
+        "earth": {
+          "nahuatl": "Tlaltepetl",
+          "maya": "Kab (earth)",
+          "visual_markers": ["Cipactli crocodile surface", "jade green", "flower motifs", "Tlaltecuhtli earth monster at base"],
+          "colors": ["green", "brown", "jade"]
+        },
+        "underworld": {
+          "nahuatl": "Mictlan",
+          "maya": "Xibalba",
+          "levels": "9 levels in Aztec (Mictlan); also 9 lords of the night",
+          "visual_markers": ["skull motifs", "crosshatch black ground", "bone imagery", "jaguar (night sun)", "black/dark coloring", "water imagery (Maya Xibalba has flood/drowning associations)"],
+          "colors": ["black", "bone white", "dark red"]
+        }
+      },
+      "visual_format": "Vertical tripartite band: sky band top, earth band middle, underworld band below. Often a World Tree (axis mundi) penetrates all three. Also: a stepped mountain cross-section showing surface (earth), interior (underworld), above (sky).",
+      "generative_hint": "For a vertical cosmogram: three horizontal register bands. Top register: celestial band with sun/star/Venus symbols, blue/turquoise fill. Middle register: earth surface with jade green, Cipactli texture, life forms. Bottom register: crosshatched or bone-scattered underworld with black/dark red. A single vertical tree or serpent pierces all three levels at center."
+    },
+    {
+      "id": "world_tree",
+      "name": "World Tree / Axis Mundi (Wacah Chan)",
+      "culture": "Maya (primarily); also Aztec, pan-Mesoamerican concept",
+      "description": "A cosmic tree connecting sky, earth, and underworld along the central axis. In Maya tradition: the raised-up sky (Wacah Chan). Visually depicted on the Palenque sarcophagus lid (K'inich Janaab Pakal's tomb) as a cross-shaped foliated tree.",
+      "visual_elements": {
+        "trunk": "Rising from the earth/underworld; often decorated with serpent-god imagery, jade jewels",
+        "branches": "Extending into the sky; quetzal bird (Itzam-Yeh) perched at summit",
+        "roots": "Descending into underworld; skeletal or death-deity imagery",
+        "cross_form": "Tree of life in cross form; cosmic directions organized around it"
+      },
+      "palenque_example": "Sarcophagus lid: King falls into underworld (bottom); World Tree rises above his body; Celestial Bird perches at top; entire composition = death + resurrection cycle",
+      "generative_hint": "A tall central tree (or cross) with: roots in skeletal/dark underworld zone at bottom; trunk in earth zone; branches in sky zone at top. A large bird (quetzal, harpy eagle) at the summit. Branches extend horizontally at 90° like cardinal arms. Decorate with jade/green elements for preciousness. May double as serpent body."
+    },
+    {
+      "id": "nine_lords_night",
+      "name": "Nine Lords of the Night (Bolon Ti Ku)",
+      "culture": "Aztec / Maya",
+      "description": "A cycle of 9 deity patrons rotating through each night. Represented in the Aztec Codex Borgia and Maya codices. Associated with the 9 layers of the underworld.",
+      "lords": [
+        "Xiuhtecuhtli (fire)", "Itztli (obsidian knife)", "Piltzintecuhtli (young sun)", "Centeotl (maize deity)",
+        "Mictlantecuhtli (death)", "Chalchiuhtlicue (water)", "Tlazolteotl (filth/birth)", "Tepeyollotl (earth heart)", "Tlaloc (rain)"
+      ],
+      "visual_format": "9-segment horizontal band or 9-cell grid; each cell contains the patron deity glyph and day coefficient",
+      "generative_hint": "A horizontal strip of 9 equal panels; each panel contains a distinct deity face glyph. Use as a secondary border band below main compositions."
+    },
+    {
+      "id": "thirteen_heavens",
+      "name": "Thirteen Layers of the Sky",
+      "culture": "Aztec",
+      "description": "The sky is divided into 13 ascending levels, each with its own celestial body, deity, and quality.",
+      "layers": [
+        {"level": 1, "content": "Moon, clouds"},
+        {"level": 2, "content": "Stars"},
+        {"level": 3, "content": "Sun"},
+        {"level": 4, "content": "Venus"},
+        {"level": 5, "content": "Comets, smoking stars"},
+        {"level": 6, "content": "Day/night stars"},
+        {"level": 7, "content": "Tlalocan (Tlaloc's realm)"},
+        {"level": 8, "content": "Quetzal wind (white winds)"},
+        {"level": 9, "content": "Winds (gods of death and white)"},
+        {"level": 10, "content": "Yellow winds"},
+        {"level": 11, "content": "Red winds"},
+        {"level": 12, "content": "Gods' gods (supreme)"},
+        {"level": 13, "content": "Omeyocan (place of duality, Ometeotl's realm)"}
+      ],
+      "visual_format": "Vertical stack of 13 horizontal bands; each band labeled and decorated with celestial bodies/deity emblems",
+      "generative_hint": "13-layer vertical diagram; bands get progressively more abstract/lighter toward the top. Bottom bands = visible sky (moon, sun, stars). Top bands = pure divine geometry/light. Color gradient from deep blue (bottom sky) to white-gold (top divine). Each band has a small iconic symbol identifying its content."
+    },
+    {
+      "id": "venus_cycle",
+      "name": "Venus Cycle / War Star",
+      "culture": "Maya (Dresden Codex), Aztec",
+      "description": "Venus was tracked with extraordinary precision as a war/sacrifice star. The 584-day Venus cycle was used to time military campaigns. In the Dresden Codex, Venus tables cover 8 solar years = 5 Venus synodic periods.",
+      "phases": {
+        "morning_star": "Heliacal rising — Venus appears as morning star; moment of maximum power; associated with war and sacrifice in Aztec belief; Quetzalcoatl resurrected",
+        "superior_conjunction": "Venus behind sun; 90-day invisibility",
+        "evening_star": "Venus as evening star; less powerful phase",
+        "inferior_conjunction": "Venus between earth and sun; 8-day underworld passage"
+      },
+      "visual_format": "Star cartouche (5-pointed or 8-pointed star in rectangular or oval border); Venus as a flint-tipped spear-thrower; or as a morning star glyph (Lamat in Maya = star sign)",
+      "generative_hint": "Venus morning star: a five-or-eight-pointed star inside a cartouche (oval or rectangular border). The star is the weapon — a pointed star that 'spears' the viewer. In Maya: the Lamat day sign glyph = star cross. In Aztec: star cartouches appear in celestial band elements and on warrior costumes."
+    },
+    {
+      "id": "cipactli_earth_surface",
+      "name": "Cipactli / Earth Monster",
+      "culture": "Aztec",
+      "description": "The primordial crocodile from whose body the earth was made. In Aztec creation myth, Tezcatlipoca and Quetzalcoatl dragged Cipactli from the primordial sea and split it to form the earth. The earth surface is the living body of this monster.",
+      "visual_elements": {
+        "body": "Irregular spiny/knobby crocodile body; each knob = a mountain or hill",
+        "mouths": "Multiple mouths on joints, elbows, and body; earth's caves and crevices are mouths",
+        "eyes": "Multiple eyes on the body surface",
+        "pattern": "Earth-skin texture: irregular spiny bumps; each scale = a mountain; occasional gaping mouth interrupts the pattern"
+      },
+      "generative_hint": "For earth surface texture: irregular spiny bumps/knobs on the surface; some knobs open as fanged mouths; overall rhythm is chaotic but with bilaterally suggested symmetry. Good for ground plane textures in Aztec scenes."
+    }
+  ]
+}

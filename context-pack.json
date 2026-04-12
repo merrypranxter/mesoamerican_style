@@ -1,18 +1,40 @@
 {
-  "schema": "context-pack/v1",
+  "schema": "context-pack/v2",
   "id": "mesoamerican_style",
-  "name": "Mesoamerican Style",
-  "version": "0.1.0",
-  "description": "A structured context pack for Mesoamerican-inspired visual design: motifs, palette, prompts, and generative hints.",
+  "name": "Mesoamerican Style — Full Reference Database",
+  "version": "1.0.0",
+  "description": "A comprehensive AI context database for Mesoamerican-inspired visual design. Covers 8 cultures (Aztec, Maya, Olmec, Teotihuacan, Zapotec, Mixtec, Toltec, Veracruz/Totonac) with motifs, palettes, glyph systems, calendars, cosmology, deities, materials, architecture, ceramics, sculpture, prompts, and generative code patterns.",
   "recommended_use": [
     "prompting",
     "generative-art",
     "shaders",
+    "glsl",
     "javascript-canvas",
-    "visual-style"
+    "visual-style",
+    "image-generation",
+    "cultural-reference"
+  ],
+  "cultures_covered": [
+    "Aztec (Mexica)",
+    "Maya (Classic and Post-Classic)",
+    "Olmec",
+    "Teotihuacan",
+    "Zapotec",
+    "Mixtec",
+    "Toltec",
+    "Totonac / Gulf Coast (Veracruz)"
   ],
   "tags": [
     "mesoamerican",
+    "aztec",
+    "maya",
+    "olmec",
+    "teotihuacan",
+    "zapotec",
+    "mixtec",
+    "toltec",
+    "totonac",
+    "veracruz",
     "glyph",
     "bas-relief",
     "step-fret",
@@ -20,17 +42,61 @@
     "obsidian",
     "maize",
     "temple-geometry",
-    "stone-carving"
+    "stone-carving",
+    "codex",
+    "feathered-serpent",
+    "calendar",
+    "were-jaguar",
+    "tonalpohualli",
+    "long-count",
+    "maya-blue",
+    "turquoise-mosaic",
+    "scroll-pattern",
+    "funerary-urn"
   ],
   "files": {
+    "readme": "README.md",
     "overview": "CONTEXT_PACK.md",
     "style_guide": "STYLE_GUIDE.md",
+    "examples": "EXAMPLES.md",
+    "cultures": {
+      "aztec": "cultures/aztec.md",
+      "maya": "cultures/maya.md",
+      "olmec": "cultures/olmec.md",
+      "teotihuacan": "cultures/teotihuacan.md",
+      "zapotec": "cultures/zapotec.md",
+      "mixtec": "cultures/mixtec.md",
+      "toltec": "cultures/toltec.md",
+      "totonac_gulf_coast": "cultures/totonac_gulf_coast.md"
+    },
+    "symbols": {
+      "glyphs": "symbols/glyphs.json",
+      "calendars": "symbols/calendars.json",
+      "cosmology": "symbols/cosmology.json",
+      "deities": "symbols/deities.json"
+    },
     "motifs": "motifs/motifs.json",
     "palettes": "palette/palettes.json",
+    "materials": "materials/materials.json",
+    "architecture": "architecture/architecture.md",
+    "ceramics": "ceramics/ceramics.md",
+    "sculpture": "sculpture/sculpture.md",
     "prompt_templates": "prompts/prompt_templates.md",
     "negative_prompts": "prompts/negative_prompts.md",
     "shader_hints": "generative/shader_hints.md",
-    "js_visual_patterns": "generative/js_visual_patterns.md",
-    "examples": "EXAMPLES.md"
-  }
+    "js_visual_patterns": "generative/js_visual_patterns.md"
+  },
+  "reading_order": [
+    "STYLE_GUIDE.md",
+    "cultures/{target_culture}.md",
+    "motifs/motifs.json",
+    "palette/palettes.json",
+    "symbols/deities.json",
+    "symbols/calendars.json",
+    "prompts/prompt_templates.md",
+    "prompts/negative_prompts.md",
+    "generative/shader_hints.md",
+    "generative/js_visual_patterns.md",
+    "EXAMPLES.md"
+  ]
 }

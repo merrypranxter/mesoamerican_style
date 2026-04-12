@@ -1,0 +1,146 @@
+{
+  "schema": "symbols/deities/v1",
+  "description": "Major Mesoamerican deities with visual attributes for generative AI. Each entry describes how to visually construct the deity figure.",
+  "deities": [
+    {
+      "id": "quetzalcoatl",
+      "name": "Quetzalcoatl",
+      "culture": ["Aztec", "Teotihuacan", "Toltec"],
+      "maya_equivalent": "Kukulkan / K'uk'ulkan",
+      "domain": ["wind", "creation", "feathered serpent", "morning star (Venus)", "knowledge"],
+      "visual_attributes": {
+        "serpent_form": "A rattlesnake body covered in quetzal feathers; iridescent green feathers replace scales",
+        "human_form": "Buccal (duck-beak) wind mask; conical straw hat (ehecailacacozcatl); cut shell cross-section (ehecailacacozcatl) pectoral",
+        "colors": ["iridescent green (#1A8040)", "quetzal blue-green (#1A9070)", "red (#A02020)", "gold (#C09020)"],
+        "diagnostic_elements": ["beak mask", "feathered serpent body", "spiral shell cross-section", "wind scrolls from mouth"],
+        "architectural_form": "Circular temples (Ehecatl/Quetzalcoatl shrines have rounded plan); serpent-column bases at Tula and Chichen Itza"
+      },
+      "generative_hint": "Feathered serpent: undulating sinuous body; feathers shown as overlapping U-chevrons along dorsal surface; head with open fanged jaw and feather collar; iridescent green dominant. For wind-god human form: duckbill mask, conical hat, shell cross-section pectoral."
+    },
+    {
+      "id": "tlaloc",
+      "name": "Tlaloc",
+      "culture": ["Aztec", "Teotihuacan"],
+      "maya_equivalent": "Chaac / Chac",
+      "domain": ["rain", "water", "lightning", "agriculture", "earth"],
+      "visual_attributes": {
+        "diagnostic_elements": ["goggle eyes (circular rings around both eyes)", "fanged jaw", "upper lip as intertwined serpents", "jadeite jewelry", "blue-green color"],
+        "colors": ["turquoise/blue-green (#1A9090)", "black (#1A1A1A)", "jade (#1E7A52)"],
+        "teotihuacan_form": "Frontal; large circular goggle eyes; water droplets and shells surround figure; often in register bands with repeated identical forms",
+        "aztec_form": "Profile (in codices); goggle eyes; horizontal upper lip element; nose-ornament; often blue body paint",
+        "maya_chac_form": "Hook/scroll nose (curved beak-like extension); single large eye; forked lightning tongue; axe in hand; Puuc architecture: stacked Chac masks at corners"
+      },
+      "generative_hint": "Goggle eyes = the defining mark: two concentric circles for each eye. In 3D/sculptural contexts, the goggle eye ring is a physical projecting element. In 2D codex: two solid circles. Upper lip = two parallel horizontal curves or interlocked serpents. For Maya Chac: exaggerated downward hook nose (single curved scroll); large circular eye; no goggles."
+    },
+    {
+      "id": "huitzilopochtli",
+      "name": "Huitzilopochtli",
+      "culture": ["Aztec (Mexica)"],
+      "domain": ["sun", "war", "Aztec patron deity", "left-handed hummingbird"],
+      "visual_attributes": {
+        "diagnostic_elements": ["hummingbird foot/leg as headdress element", "blue-black body paint", "solar disk symbols", "serpent of fire (xiuhcoatl) as weapon", "eagle feathers"],
+        "colors": ["solar yellow (#D9A824)", "blue-black (#1A1A3A)", "red (#A02020)"],
+        "weapon": "Xiuhcoatl (turquoise/fire serpent) as a long weapon-staff with serpent head",
+        "headdress": "Hummingbird leg extending from headdress; quetzal feathers"
+      },
+      "generative_hint": "Blue-black body paint as the primary surface color. Solar disk elements in the composition. The fire serpent weapon curves forward from the right hand. Rarely seen in sculpture (no major surviving sculpture confirmed); primarily codex form."
+    },
+    {
+      "id": "tezcatlipoca",
+      "name": "Tezcatlipoca",
+      "culture": ["Aztec", "Toltec"],
+      "domain": ["night sky", "darkness", "Jaguar", "sorcery", "earth", "smoking mirror"],
+      "visual_attributes": {
+        "diagnostic_elements": ["obsidian smoking mirror replacing left foot", "black/yellow striped body paint", "jaguar associations", "skull associations", "turquoise mirror on temple or chest"],
+        "colors": ["obsidian black (#0B0C10)", "yellow ochre (#D4A020)", "jaguar spot tan/brown (#8B4C27)"],
+        "smoking_mirror": "Circular obsidian disk with smoke scrolls rising from it; replaces left foot; sometimes worn on chest or temple",
+        "body_paint": "Horizontal black and yellow horizontal stripes; or solid black with yellow star spots"
+      },
+      "generative_hint": "The smoking mirror is the diagnostic: a circular obsidian disk (very dark, near-black with slight reflective quality) with smoke scrolls rising from it. The left foot is replaced by this mirror. Body: black+yellow stripes. Jaguar skin associations = spot overlay."
+    },
+    {
+      "id": "coatlicue",
+      "name": "Coatlicue",
+      "culture": ["Aztec"],
+      "domain": ["earth", "death", "birth", "mother of gods", "duality"],
+      "visual_attributes": {
+        "diagnostic_elements": ["head replaced by two facing serpent heads (forming a face)", "skirt of interlocked serpents", "necklace of hands, hearts, and skull pendant", "clawed feet and hands", "large pendulous breasts"],
+        "colors": ["stone grey (#7A7878)", "serpent green (#2A6040)", "blood red (#A02020)", "bone white (#E0D8C0)"],
+        "composition": "Frontal; massive blocky form; the entire figure is layered with symbolic elements; no empty surface"
+      },
+      "generative_hint": "A compressed, frontal figure where the 'face' is formed by two inward-facing serpent heads at the neck. The skirt is a writhing mass of interlocked serpents. The necklace has alternating severed hands and hearts with a skull at the base. Clawed feet. Overall: a dense accumulation of death/earth symbols. Compose as a near-symmetrical tower of symbols."
+    },
+    {
+      "id": "xipe_totec",
+      "name": "Xipe Totec",
+      "culture": ["Aztec", "Zapotec", "Mixtec", "Gulf Coast"],
+      "domain": ["spring renewal", "agriculture", "skin-shedding", "seasons", "goldsmiths"],
+      "visual_attributes": {
+        "diagnostic_elements": ["wearing flayed human skin as a suit", "flayed skin hands hanging over deity hands", "square eye holes in flayed face mask (tzontecomatl)", "red-mesh (nets of flesh) over skin surface", "yellow body paint under skin"],
+        "colors": ["flayed skin tan (#D4A878)", "yellow body (#D4B820)", "red mesh (#A02020)"],
+        "mask": "Flayed face worn as mask; squinting half-closed eyes showing through eye holes; mouth slightly open; skin wrinkled"
+      },
+      "generative_hint": "The outer surface is a flayed human skin worn like a costume. The flayed hands hang over the deity's real hands (four visible hands total). The face mask has squinting/half-closed eyes visible through the eye holes. Skin surface has a reddish mesh pattern. Think: a disturbing second skin, slightly too large for the body inside it."
+    },
+    {
+      "id": "itzamna",
+      "name": "Itzamna",
+      "culture": ["Maya"],
+      "domain": ["creation", "writing", "knowledge", "sky", "highest deity"],
+      "visual_attributes": {
+        "diagnostic_elements": ["elderly face with large hooked nose", "toothless or buck-toothed", "single eye in some forms", "iguana or crocodile associations", "flower or sun signs in headdress", "associated with codices and writing instruments"],
+        "colors": ["warm tan (#D4B070)", "jade green (#1E7A52)", "sky blue (#2880A8)"],
+        "forms": "May appear as cosmic iguana/crocodile (the sky itself), as an old man, or as a young lord"
+      },
+      "generative_hint": "Old beaked or large-nosed elderly face; large square eye with iris marking; often holding a codex or writing instrument. When depicted as cosmic creature: a large iguana or crested lizard whose body spans the sky horizon."
+    },
+    {
+      "id": "ix_chel",
+      "name": "Ix Chel",
+      "culture": ["Maya"],
+      "domain": ["moon", "medicine", "weaving", "midwifery", "floods"],
+      "visual_attributes": {
+        "diagnostic_elements": ["elderly woman with clawed feet", "inverted water jar pouring a flood", "crossed bones and crosshatching (death)", "serpent headdress", "weaving bobbin"],
+        "colors": ["lunar white (#F0EAD8)", "water blue (#1B6BA8)", "aged sienna (#8B4C27)"],
+        "forms": "Old crone form with jaguar claws; also young beautiful moon goddess form"
+      },
+      "generative_hint": "Old woman form: elderly, clawed, with a serpent in her headdress and an upended water jar. Crosshatch skin marking = death/underworld association. The inverted water jar is the key visual: a vessel pouring water flood downward."
+    },
+    {
+      "id": "chaac",
+      "name": "Chaac",
+      "culture": ["Maya"],
+      "domain": ["rain", "lightning", "agriculture"],
+      "visual_attributes": {
+        "diagnostic_elements": ["long curling scroll/hook nose (beak-like)", "axe or lightning in hand", "large round eye", "single tooth or crossed-fang mouth", "tear/water droplet under eye"],
+        "colors": ["blue-grey (#5080A0)", "stormy dark (#2A3A50)", "rain white (#E0E8F0)"],
+        "architectural_use": "Stacked Chac masks at corners of Puuc-style buildings; each mask is a profile Chac head built from individual modular stone blocks"
+      },
+      "generative_hint": "The nose is everything: a long downward-curving scroll hook, like a snout or proboscis extending from the face. Large circular eye. Often holding a stone axe (= lightning bolt). For Puuc architectural masks: assemble individual stone elements (the eye, nose, teeth, cheek) as separate modular pieces creating a stacked frontal face at building corners."
+    },
+    {
+      "id": "hunhunahpu_maize_god",
+      "name": "Hunahpu / Maize God (Jun Ajaw / Ixim)",
+      "culture": ["Maya"],
+      "domain": ["maize", "creation", "death and rebirth", "ball game", "beauty"],
+      "visual_attributes": {
+        "diagnostic_elements": ["elongated foliated head (head shaped like a maize ear with corn silk/tassel top)", "young handsome face", "maize plant emerging from cleft in head", "jade ornaments", "net/fish-net skirt"],
+        "colors": ["maize yellow (#D4C060)", "jade green (#1E7A52)", "cream skin (#EAD8A8)"],
+        "palenque_form": "Resurrected from the underworld; kneeling in the earth with maize growing from his head; on Palenque sarcophagus lid"
+      },
+      "generative_hint": "The head is shaped like a maize cob — elongated, rounded at the top, with corn leaves/silk sprouting from the crown. Young handsome face. Often shown being resurrected, rising from a split turtle shell or from the cleft earth. Jade pectoral and ear ornaments."
+    },
+    {
+      "id": "cocijo",
+      "name": "Cocijo",
+      "culture": ["Zapotec"],
+      "domain": ["rain", "lightning", "water", "fertility"],
+      "visual_attributes": {
+        "diagnostic_elements": ["bifurcated/forked tongue projecting downward", "large square mouth cavity", "fanged jaw", "large eyes (often circular)", "combined serpent-jaguar elements", "crossed-band glyph on chest"],
+        "colors": ["storm grey (#5A6878)", "turquoise (#1A8A84)", "fired clay (#C09860)"],
+        "ceramic_context": "Primarily known from Zapotec funerary urns; mask appears as frontal face attachment"
+      },
+      "generative_hint": "Cocijo's most diagnostic feature is the downward-projecting bifurcated tongue — a Y-shaped forked element extending below the lower lip. Square open mouth. Circular large eyes. Often rendered in ceramic grey-buff tones (funerary urn context). Strictly frontal; rigidly symmetrical."
+    }
+  ]
+}

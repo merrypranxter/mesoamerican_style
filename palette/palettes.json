@@ -1,31 +1,137 @@
 {
-  "schema": "palettes/v1",
+  "schema": "palettes/v2",
+  "description": "Mesoamerican color palettes organized by culture and use-case. All colors derived from actual mineral pigments, stone materials, and ceramic traditions.",
   "palettes": [
     {
       "id": "stone_jade_cinnabar",
-      "name": "Stone / Jade / Cinnabar",
+      "name": "Stone / Jade / Cinnabar (universal base)",
+      "culture": "Pan-Mesoamerican",
       "colors": [
-        {"name": "Basalt", "hex": "#2B2B2B"},
-        {"name": "Limestone", "hex": "#C9C2B3"},
-        {"name": "Jade", "hex": "#1E8F6A"},
-        {"name": "Cinnabar", "hex": "#B1322E"},
-        {"name": "Obsidian", "hex": "#0D0D12"},
-        {"name": "Maize", "hex": "#D6B14A"}
+        {"name": "Basalt", "hex": "#2B2B2B", "material": "Basalt volcanic stone"},
+        {"name": "Limestone", "hex": "#C9C2B3", "material": "Carved limestone"},
+        {"name": "Jade", "hex": "#1E8F6A", "material": "Jadeite / nephrite"},
+        {"name": "Cinnabar", "hex": "#B1322E", "material": "Mercury sulfide mineral"},
+        {"name": "Obsidian", "hex": "#0D0D12", "material": "Volcanic obsidian glass"},
+        {"name": "Maize", "hex": "#D6B14A", "material": "Dried maize / limonite ochre"}
       ],
-      "usage": "Use stone neutrals as base; pigments appear in recesses or as accent bands."
+      "usage": "Use stone neutrals as base; pigments appear in recesses or as accent bands. Universal starting point for any Mesoamerican render."
     },
     {
       "id": "codex_pigments",
-      "name": "Codex pigments",
+      "name": "Codex pigments (painted manuscript)",
+      "culture": "Aztec / Mixtec",
       "colors": [
-        {"name": "Indigo", "hex": "#233A7A"},
-        {"name": "Cochenille", "hex": "#A2173A"},
-        {"name": "Turquoise", "hex": "#2AA8A1"},
-        {"name": "Ochre", "hex": "#B07A2A"},
-        {"name": "Bone", "hex": "#E7DCC8"},
-        {"name": "Charcoal", "hex": "#2A2A30"}
+        {"name": "Indigo", "hex": "#233A7A", "material": "Indigofera plant"},
+        {"name": "Cochineal", "hex": "#A2173A", "material": "Cochineal insects on cactus"},
+        {"name": "Turquoise", "hex": "#2AA8A1", "material": "Turquoise stone / azurite"},
+        {"name": "Ochre", "hex": "#B07A2A", "material": "Limonite iron oxide"},
+        {"name": "Bone", "hex": "#E7DCC8", "material": "Lime-treated bark paper ground"},
+        {"name": "Charcoal", "hex": "#2A2A30", "material": "Lamp black / carbon"}
       ],
-      "usage": "Flatter, painted feel—good for posterized or vector-style outputs."
+      "usage": "Flatter, painted feel — good for posterized or vector-style codex outputs. High-contrast black outline dominates."
+    },
+    {
+      "id": "aztec_codex",
+      "name": "Aztec Codex (Borgia style)",
+      "culture": "Aztec (Mexica)",
+      "colors": [
+        {"name": "Codex Black", "hex": "#1A1208", "material": "Carbon/lamp black"},
+        {"name": "Aztec Red", "hex": "#A8232A", "material": "Cochineal + hematite"},
+        {"name": "Turquoise Blue", "hex": "#1F9BA3", "material": "Turquoise mineral"},
+        {"name": "Solar Yellow", "hex": "#D9A824", "material": "Limonite ochre"},
+        {"name": "Chalk White", "hex": "#EFE6D0", "material": "Lime gesso ground"},
+        {"name": "Jade Green", "hex": "#226B45", "material": "Malachite / jade"},
+        {"name": "Night Blue", "hex": "#1D2B54", "material": "Indigo + carbon"}
+      ],
+      "usage": "For Aztec codex-style flat graphic output. Black outlines dominate. Red is the primary accent. Turquoise marks sky/royalty. Yellow marks sun/gold/maize."
+    },
+    {
+      "id": "maya_polychrome",
+      "name": "Maya Polychrome (ceramic and mural)",
+      "culture": "Maya Classic",
+      "colors": [
+        {"name": "Maya Blue", "hex": "#1B6BA8", "material": "Indigo + palygorskite clay"},
+        {"name": "Blood Red", "hex": "#8B1A1A", "material": "Iron oxide hematite"},
+        {"name": "Codex Cream", "hex": "#F2E8C6", "material": "Lime-treated paper/plaster"},
+        {"name": "Forest Green", "hex": "#2A6E3F", "material": "Malachite / plant"},
+        {"name": "Ochre Orange", "hex": "#B87A2C", "material": "Limonite variant"},
+        {"name": "Carbon Black", "hex": "#1C1C1C", "material": "Lamp black"},
+        {"name": "Sky Turquoise", "hex": "#26B5AA", "material": "Malachite / azurite"},
+        {"name": "Palenque Pink", "hex": "#D4796A", "material": "Diluted cinnabar stucco"}
+      ],
+      "usage": "For polychrome Maya vessel or mural rendering. Cream background. Maya Blue is the signature and should be used sparingly as a sacred accent. Black outlines with full palette fills."
+    },
+    {
+      "id": "olmec_stone_jade",
+      "name": "Olmec Stone and Greenstone",
+      "culture": "Olmec",
+      "colors": [
+        {"name": "Basalt Charcoal", "hex": "#2E2E2E", "material": "Colossal head basalt"},
+        {"name": "Jade Deep", "hex": "#1E7A52", "material": "Jadeite (highest quality)"},
+        {"name": "Serpentine", "hex": "#5A8A5A", "material": "Green serpentine"},
+        {"name": "Cinnabar Red", "hex": "#B53328", "material": "Cinnabar burial pigment"},
+        {"name": "Ochre Tan", "hex": "#C09060", "material": "Limonite clay figurines"},
+        {"name": "Mottled Greenstone", "hex": "#4A7A58", "material": "Mixed greenstone mosaic"}
+      ],
+      "usage": "For Olmec sculptural renders. The material IS the palette — dark basalt for monuments, vivid jade for small objects. Keep backgrounds neutral to let material speak."
+    },
+    {
+      "id": "teotihuacan_mural",
+      "name": "Teotihuacan Mural Palette",
+      "culture": "Teotihuacan",
+      "colors": [
+        {"name": "Teotihuacan Red", "hex": "#B83A2E", "material": "Hematite iron oxide"},
+        {"name": "Mural Orange", "hex": "#D46A30", "material": "Iron oxide variant"},
+        {"name": "Teteo Blue-Green", "hex": "#1A7A72", "material": "Malachite + plant"},
+        {"name": "Pale Yellow-Green", "hex": "#AABF5A", "material": "Chromite / limonite"},
+        {"name": "Deep Lime Plaster", "hex": "#E8E0C0", "material": "Lime plaster wall ground"},
+        {"name": "Carbon Black", "hex": "#1A1A1A", "material": "Lamp black"},
+        {"name": "Warm White", "hex": "#F0E8D0", "material": "Lime white highlights"}
+      ],
+      "usage": "For Teotihuacan mural-style. Deep red is the dominant background color. Figures in orange-red tones with blue-green accents for Tlaloc and water. Black outlines. Flat fills."
+    },
+    {
+      "id": "zapotec_urn",
+      "name": "Zapotec Funerary Urn",
+      "culture": "Zapotec",
+      "colors": [
+        {"name": "Urn Grey-Buff", "hex": "#B8A88A", "material": "Local fired clay"},
+        {"name": "Monte Albán Cream", "hex": "#D8C9A8", "material": "Lime plaster"},
+        {"name": "Oaxacan Red", "hex": "#9A3428", "material": "Iron oxide pigment"},
+        {"name": "Turquoise Band", "hex": "#1A8A84", "material": "Malachite / azurite"},
+        {"name": "Tomb Charcoal", "hex": "#2E2E2E", "material": "Carbon soot"},
+        {"name": "Stone Limestone", "hex": "#C0B090", "material": "Monte Albán limestone"}
+      ],
+      "usage": "For Zapotec ceramic and architectural renders. Grey-buff is the dominant tone of the urns. Warm and muted; avoid bright colors."
+    },
+    {
+      "id": "mixtec_codex",
+      "name": "Mixtec Codex (Nuttall style)",
+      "culture": "Mixtec",
+      "colors": [
+        {"name": "Codex Red", "hex": "#A02020", "material": "Cochineal"},
+        {"name": "Skin Tan", "hex": "#D4A870", "material": "Yellow ochre"},
+        {"name": "Turquoise Mosaic", "hex": "#20A0A0", "material": "Turquoise stone"},
+        {"name": "Codex Black", "hex": "#1A1A1A", "material": "Carbon black"},
+        {"name": "Codex Cream", "hex": "#EFE0B8", "material": "Deer skin primer"},
+        {"name": "Solar Yellow", "hex": "#D4A020", "material": "Gold / limonite"},
+        {"name": "Gold Metal", "hex": "#C89020", "material": "Gold / tumbaga alloy"}
+      ],
+      "usage": "For Mixtec codex-strip narrative style. Cream background with warm tan body fills. Red reading-path lines. Turquoise and gold accents for elite objects."
+    },
+    {
+      "id": "gulf_coast_scroll",
+      "name": "Gulf Coast / Veracruz Scroll",
+      "culture": "Veracruz / Totonac",
+      "colors": [
+        {"name": "Tajín Sandstone", "hex": "#D4B880", "material": "Local sandstone"},
+        {"name": "Niche Shadow", "hex": "#3A3028", "material": "Deep shadow"},
+        {"name": "Scroll Red", "hex": "#9A2820", "material": "Iron oxide fill"},
+        {"name": "Veracruz Ochre", "hex": "#C09040", "material": "Limonite"},
+        {"name": "Smiling Clay", "hex": "#D4906A", "material": "Local fired clay"},
+        {"name": "Jungle Green", "hex": "#1A6030", "material": "Malachite"}
+      ],
+      "usage": "For Gulf Coast Tajín or Veracruz-style scroll renders. Warm sandstone tones. Red fills in carved scroll channels. Niche-shadow as a pattern element."
     }
   ]
 }
