@@ -1,0 +1,205 @@
+{
+  "schema": "materials/v1",
+  "description": "Mesoamerican materials, pigments, surface treatments, and their visual properties for generative AI rendering reference.",
+  "stone_materials": [
+    {
+      "id": "jade_jadeite",
+      "name": "Jade (Jadeite / Nephrite / Serpentine)",
+      "hex_range": ["#0D5C3E", "#1E7A52", "#2A8A5A", "#3A9A6A", "#5A8A5A"],
+      "surface": "High-gloss polished; slight translucency in thin sections; mottled/banded internal veining",
+      "cultural_value": "Highest value material in all Mesoamerican cultures; more precious than gold; associated with water, maize, life, breath",
+      "uses": ["elite jewelry (ear spools, pectorals, mosaic)", "ritual celts and axes", "funerary masks and death assemblages", "mosaics inlaid in wooden or resin substrates"],
+      "render_hints": "Deep green with slight blue-grey undertone; high specular highlight on surface; subsurface scattering creates depth; veining is white-grey diagonal bands; maximum saturation in deepest shadow"
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "hex_range": ["#0B0C10", "#15151E", "#1E1E28"],
+      "surface": "Mirror-polished; near-black with reflective sheen; knife-edge fractures are razor-sharp and translucent at thin edges",
+      "cultural_value": "Sacred and utilitarian; sacrificial blades, prismatic blades for bloodletting, mirror discs, spear and dart points",
+      "major_sources": ["Teotihuacan (Sierra de las Navajas)", "Ixtepeque (Guatemala, Maya)", "Pachuca"],
+      "uses": ["sacrificial blades (tecpatl)", "prismatic blades", "concave mirrors (Tezcatlipoca's smoking mirror)", "mosaic inlay in masks"],
+      "render_hints": "Near-black (#0B0C10) with very strong specular highlight at correct angle; almost mirror-like; thin edges lighten to dark grey-brown; conchoidal fracture pattern at edges"
+    },
+    {
+      "id": "basalt",
+      "name": "Basalt",
+      "hex_range": ["#2A2A2A", "#3A3A3A", "#484848"],
+      "surface": "Rough exterior from weathering; carved surfaces are smoother but still coarse-grained; not polished",
+      "uses": ["Olmec colossal heads", "Aztec monumental sculpture (Coatlicue, Sun Stone)", "grinding stones (metates)", "architectural elements"],
+      "render_hints": "Dark grey with fine grain texture visible at close range; slight brownish warmth in some specimens; carved channels appear darker from shadow and grime accumulation"
+    },
+    {
+      "id": "limestone",
+      "name": "Limestone (Caliza)",
+      "hex_range": ["#C0B090", "#D0C0A0", "#E0D0B0"],
+      "surface": "Relatively smooth; good carving medium; weathers to grey-cream surface; original surfaces often plastered and painted",
+      "uses": ["Maya stela carving", "architectural blocks", "altar slabs", "lintels"],
+      "render_hints": "Warm grey-cream; surface weathers to lighter tone; carved channels and relief areas show slightly darker tone from trapped sediment; original surfaces had plaster and pigment which shows in traces"
+    },
+    {
+      "id": "travertine_onyx",
+      "name": "Travertine / Tecali (Mexican Onyx)",
+      "hex_range": ["#E8D080", "#F0D890", "#F8E8A8"],
+      "surface": "Semi-translucent when backlit; banded with white and yellow layers; smooth polished",
+      "uses": ["elite vessels", "ritual bowls", "carved deity images", "floor slabs"],
+      "render_hints": "Honey-yellow with white banding; semi-translucent quality; warm glow when light passes through thin sections"
+    },
+    {
+      "id": "serpentine",
+      "name": "Serpentine",
+      "hex_range": ["#4A7A58", "#5A8A68", "#6A9A78"],
+      "surface": "Smooth; waxy luster; mottled green with grey-black veins",
+      "uses": ["secondary greenstone for celts and offerings", "Olmec figurines", "mosaic pavement at La Venta"],
+      "render_hints": "Medium green with grey-black veining; waxy rather than glossy; softer appearance than jadeite"
+    },
+    {
+      "id": "porphyry_andesite",
+      "name": "Andesite / Volcanic Porphyry",
+      "hex_range": ["#5A5050", "#6A6060", "#7A7070"],
+      "surface": "Medium-grain; reddish to grey-brown; harder than limestone; used for Aztec sculpture",
+      "uses": ["Aztec sculpture (alongside basalt)", "grinding implements"],
+      "render_hints": "Warm grey-red; visible phenocryst crystals at close range; carved surfaces smooth but with slight texture"
+    }
+  ],
+  "pigments": [
+    {
+      "id": "maya_blue",
+      "name": "Maya Blue (Azul Maya)",
+      "hex": "#1B6BA8",
+      "hex_variants": ["#1560A0", "#2070B0", "#2A78B8"],
+      "composition": "Indigo (from Indigofera suffruticosa) + attapulgite/palygorskite clay; unique organo-mineral compound",
+      "properties": "Extraordinarily durable (survives 1000+ years; acid-resistant); medium-bright blue; slightly grey-blue",
+      "uses": ["sacrificial victims painted blue", "Chaac deity color", "mural backgrounds and figural fills", "ceramic decoration", "codex pigment"],
+      "render_hints": "Medium-value blue; slightly desaturated/dusty compared to modern paint; not as vivid as cobalt; matte to slight sheen; survives as even tone on walls"
+    },
+    {
+      "id": "cinnabar",
+      "name": "Cinnabar (Mercury Sulfide / Vermilion)",
+      "hex": "#B53328",
+      "hex_variants": ["#A02020", "#C03030", "#C84020"],
+      "composition": "HgS (mercury sulfide); vermilion red mineral",
+      "properties": "Brilliant, saturated red; extremely toxic (mercury); prestigious precisely because of its rarity and toxicity",
+      "uses": ["elite burial pigment (painted over corpses and objects)", "body paint for sacrificial contexts", "temple interior paint", "codex red"],
+      "render_hints": "Pure vivid red-orange; highly saturated; appears fresh even in ancient contexts due to chemical stability; brilliant specular in mineral form"
+    },
+    {
+      "id": "cochineal_red",
+      "name": "Cochineal (Cochenille / Grana Cochinilla)",
+      "hex": "#A2173A",
+      "hex_variants": ["#8A1030", "#B02040", "#C03050"],
+      "composition": "Carminic acid extracted from Dactylopius coccus insects on prickly pear cactus",
+      "properties": "Deep red to crimson; can shift to purple with mordant variation; less stable than cinnabar over centuries",
+      "uses": ["codex red pigment", "textile dye (primary export good)", "body paint", "ceramic slip decoration"],
+      "render_hints": "Deep warm crimson; slightly cooler/darker than cinnabar; ages to brownish-red in codex contexts; vivid when fresh"
+    },
+    {
+      "id": "carbon_black",
+      "name": "Carbon Black (Lamp Black / Charcoal)",
+      "hex": "#1A1A1A",
+      "composition": "Carbon from charred bone, lamp black, or charcoal",
+      "uses": ["all outline work in codex and mural painting", "glyph strokes", "hair, night, death contexts"],
+      "render_hints": "Absolute black; matte; slight warm undertone in charcoal; cold/blue-black in lamp black"
+    },
+    {
+      "id": "ochre_yellow",
+      "name": "Yellow Ochre (Limonite / Jarosite)",
+      "hex": "#B87A2C",
+      "hex_variants": ["#A07020", "#C08030", "#D09040"],
+      "composition": "Hydrated iron oxide (limonite); or jarosite (potassium iron sulfate)",
+      "uses": ["figural body fills", "solar/maize symbols", "secondary color in codices", "fresco underlayers"],
+      "render_hints": "Warm medium yellow with brown undertone; earthy, natural quality; not vivid chrome yellow"
+    },
+    {
+      "id": "hematite_red",
+      "name": "Red Ochre / Hematite",
+      "hex": "#9A3428",
+      "hex_variants": ["#882A20", "#A83A30", "#7A2018"],
+      "composition": "Iron oxide (Fe₂O₃); ground hematite",
+      "uses": ["body paint", "wall pigment", "ceramic slip", "burial objects (commonly)", "Teotihuacan mural red-orange"],
+      "render_hints": "Deep warm red; slightly brick or rust toned; common and widely used; appears everywhere in ancient contexts"
+    },
+    {
+      "id": "indigo",
+      "name": "Indigo (Añil)",
+      "hex": "#233A7A",
+      "hex_variants": ["#1A3070", "#2A4080", "#304890"],
+      "composition": "Plant-based (Indigofera species); organic blue dye",
+      "uses": ["textile dyeing (major)", "codex blue-black passages", "component of Maya Blue"],
+      "render_hints": "Deep blue-indigo; cooler and darker than Maya Blue; slight purple undertone; appears as blue-black in dense applications"
+    },
+    {
+      "id": "malachite_green",
+      "name": "Malachite Green / Mineral Green",
+      "hex": "#2A7A4A",
+      "hex_variants": ["#207040", "#308050", "#3A9060"],
+      "composition": "Copper carbonate hydroxide; also vegetal greens from plant extracts",
+      "uses": ["Tlaloc deity color fills", "vegetation and maize", "jade-equivalent fill in murals"],
+      "render_hints": "Middle-value green; slight blue tint; matte in malachite mineral form"
+    },
+    {
+      "id": "turquoise",
+      "name": "Turquoise Blue-Green",
+      "hex": "#1F9BA3",
+      "hex_variants": ["#1A9098", "#2098A0", "#25A0A8"],
+      "composition": "Copper aluminum phosphate mineral",
+      "uses": ["Aztec turquoise mosaic objects", "sky color", "Tlaloc/water deity color", "Quetzalcoatl associations"],
+      "render_hints": "Bright, vivid cyan-blue-green; medium value; more green-shifted than Maya Blue; glassy luster in polished stone"
+    },
+    {
+      "id": "iron_pyrite",
+      "name": "Iron Pyrite (Fool's Gold)",
+      "hex": "#C8A830",
+      "hex_variants": ["#C0A020", "#D0B038", "#B89820"],
+      "composition": "FeS₂; iron sulfide",
+      "uses": ["mosaic mirror discs (mirrors)", "inlay in masks alongside turquoise", "cosmetic compact lid surfaces"],
+      "render_hints": "Metallic gold-yellow; high specular; mirror-like in polished form; warm yellow metallic sheen"
+    },
+    {
+      "id": "bone_white",
+      "name": "Calcined Bone / Lime White",
+      "hex": "#E7DCC8",
+      "hex_variants": ["#E0D4C0", "#EAE0D0", "#F0EAD8"],
+      "composition": "Calcium carbonate from limestone or calcined bone",
+      "uses": ["background white in codices", "lime plaster ground for murals", "body paint (death/skull contexts)", "teeth in skull depictions"],
+      "render_hints": "Warm off-white; slight cream or ivory tone; matte; slightly textured at close range"
+    }
+  ],
+  "surface_treatments": [
+    {
+      "id": "fresco_secco",
+      "name": "Fresco Secco (Dry Fresco)",
+      "description": "Pigment applied to dried lime plaster surface; primary mural technique in Teotihuacan, Bonampak, and other sites",
+      "visual_quality": "Flat, matte surface; colors can be vivid but without gloss; slight absorbency effect in some areas",
+      "render_hints": "Matte; slight surface texture from plaster; colors may have slight dust/bloom at surface; edges of applied color are slightly soft where pigment absorbed"
+    },
+    {
+      "id": "polished_burnish",
+      "name": "Burnished Ceramic / Stone Polish",
+      "description": "Stone-polished ceramic surface creating a low-to-high gloss; also stone objects polished with abrasives",
+      "visual_quality": "Low to mirror sheen depending on intensity; thin-walled ceramics with very smooth surface",
+      "render_hints": "Smooth surface with directional highlight; slight sheen angled with surface direction; less harsh than modern gloss glaze"
+    },
+    {
+      "id": "stucco_relief",
+      "name": "Modeled Stucco",
+      "description": "Lime plaster applied in layers; modeled into three-dimensional relief while wet; then painted",
+      "visual_quality": "3D surface with painted color; surface slightly rough at texture scale; deep carving channels are darker",
+      "render_hints": "Combine relief height with painted color; micro-texture of plaster surface; raking light reveals relief depth; pigment collects in deepest channels (pigment-in-recesses effect)"
+    },
+    {
+      "id": "incised_relief",
+      "name": "Stone-Incised Relief / Bas-Relief",
+      "description": "Forms cut into stone surface with chisels; range from shallow incision to deep undercutting",
+      "visual_quality": "Stone surface with carved channels; chisel marks visible in rougher work; smooth in high-quality carving",
+      "render_hints": "Use ambient occlusion in channels; raking directional light from low angle (as if lit by torchlight or side sun); carved edge has slight chipped micro-texture; deep channels are darkest; surface ridges catch brightest light"
+    },
+    {
+      "id": "mosaic_inlay",
+      "name": "Mosaic Inlay (Turquoise / Jade / Pyrite)",
+      "description": "Small stone tiles (tesserae) affixed to substrate with organic adhesive; creates colored geometric or figural images",
+      "visual_quality": "Grid of small tiles; slight height variation between tiles; grout lines between tiles; highly colorful",
+      "render_hints": "Tile grid visible at close range; each tile a slightly different shade/orientation; grout lines as fine dark channels; high-specular on polished stone tiles; overall surface has irregular but rhythmic geometry"
+    }
+  ]
+}
