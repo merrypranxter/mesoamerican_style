@@ -1,0 +1,63 @@
+id: meso.teotihuacan_mural_style
+type: style
+name: Teotihuacan Mural Painting Style
+aliases:
+  - Teotihuacan fresco
+  - City of the Gods mural tradition
+culture_scope: [teotihuacan]
+summary: >
+  The processional mural tradition of Teotihuacan (100 BCE – 550 CE), featuring
+  flat profile figures, bold mineral pigments, and repetitive frieze layouts
+  that encode cosmological and ritual meaning.
+description: |
+  Teotihuacan murals cover the interior walls of apartment compounds,
+  temples, and palace complexes throughout the city. Stylistic hallmarks:
+
+  - **Profile-facing processions**: figures walk in single file toward a
+    central deity or offering, creating rhythmic repetition.
+  - **Flat modelling**: coloured fills with no shading; forms defined by
+    incised preparatory lines visible under paint.
+  - **Speech scrolls**: flowery speech scrolls (precursors of Aztec convention)
+    emerge from mouths and hands.
+  - **Talud-tablero framing**: architectural context often incorporates the
+    slope-and-panel profile of Teotihuacan buildings.
+  - **Dominant colours**: Maya Blue (unusual for Teotihuacan), red (hematite),
+    yellow, green, black — particularly vibrant compared to later traditions.
+  - **Feathered headdress motifs**: elaborate quetzal-feather crowns are key
+    identity markers for figures.
+
+  Key compounds: Tepantitla, Atetelco, Zacuala, La Ventilla.
+tags:
+  culture_scope: [teotihuacan]
+  medium: [stucco_mural, architecture]
+  motif_type: [deity, plant, animal, celestial]
+  geometry: [banded, frieze, symmetry]
+  surface: [painted]
+  palette: [mineral_pigments, full_ceremonial]
+  composition: [frieze, register]
+  mood: [ceremonial, vibrant, cosmic]
+  remix: [none]
+  shader_ops: [palette_map, edge_ink, noise]
+constraints:
+  do:
+    - Use strongly saturated hues against a red or cream ground.
+    - Repeat figures at regular intervals — processional rhythm is key.
+    - Include speech scrolls / flowery emanations from figures.
+    - Border frieze with geometric bands (see meso.border_band_stepped_fret).
+  avoid:
+    - Avoid random asymmetric layouts; Teotihuacan murals are highly ordered.
+parameters:
+  figure_spacing_ratio: 1.2    # figure width as a multiple of gap width
+  ground_colour_hex: "#C0392B" # deep red ground typical of Teotihuacan
+compat:
+  - meso.feathered_headdress_motif
+  - meso.speech_scroll_motif
+  - meso.mineral_pigment_palette
+  - meso.border_band_stepped_fret
+provenance:
+  period: "Teotihuacan Classic, 100 BCE – 550 CE"
+  sources:
+    - "Berrin, K. & Pasztory, E. (1993). Teotihuacan: Art from the City of the Gods."
+    - "Headrick, A. (2007). The Teotihuacan Trinity. U of Texas Press."
+version: "1.0"
+created_at: "2026-04-10"

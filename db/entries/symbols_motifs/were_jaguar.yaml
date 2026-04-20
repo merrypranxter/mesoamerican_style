@@ -1,0 +1,62 @@
+id: meso.were_jaguar_motif
+type: symbol
+name: Were-Jaguar
+aliases:
+  - Olmec were-jaguar
+  - Jaguar-human hybrid
+culture_scope: [olmec, general_mesoamerican]
+summary: >
+  Olmec supernatural infant-jaguar hybrid — cleft brow, snarling or weeping
+  downturned mouth, almond eyes — the proto-rain deity and founding symbol
+  of Mesoamerican supernaturalism.
+description: |
+  The were-jaguar is the most iconic motif of the Olmec culture and is
+  considered a precursor to later Mesoamerican rain/earth deities. Characteristics:
+
+  - **Cleft head**: V-notch at the top of the skull (may represent sprouting
+    maize, a cave entrance, or the rain deity's jaguar-cleft identity).
+  - **Downturned mouth**: distinctive frowning or snarling lip; weeping
+    or drooling fluid from corners (may be rain/water symbolism).
+  - **Toothless / infant form**: sometimes depicted as a small chubby infant
+    rather than a fierce jaguar.
+  - **Almond eyes**: slightly slanted elongated eyes; often infilled with
+    a symbol or cross-hatching.
+  - **Jaguar ears**: rounded triangular ears on otherwise human head.
+  - **Transformation state**: the ambiguous human-jaguar state encodes
+    shamanic transformation, the key to Olmec supernatural power.
+
+  Appears on: jade celts, basalt altars, ceramic figurines, stone carvings.
+tags:
+  culture_scope: [olmec]
+  medium: [jade, stone_relief, ceramics]
+  motif_type: [deity, animal]
+  geometry: [symmetry]
+  surface: [carved, inlaid]
+  palette: [jade_turquoise, obsidian_black]
+  composition: [central_mask, emblem]
+  mood: [ceremonial, mythic, austere]
+  remix: [none]
+  shader_ops: [relief_shading, normal_map, noise]
+constraints:
+  do:
+    - Use the cleft brow / V-notch as the primary skull identifier.
+    - Show the frowning or downturned weeping mouth.
+    - Blend infant-body proportions with jaguar facial features.
+    - Keep palette dark jade green, cream, or near-black.
+  avoid:
+    - Avoid "Were-jaguar = werewolf" associations — this is not transformation
+      in the horror-genre sense; it's a sacred power state.
+parameters:
+  form: "hybrid"       # hybrid | jaguar | infant
+  cleft_depth: "prominent"
+compat:
+  - meso.olmec_colossal_head_style
+  - meso.jade_greenstone_material
+  - meso.jaguar_motif
+provenance:
+  period: "Olmec Formative, 1500–400 BCE"
+  sources:
+    - "Joralemon, D. (1971). A Study of Olmec Iconography. Dumbarton Oaks."
+    - "Grove, D. C. & Gillespie, S. D. (1992). Ideology and Evolution at the Regional Scale."
+version: "1.0"
+created_at: "2026-04-10"

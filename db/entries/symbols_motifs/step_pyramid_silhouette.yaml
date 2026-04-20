@@ -1,0 +1,67 @@
+id: meso.step_pyramid_silhouette
+type: symbol
+name: Step Pyramid / Temple Silhouette
+aliases:
+  - Teocalli
+  - El Castillo silhouette
+  - Temple-pyramid
+culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+summary: >
+  The stepped pyramid temple is the architectural symbol of Mesoamerica —
+  a mountain-axis-mundi metaphor with a distinctive stepped profile,
+  staircase, and summit sanctuary.
+description: |
+  The step-pyramid is both a cosmological statement and the most recognisable
+  Mesoamerican architectural form. As a visual motif:
+
+  - **Profile view**: three to nine stepped tiers with vertical faces;
+    a steep central staircase on one or more sides; a sanctuary (temple
+    building) at the summit.
+  - **Talud-tablero**: the Teotihuacan structural module — sloping base
+    (talud) with vertical panel (tablero) alternating up each tier.
+  - **Serpent balustrades**: Maya pyramid staircases often flanked by
+    undulating serpent-body railings terminating in serpent heads at the base.
+  - **Mountain symbolism**: the pyramid IS a mountain (witz in Maya) —
+    the interior and exterior are often decorated with cave-mouth openings
+    and deity masks.
+  - **Skyline silhouette**: the stepped outline against sky/background is
+    the minimal identifying form; usable as pure geometry.
+  - **Tiers as cosmological layers**: each tier may represent a level of
+    the sky or underworld in specific traditions.
+tags:
+  culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+  medium: [architecture, stone_relief, codex_painting]
+  motif_type: [pattern, celestial, deity]
+  geometry: [stepped_fret, banded, axial, symmetry]
+  surface: [carved, painted]
+  palette: [earthtones, mineral_pigments]
+  composition: [emblem, axial]
+  mood: [ceremonial, cosmic, austere]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, noise]
+constraints:
+  do:
+    - Use clean geometric stepped profile — the silhouette should read
+      at thumbnail scale.
+    - Include staircase (usually central) as a prominent vertical element.
+    - For Maya versions, add serpent-head balustrades at stair base.
+    - Can be used as a background/horizon element with full detail or as
+      a pure black-silhouette stamp.
+  avoid:
+    - Avoid Egyptian-style smooth pyramid profiles — Mesoamerican pyramids
+      are always stepped.
+parameters:
+  tier_count: 4          # 3–9 typical
+  stair_sides: 1         # 1 = front only; 4 = all sides (Chichén Itzá)
+  has_serpent_balustrade: true
+compat:
+  - meso.border_band_stepped_fret
+  - meso.classic_maya_relief_style
+  - meso.earthtone_stone_palette
+provenance:
+  period: "Preclassic through Postclassic, 500 BCE – 1521 CE"
+  sources:
+    - "Kubler, G. (1984). The Art and Architecture of Ancient America. Penguin."
+    - "Coe, M. D. (2011). The Maya (8th ed.). Thames & Hudson."
+version: "1.0"
+created_at: "2026-04-10"

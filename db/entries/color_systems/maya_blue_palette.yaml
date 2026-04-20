@@ -1,0 +1,78 @@
+id: meso.maya_blue_palette
+type: color_system
+name: Maya Blue Palette
+aliases:
+  - Azul Maya
+  - Palygorskite-indigo pigment
+culture_scope: [maya, aztec_mexica, general_mesoamerican]
+summary: >
+  The iconic turquoise-blue pigment of Mesoamerica — a unique hybrid of
+  organic indigo and mineral palygorskite clay that proved exceptionally
+  stable — paired here with its traditional companion colours.
+description: |
+  Maya Blue (Azul Maya) is one of the most chemically stable synthetic
+  pigments in the ancient world, produced by heating indigo dye with
+  palygorskite clay:
+
+  - **Hue**: bright cyan-turquoise (not navy, not sky-blue) — a distinctive
+    slightly greenish blue.
+  - **Value**: medium; neither very light nor very dark.
+  - **Companions**:
+    - *Red* (hematite / cochineal): high-contrast opposite; used for blood,
+      fire, and directional symbolism.
+    - *Ochre-yellow* (limonite): warm ground or secondary accent.
+    - *Black* (carbon/manganese): outlines and details.
+    - *Cream-white* (lime chalk): background or light areas.
+    - *Dark green* (malachite): secondary complement to blue.
+  - **Ceremonial uses**: Maya Blue is found on sacrificial vessels, murals,
+    cenote offerings, and in the coating of ritual objects — it is a prestige
+    and sacred colour.
+  - **Limiting quality**: real Maya Blue never appears in a full-spectrum
+    palette; it dominates as the key chromatic accent against earthier tones.
+
+  Hex approximations (modern RGB equivalents):
+  - Maya Blue: `#4EC3C0`
+  - Companion red: `#C0392B`
+  - Companion ochre: `#D4A017`
+  - Black: `#1A0F00`
+  - Cream: `#F5E6C8`
+tags:
+  culture_scope: [maya, aztec_mexica, general_mesoamerican]
+  medium: [ceramics, stucco_mural, codex_painting, stone_relief]
+  motif_type: [pattern]
+  geometry: [banded]
+  surface: [painted]
+  palette: [jade_turquoise, mineral_pigments, limited]
+  composition: [frieze, register]
+  mood: [ceremonial, cosmic, vibrant]
+  remix: [none]
+  shader_ops: [palette_map]
+constraints:
+  do:
+    - Use Maya Blue as the dominant cool accent against warm earth tones.
+    - Limit palette to 5–6 colours total.
+    - Pair with black outlines and cream/buff ground.
+  avoid:
+    - Avoid making Maya Blue the background colour — it works as accent.
+    - Do not mix with cool greys or cool whites — keep warm accompaniments.
+parameters:
+  swatches:
+    maya_blue: "#4EC3C0"
+    red: "#C0392B"
+    ochre: "#D4A017"
+    black: "#1A0F00"
+    cream: "#F5E6C8"
+    dark_green: "#2E7D50"
+  dominant: "maya_blue"
+  total_colours: 6
+compat:
+  - meso.classic_maya_relief_style
+  - meso.teotihuacan_mural_style
+  - meso.tlaloc_rain_deity
+provenance:
+  period: "Classic Maya, 250–900 CE+"
+  sources:
+    - "Littmann, E. R. (1982). Maya Blue — A New Perspective. American Antiquity."
+    - "Reyes-Valerio, C. (1993). De Bonampak al Templo Mayor."
+version: "1.0"
+created_at: "2026-04-10"

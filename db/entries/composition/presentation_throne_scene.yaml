@@ -1,0 +1,67 @@
+id: meso.presentation_throne_composition
+type: composition
+name: Presentation / Throne Scene Composition
+aliases:
+  - Ruler-presentation scene
+  - Enthronement composition
+  - Tribute scene layout
+culture_scope: [maya, aztec_mexica, general_mesoamerican]
+summary: >
+  The hierarchical presentation scene — a ruler or deity enthroned above,
+  receiving tribute or homage from smaller subordinate figures below —
+  the dominant political/ritual compositional type.
+description: |
+  Presentation and throne scenes communicate hierarchical power relationships
+  through consistent compositional devices:
+
+  - **Scale hierarchy**: the principal figure (ruler, deity) is depicted
+    larger than subordinates, regardless of spatial logic.
+  - **Elevated position**: the principal sits on a throne (jaguar pelt,
+    stepped platform, or deity back) placed higher in the composition.
+  - **Frontal / three-quarter figure**: the principal may be rendered more
+    frontally than the profile-facing subordinates who approach them.
+  - **Approach posture**: subordinate figures lean forward, offer objects
+    with both hands, or are shown kneeling; often depicted in a long
+    procession approaching from one side.
+  - **Canopy / parasol**: a feathered or textile canopy over the principal
+    figure signals their elevated status.
+  - **Object of transaction**: captives, tribute bundles, bloodletting tools,
+    or sacred objects are the focus of the exchange.
+  - **Caption block**: hieroglyphic or pictographic captions identify the
+    principal figure and date the event.
+tags:
+  culture_scope: [maya, aztec_mexica, general_mesoamerican]
+  medium: [stone_relief, codex_painting, ceramics]
+  motif_type: [deity, pattern]
+  geometry: [register, axial, symmetry]
+  surface: [carved, painted]
+  palette: [mineral_pigments, full_ceremonial]
+  composition: [register, axial, frieze]
+  mood: [ceremonial, martial, mythic]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink]
+constraints:
+  do:
+    - Make the principal figure 1.5–2× the height of subordinate figures.
+    - Place the principal at or above the centre of the composition.
+    - Show subordinates in approach posture (lean or kneel).
+    - Include a canopy or parasol above the principal if present.
+  avoid:
+    - Avoid equal-size figures — hierarchy through scale is mandatory.
+    - Do not use vanishing-point perspective.
+parameters:
+  principal_scale_multiplier: 1.7  # size ratio principal:subordinate
+  approach_direction: "left"       # left | right | both
+  has_canopy: true
+  subordinate_count: 2             # typical range 2–6
+compat:
+  - meso.classic_maya_relief_style
+  - meso.aztec_codex_painting_style
+  - meso.feathered_headdress_motif
+provenance:
+  period: "Classic Maya and Aztec, 250–1521 CE"
+  sources:
+    - "Martin, S. & Grube, N. (2000). Chronicle of the Maya Kings and Queens."
+    - "Pasztory, E. (1983). Aztec Art. Abrams."
+version: "1.0"
+created_at: "2026-04-10"

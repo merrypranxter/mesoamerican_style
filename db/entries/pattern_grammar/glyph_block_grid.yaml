@@ -1,0 +1,67 @@
+id: meso.glyph_block_grid
+type: pattern
+name: Glyph Block Grid
+aliases:
+  - Maya glyph block layout
+  - Cartouche grid
+culture_scope: [maya]
+summary: >
+  The formal grid of paired glyph columns used in Classic Maya inscriptions —
+  usable as an abstract compositional grid even when content is non-textual.
+description: |
+  Maya hieroglyphic inscriptions follow a strict grid organisation that
+  produces a powerful visual rhythm:
+
+  - **Column-pair reading order**: glyphs are read left-to-right in column
+    pairs (A1-B1, A2-B2, etc.), then down; two columns read simultaneously.
+  - **Block proportions**: each glyph block is approximately square or
+    slightly taller than wide; blocks separated by thin gutters.
+  - **Main sign + affixes**: each block contains a dominant "main sign"
+    occupying ~60% of the block area, with smaller "affix" elements attached
+    to top, bottom, sides.
+  - **Visual density**: rich internal detail; no block is left sparse.
+  - **Border cartouche**: some blocks use a rounded-rectangle (cartouche)
+    border; others are frameless.
+
+  **For generative/AI use**: the GRID STRUCTURE is the valuable element —
+  a 2-column grid of equally-sized decorated square blocks creates the
+  "Maya inscription" visual grammar without any actual text content.
+  Fill blocks with abstract organic marks, knot-forms, or geometric
+  elements following the main-sign + affix rule.
+tags:
+  culture_scope: [maya]
+  medium: [stone_relief, codex_painting, ceramics]
+  motif_type: [glyphlike, pattern]
+  geometry: [grid, banded]
+  surface: [carved, painted]
+  palette: [obsidian_black, mineral_pigments]
+  composition: [register, border_band]
+  mood: [ceremonial, mythic]
+  remix: [none]
+  shader_ops: [edge_ink, relief_shading]
+constraints:
+  do:
+    - Use 2-column paired grid as the structural basis.
+    - Fill blocks with complex abstract organic marks (not Latin letters).
+    - Maintain consistent block size and gutter width.
+    - Include "affix" satellite marks around each main sign.
+  avoid:
+    - Do NOT generate content that could be mistaken for real Maya script —
+      see meso.glyph_guidance_safe for full guidance.
+    - Do not mix with Latin alphabet or modern typefaces.
+parameters:
+  column_count: 2           # always 2 for canonical layout
+  block_aspect_ratio: 1.0   # width:height; 1.0 = square
+  gutter_fraction: 0.08     # gutter as fraction of block width
+  affix_scale: 0.25         # affix size as fraction of block
+compat:
+  - meso.classic_maya_relief_style
+  - meso.glyph_guidance_safe
+  - meso.shader_relief_chisel
+provenance:
+  period: "Classic Maya, 250–900 CE"
+  sources:
+    - "Coe, M. D. & Van Stone, M. (2001). Reading the Maya Glyphs. Thames & Hudson."
+    - "Montgomery, J. (2002). Dictionary of Maya Hieroglyphs. Hippocrene Books."
+version: "1.0"
+created_at: "2026-04-10"

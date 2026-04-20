@@ -1,0 +1,70 @@
+id: meso.jade_greenstone_material
+type: material
+name: Jade / Greenstone
+aliases:
+  - Chalchihuitl (Nahuatl)
+  - Jadeite
+  - Jade mosaic
+  - Greenstone
+culture_scope: [general_mesoamerican]
+summary: >
+  Jade and greenstone were the most precious materials in Mesoamerica —
+  more valued than gold — with a characteristic colour range, translucency,
+  waxy lustre, and symbolic weight encompassing water, life, and divinity.
+description: |
+  In Mesoamerica, jade (and various other greenstones including nephrite,
+  serpentine, and albite) carried a cultural value exceeding any metal:
+
+  - **Colour range**: pale apple green → vivid emerald → deep blue-green
+    → grey-green; the most prized pieces are translucent imperial jade green
+    (jadeite, Guatemala/Motagua source).
+  - **Lustre**: waxy to vitreous; a cold, wet-looking sheen rather than
+    metallic glitter; semi-translucent in thin sections.
+  - **Surface texture**: smooth polished (mask, pectoral, bead forms);
+    incised (carved surface detail); mosaic (small tesserae).
+  - **Symbolic associations**: water, maize, breath, precious fluid, royalty,
+    divinity; equivalence with blood (red+green = life-force pairing).
+  - **Mosaic use**: mask faces constructed from hundreds of small flat
+    jade tiles; Palenque death masks are iconic examples.
+  - **Bead forms**: cylindrical "tube" beads, discs, and celts (axe-shape)
+    are the canonical bead forms; long necklaces a key status marker.
+
+  Rendering notes: aim for waxy cold lustre, not metallic; include subtle
+  internal translucency suggestion at thin edges.
+tags:
+  culture_scope: [general_mesoamerican]
+  medium: [jade]
+  motif_type: [pattern]
+  geometry: [grid, radial]
+  surface: [inlaid, carved]
+  palette: [jade_turquoise]
+  composition: [emblem]
+  mood: [ceremonial, austere, cosmic]
+  remix: [none]
+  shader_ops: [relief_shading, palette_map]
+constraints:
+  do:
+    - Use a waxy (not specular) highlight model.
+    - Include the full green colour range in mosaic pieces (not monochrome).
+    - Incised line cuts through polished surface — render as a dark groove.
+    - Edge glow (subtle) to suggest translucency.
+  avoid:
+    - Avoid metallic/gold-style shading — jade is stone, not metal.
+    - Avoid bright pure green — real jade skews cooler and less saturated.
+parameters:
+  colour_range:
+    min_hex: "#4A7C59"
+    max_hex: "#A8D5A2"
+  lustre: "waxy"          # waxy | vitreous | matte
+  form: "polished_mask"   # polished_mask | mosaic | bead | celt
+compat:
+  - meso.jade_turquoise_palette
+  - meso.were_jaguar_motif
+  - meso.olmec_colossal_head_style
+provenance:
+  period: "General Mesoamerican, 1500 BCE – 1521 CE"
+  sources:
+    - "Taube, K. (2005). The Symbolism of Jade in Classic Maya Religion. Ancient Mesoamerica 16."
+    - "Coe, M. D. et al. (1995). The Olmec World. Princeton UP."
+version: "1.0"
+created_at: "2026-04-10"

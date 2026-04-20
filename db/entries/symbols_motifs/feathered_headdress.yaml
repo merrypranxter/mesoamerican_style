@@ -1,0 +1,70 @@
+id: meso.feathered_headdress_motif
+type: symbol
+name: Feathered Headdress / Quetzal Crown
+aliases:
+  - Quetzalfeather headdress
+  - Xiuhuitzolli
+  - Copilli
+  - Penacho
+culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+summary: >
+  The elaborate feather headdress is the primary marker of royal/divine
+  status in Mesoamerican iconography — quetzal feathers, mosaic shields,
+  and cascading plumes form a distinctive silhouette.
+description: |
+  Feather headdresses in Mesoamerica were luxury objects of immense
+  prestige, worn in ritual and warfare contexts:
+
+  - **Quetzal feathers**: the long iridescent tail feathers of the resplendent
+    quetzal (Pharomachrus mocinno) are the prestige material; bright emerald-
+    green with irridescent shimmer; often exceed 60 cm in length.
+  - **Fan structure**: feathers arranged in a semicircular or full-circle fan
+    radiating from a mosaic headband base.
+  - **Mosaic back panel**: larger headdresses have a horizontal disc (like
+    a wheel of feathers) worn at the back of the head, distinct from the
+    front crown.
+  - **Gold and turquoise elements**: metal discs and turquoise-mosaic elements
+    interspersed between feather layers.
+  - **Silhouette dominance**: in profile representations, the headdress often
+    occupies more space than the figure's body — it IS the identity marker.
+  - **Aztec Xiuhuitzolli**: turquoise diadem (royal crown) — distinct from
+    quetzal headdress; worn directly on head.
+
+  The Penacho of Moctezuma (Vienna) is the most famous surviving example.
+tags:
+  culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+  medium: [featherwork, stone_relief, codex_painting]
+  motif_type: [deity, pattern]
+  geometry: [radial, symmetry]
+  surface: [painted, inlaid]
+  palette: [jade_turquoise, full_ceremonial, mineral_pigments]
+  composition: [emblem, central_mask]
+  mood: [ceremonial, martial, mythic]
+  remix: [none]
+  shader_ops: [palette_map, edge_ink]
+constraints:
+  do:
+    - Treat the headdress silhouette as the key identity-conferring form.
+    - Use long curved quetzal plumes in iridescent green-blue.
+    - Include a mosaic base/band from which plumes emerge.
+    - In simplified/abstract versions, the radiating fan shape alone
+      communicates the headdress.
+  avoid:
+    - Do not simplify to a generic feather war bonnet — the Mesoamerican
+      form uses specific quetzal plumes and mosaic base construction.
+parameters:
+  plume_length: "long"          # short | medium | long | exaggerated
+  plume_colour: "quetzal_green" # quetzal_green | mixed | monochrome
+  has_mosaic_base: true
+compat:
+  - meso.feathered_serpent
+  - meso.teotihuacan_mural_style
+  - meso.jade_turquoise_palette
+  - meso.aztec_codex_painting_style
+provenance:
+  period: "Teotihuacan through Aztec, 200–1521 CE"
+  sources:
+    - "Berdan, F. (2014). Aztec Archaeology and Ethnohistory. Cambridge UP."
+    - "Pasztory, E. (1983). Aztec Art. Abrams."
+version: "1.0"
+created_at: "2026-04-10"

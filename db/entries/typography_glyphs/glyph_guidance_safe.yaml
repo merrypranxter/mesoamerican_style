@@ -1,0 +1,93 @@
+id: meso.glyph_guidance_safe
+type: glyph_guidance
+name: Safe Glyph Use Guidance
+aliases:
+  - Glyph-inspired marks
+  - Abstract logographic forms
+  - Respectful inscription design
+culture_scope: [maya, aztec_mexica, general_mesoamerican]
+summary: >
+  Guidance for creating glyph-inspired abstract marks that evoke
+  Mesoamerican writing traditions without reproducing or fabricating
+  actual inscriptions — preserving cultural integrity while enabling
+  creative visual exploration.
+description: |
+  ## The core principle
+
+  Real Maya and Aztec writing systems are active areas of ongoing
+  decipherment and carry deep cultural and religious significance to
+  descendant communities. **Do not generate fake inscriptions that could
+  be mistaken for real text.**
+
+  ## What you CAN do (inspired geometry)
+
+  The *structural grammar* of glyph systems — not the content — is your
+  creative resource:
+
+  - **Block containment**: work within a rounded-rectangle block; divide
+    the block into quadrants for the main sign + affixes.
+  - **Organic complexity**: use flowing, ovoid, interlocking forms rather
+    than straight lines; curves and scrolls are more authentic than
+    angular or Latin-derived shapes.
+  - **Main sign + affix rule**: one dominant element (60–70% of block area)
+    plus 2–4 smaller satellite elements attached to cardinal sides.
+  - **Knot and scroll vocabulary**: curling comma-like forms, interlocking
+    loops, stacked ovals, trilobate (three-part) shapes, crossed bands.
+  - **Abstract not representational**: resist the urge to make each "glyph"
+    look like a recognisable object — real glyphs are stylised to the
+    point of abstraction.
+
+  ## What to AVOID
+
+  - Do not copy specific real glyphs and repurpose them with new "meanings."
+  - Do not generate a "code" that claims to read as Nahuatl, Maya, or
+    any other Mesoamerican language.
+  - Do not label abstract marks as "ancient text" in your output.
+  - Do not use glyph-inspired marks on sacred or religious contexts without
+    community consultation.
+
+  ## Prompt guidance for AI image generation
+
+  Use phrases like:
+  - "glyph-inspired abstract marks, NOT actual Maya script"
+  - "geometric interlocking organic forms in the style of Mesoamerican
+    logographic blocks"
+  - "decorative inscription-like panels, abstract, non-legible"
+  - "inspired by Maya block structure, no real text"
+tags:
+  culture_scope: [maya, aztec_mexica, general_mesoamerican]
+  medium: [stone_relief, codex_painting]
+  motif_type: [glyphlike, pattern]
+  geometry: [grid, banded]
+  surface: [carved, painted]
+  palette: [obsidian_black, mineral_pigments]
+  composition: [register, border_band]
+  mood: [ceremonial]
+  remix: [none]
+  shader_ops: [edge_ink]
+constraints:
+  do:
+    - Work within block containment structure.
+    - Use organic ovoid forms and scroll vocabulary.
+    - Label outputs clearly as "glyph-inspired abstract" not real script.
+    - Encourage "inspired geometry" in all derivative work.
+  avoid:
+    - Do not fabricate readable or decodable inscriptions.
+    - Do not copy specific attested glyphs for reuse out of context.
+    - Do not claim ancient origin for modern abstract marks.
+parameters:
+  block_shape: "rounded_rectangle"
+  main_sign_proportion: 0.65
+  affix_count: 3
+  vocabulary: ["scroll", "oval", "knot", "trilobate", "crossed_bands"]
+compat:
+  - meso.glyph_block_grid
+  - meso.classic_maya_relief_style
+  - meso.calendar_glyph_guidance
+provenance:
+  period: "Guidance document — contemporary"
+  sources:
+    - "Coe, M. D. & Van Stone, M. (2001). Reading the Maya Glyphs."
+    - "Houston, S. et al. (2001). The Language of Classic Maya Inscriptions."
+version: "1.0"
+created_at: "2026-04-10"

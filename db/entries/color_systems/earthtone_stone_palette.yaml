@@ -1,0 +1,68 @@
+id: meso.earthtone_stone_palette
+type: color_system
+name: Earth-Tone Stone Palette
+aliases:
+  - Basalt and limestone neutrals
+  - Monumental sculpture palette
+culture_scope: [general_mesoamerican]
+summary: >
+  The restrained, near-monochrome palette of uncoloured stone sculpture —
+  warm buffs, greys, and near-blacks with strong tonal contrast from
+  directional light — ideal for relief rendering and austere aesthetics.
+description: |
+  Not all Mesoamerican art was polychrome. The monumental stone tradition —
+  especially Olmec, and many Aztec sculptures — reads in near-monochrome,
+  relying on form and light rather than colour:
+
+  - **Limestone buff** (`#C8B89A`): warm mid-tone for Classic Maya stela faces.
+  - **Basalt grey** (`#5A5A5A`): Aztec/Olmec monumental stone; dark, neutral.
+  - **Sandstone tan** (`#D2A679`): Oaxacan and some Teotihuacan work.
+  - **Deep shadow** (`#1A1007`): warm near-black for recessed areas in
+    raking-light photography.
+  - **Highlight** (`#EDE0C8`): bright surface planes catching directional light.
+  - **Lichen grey-green** (`#8A9B7A`): organic patina on outdoor stone.
+  - **Cinnabar ghost** (`#7A2A1A`): faded red ghost-paint traces in recesses.
+
+  Use for: stone relief rendering, photographic reconstruction, AI prompt
+  constraints for "unpainted stone" aesthetic, shader textures.
+tags:
+  culture_scope: [general_mesoamerican]
+  medium: [stone_relief]
+  motif_type: [pattern]
+  geometry: [banded]
+  surface: [carved, weathered]
+  palette: [earthtones, obsidian_black]
+  composition: [frieze]
+  mood: [austere, ceremonial]
+  remix: [none]
+  shader_ops: [relief_shading, noise, normal_map]
+constraints:
+  do:
+    - Drive tonal contrast with directional light, not colour contrast.
+    - Apply lichen grey-green to outdoor-context surfaces.
+    - Use ghost-paint cinnabar only in low opacity in recessed areas.
+    - Keep the palette range within 5 analogous neutral tones.
+  avoid:
+    - Avoid adding vibrant colour unless specifically modelling painted-stone
+      reconstruction.
+parameters:
+  swatches:
+    limestone_buff: "#C8B89A"
+    basalt_grey: "#5A5A5A"
+    sandstone_tan: "#D2A679"
+    deep_shadow: "#1A1007"
+    highlight: "#EDE0C8"
+    lichen: "#8A9B7A"
+    ghost_red: "#7A2A1A"
+  dominant: "limestone_buff"
+  light_direction_deg: 35     # degrees from horizontal
+compat:
+  - meso.carved_stone_material
+  - meso.shader_stone_weathering
+  - meso.olmec_colossal_head_style
+provenance:
+  period: "General Mesoamerican, 1500 BCE – 1521 CE"
+  sources:
+    - "Kubler, G. (1984). The Art and Architecture of Ancient America. Penguin."
+version: "1.0"
+created_at: "2026-04-10"

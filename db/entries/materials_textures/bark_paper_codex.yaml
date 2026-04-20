@@ -1,0 +1,76 @@
+id: meso.bark_paper_codex_material
+type: material
+name: Bark Paper / Amate Codex Surface
+aliases:
+  - Amate paper
+  - Huun (Maya bark paper)
+  - Deerskin vellum
+culture_scope: [aztec_mexica, maya, mixtec, general_mesoamerican]
+summary: >
+  The pre-Columbian book substrate — beaten bark paper (amate) or scraped
+  deerskin — with characteristic cream-to-buff colour, rough fibre texture,
+  and paint absorption properties that define codex aesthetics.
+description: |
+  Mesoamerican screenfold books (codices) were written on one of two surfaces:
+
+  **Bark paper (amate/huun)**:
+  - Made by soaking and beating strips of fig-tree (Ficus) bark.
+  - Surface colour: warm cream to buff (pale tan).
+  - Texture: visible fibre lines running parallel to length; occasional
+    knots or irregularities; slight surface roughness.
+  - Base coat: lime gesso applied over the paper creates a smoother
+    writing surface; toned cream-white.
+  - Paint absorption: pigments sit on the gessoed surface; slight bleed
+    at edges; chalky matte finish.
+
+  **Deerskin vellum**:
+  - More translucent and flexible than amate; slightly smoother.
+  - Used in Mixtec codices (Zouche-Nuttall, Bodley).
+  - Background is warm off-white to ivory.
+
+  **Damage/aging**:
+  - Fold lines at screenfold joints (regular crease marks).
+  - Edge darkening and browning.
+  - Small losses, worm holes, paint flaking in aged examples.
+  - Spanish colonial overwriting occasionally visible.
+
+  Rendering use: background texture layer for codex-style compositions;
+  paper grain + gesso coat + aging effects stack.
+tags:
+  culture_scope: [aztec_mexica, maya, mixtec, general_mesoamerican]
+  medium: [codex_painting]
+  motif_type: [pattern]
+  geometry: [banded]
+  surface: [painted, weathered]
+  palette: [earthtones, limited]
+  composition: [border_band]
+  mood: [ceremonial]
+  remix: [none]
+  shader_ops: [noise, palette_map]
+constraints:
+  do:
+    - Apply a warm cream/buff base colour before adding content.
+    - Add subtle horizontal fibre-direction grain noise.
+    - Include periodic fold-crease lines at regular intervals (screenfold format).
+    - Age with edge-darkening gradient and occasional small losses.
+  avoid:
+    - Avoid pure white — the surface is always warm-toned.
+    - Do not use sharp photographic paper; the surface should have visible
+      texture at normal viewing distance.
+parameters:
+  base_colour_hex: "#F5E6C8"
+  gesso_opacity: 0.85
+  fibre_direction: "horizontal"
+  fold_spacing_mm: 90         # screenfold page width
+  aging_level: 0.3            # 0 = pristine; 1 = heavily aged
+compat:
+  - meso.aztec_codex_painting_style
+  - meso.mixtec_codex_style
+  - meso.aztec_mineral_palette
+provenance:
+  period: "Pre-Columbian, 250–1521 CE"
+  sources:
+    - "Von Hagen, V. W. (1944). The Aztec and Maya Papermakers."
+    - "Boone, E. H. (2000). Stories in Red and Black. U of Texas Press."
+version: "1.0"
+created_at: "2026-04-10"

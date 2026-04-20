@@ -1,0 +1,63 @@
+id: meso.speech_scroll_motif
+type: symbol
+name: Speech Scroll / Breath Scroll
+aliases:
+  - Volute of speech
+  - Ihiyotl scroll (Nahuatl)
+  - Maya speech curl
+culture_scope: [aztec_mexica, maya, teotihuacan, mixtec, general_mesoamerican]
+summary: >
+  The speech scroll is a visual convention representing spoken words, song,
+  breath, or divine utterance — a curling tendril or volute emerging from
+  a figure's mouth, loaded with symbolic content.
+description: |
+  The speech scroll convention appears from Teotihuacan murals through
+  the Aztec and Maya codex traditions:
+
+  - **Basic form**: a single curling volute (like a clockwise or counter-
+    clockwise snail shell) emerging from the mouth/lips.
+  - **Elaboration**: flowers (song/poetry), precious stones (valued speech),
+    fire (anger/divine proclamation), or serpent (power/deity utterance)
+    can fill or replace the basic scroll.
+  - **Flower-speech**: floral speech scroll = singing, poetry, or sacred song
+    (a key motif in Teotihuacan murals).
+  - **Double scroll**: two scrolls = louder/more emphatic speech.
+  - **Writing convention**: the scroll can be filled with abstract calligraphic
+    marks (not actual text) to indicate a specific language or important
+    declaration.
+  - **Standalone ornament**: the scroll form (without a figure) is used as
+    a border/fill element, breath mark, or pure design unit.
+tags:
+  culture_scope: [aztec_mexica, maya, teotihuacan, mixtec, general_mesoamerican]
+  medium: [stone_relief, codex_painting, stucco_mural, ceramics]
+  motif_type: [pattern, deity, glyphlike]
+  geometry: [spiral, meander]
+  surface: [carved, painted]
+  palette: [mineral_pigments, jade_turquoise]
+  composition: [emblem, frieze]
+  mood: [ceremonial, mythic, vibrant]
+  remix: [none]
+  shader_ops: [edge_ink, relief_shading]
+constraints:
+  do:
+    - Use spiraling volute form as the base shape.
+    - Enrich with flowers (song) or precious-object fills for elaboration.
+    - Size relative to figure: speech scroll ≈ 15–25% of head height.
+    - Usable as a standalone repeating pattern element.
+  avoid:
+    - Do not fill with Western text conventions or modern speech-bubble
+      rectangular shapes.
+parameters:
+  scroll_type: "floral"    # plain | floral | fire | stone | serpent
+  count: 1                 # 1 | 2 | 3
+compat:
+  - meso.teotihuacan_mural_style
+  - meso.aztec_codex_painting_style
+  - meso.border_band_meander_scroll
+provenance:
+  period: "Teotihuacan through Aztec, 200–1521 CE"
+  sources:
+    - "Townsend, R. F. (ed.) (1992). The Ancient Americas: Art from Sacred Landscapes."
+    - "Boone, E. H. (2000). Stories in Red and Black. U of Texas Press."
+version: "1.0"
+created_at: "2026-04-10"

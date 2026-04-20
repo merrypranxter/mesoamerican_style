@@ -1,0 +1,65 @@
+id: meso.sun_disk_motif
+type: symbol
+name: Sun Disk / Solar Disc
+aliases:
+  - Aztec Sun Stone (colloquial)
+  - Tonatiuh face
+  - Nahui Ollin
+culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+summary: >
+  The sun disk is a radial emblem combining cosmological time reckoning,
+  the solar deity's face, and the four cardinal directions — the Aztec Sun
+  Stone being the most elaborate surviving example.
+description: |
+  The sun disk / solar emblem appears across Mesoamerican cultures as one of
+  the primary cosmological symbols:
+
+  - **Aztec Sun Stone** (colloquially "Aztec Calendar"): 3.6 m basalt disc;
+    centre = Tonatiuh face with tongue-sacrificial knife; first ring = four
+    previous world-ages; next ring = 20-day-signs; outer rings = sky-band,
+    fire serpents. *Note: this is a cosmogram, not a functional calendar.*
+  - **Maya sun**: crossed-band (kin sign = day/sun) — a four-petal flower or
+    cross in a square; sometimes reads as a Roman numeral IIII-like form.
+  - **Radial structure**: all versions share concentric ring organisation with
+    cardinal-axis symmetry.
+  - **Visual elements for abstraction**: central face (optional), four
+    directional arms/petals, concentric bands, serpent or flame outer border.
+
+  Generative use: radial compositions, clock/timer interfaces, mandala-like
+  ornament, cosmological diagrams.
+tags:
+  culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+  medium: [stone_relief, ceramics, codex_painting, architecture]
+  motif_type: [celestial, deity, glyphlike]
+  geometry: [radial, symmetry]
+  surface: [carved, painted]
+  palette: [mineral_pigments, earthtones, obsidian_black]
+  composition: [emblem, central_mask, axial]
+  mood: [cosmic, ceremonial, mythic]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, palette_map]
+constraints:
+  do:
+    - Organise as concentric rings with clear radial axis.
+    - Use fourfold symmetry to represent cardinal directions.
+    - Inner face (if included) should be frontal, tongue/knife out.
+    - Outer border may use fire-serpent (xiuhcoatl) forms.
+  avoid:
+    - Avoid labelling as "Aztec Calendar" — it is a cosmological monument,
+      not a timekeeping device.
+    - Do not use modern clock numerals on this structure.
+parameters:
+  ring_count: 4           # number of concentric rings
+  symmetry_fold: 4        # 4 = cardinal; 8 = intercardinal variants
+  has_central_face: true
+compat:
+  - meso.aztec_codex_painting_style
+  - meso.radial_composition
+  - meso.earthtone_stone_palette
+provenance:
+  period: "Aztec Late Postclassic, ca. 1427 CE (Sun Stone)"
+  sources:
+    - "Townsend, R. F. (1979). State and Cosmos in the Art of Tenochtitlan."
+    - "Taube, K. (1993). Aztec and Maya Myths. British Museum Press."
+version: "1.0"
+created_at: "2026-04-10"

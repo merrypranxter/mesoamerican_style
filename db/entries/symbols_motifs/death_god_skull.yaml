@@ -1,0 +1,68 @@
+id: meso.death_god_skull_motif
+type: symbol
+name: Death God / Skull Motif
+aliases:
+  - Ah Puch (Maya)
+  - Kisin
+  - Mictlantecuhtli (Nahuatl)
+  - Calavera (modern)
+culture_scope: [maya, aztec_mexica, general_mesoamerican]
+summary: >
+  The skull and skeletal imagery of Mesoamerican death deities — visually
+  distinct from Western skull conventions, featuring exposed vertebrae,
+  dangling eyeballs, death collars, and ceremonial context.
+description: |
+  Death in Mesoamerica is cyclical, not terminal — death deity iconography
+  reflects this by embedding skulls within abundant, regenerative scenes.
+  Key visual elements:
+
+  - **Exposed skull with lower jaw**: the face shows both upper and lower
+    jaw (unlike many Western conventions showing only the cranium).
+  - **Fleshless body patches**: alternating flesh and bone patches on the
+    body indicate decomposition-in-progress.
+  - **Dangling eyeballs**: a characteristic Maya motif — eyeball on a stalk
+    or dangling from the socket.
+  - **Death collar**: a necklace of disembodied eyes, sacrificial flints, and
+    crossed bones.
+  - **Spinal column as design element**: vertebrae rendered as a repeating
+    spool-and-bead pattern; usable as a border element.
+  - **Mictlantecuhtli (Aztec)**: skeletal god with stars on body, curly
+    hair, liver hanging from mouth; presides over the ninth underworld level.
+  - **Context**: skulls appear on tzompantli (skull racks), death collars,
+    and as cosmic framing elements — not mere horror imagery.
+tags:
+  culture_scope: [maya, aztec_mexica, general_mesoamerican]
+  medium: [stone_relief, ceramics, codex_painting, architecture]
+  motif_type: [deity, pattern]
+  geometry: [banded, grid, radial]
+  surface: [carved, painted]
+  palette: [obsidian_black, earthtones, mineral_pigments]
+  composition: [border_band, frieze, emblem]
+  mood: [ceremonial, cosmic, mythic]
+  remix: [none]
+  shader_ops: [edge_ink, palette_map, noise]
+constraints:
+  do:
+    - Include lower jaw for anatomical accuracy to Mesoamerican convention.
+    - Use spinal-spool pattern as a repeatable border motif.
+    - Contextualise skulls within cyclical/regenerative scenes rather than
+      as pure horror imagery.
+    - Death collar (eyes, flints, bones) can be used as a standalone
+      ornamental band.
+  avoid:
+    - Avoid reducing to generic Western Halloween skull — the Mesoamerican
+      form has specific anatomical features and symbolic context.
+parameters:
+  body_state: "skeletal_with_patches"
+  eye_treatment: "dangling"    # dangling | hollow | staring
+compat:
+  - meso.underworld_scene_composition
+  - meso.aztec_codex_painting_style
+  - meso.border_band_stepped_fret
+provenance:
+  period: "Classic Maya and Aztec, 250–1521 CE"
+  sources:
+    - "Taube, K. (1992). The Major Gods of Ancient Yucatan."
+    - "Matos Moctezuma, E. & Solís, F. (2002). Aztec. Royal Academy of Arts."
+version: "1.0"
+created_at: "2026-04-10"

@@ -1,0 +1,73 @@
+id: meso.feathered_serpent
+type: symbol
+name: Feathered Serpent
+aliases:
+  - Quetzalcóatl (Nahuatl)
+  - Kukulkan (Yucatec Maya)
+  - Q'uq'umatz (K'iche' Maya)
+  - Gucumatz
+culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+summary: >
+  One of the most pan-Mesoamerican deities — a serpent adorned with quetzal
+  feathers, associated with wind, knowledge, the morning star (Venus), and
+  creation.
+description: |
+  The Feathered Serpent is attested from Teotihuacan (200 CE) through the
+  Postclassic period across multiple cultures. Visually:
+
+  - **Serpent body**: undulating or coiled rattlesnake form; scales rendered
+    as overlapping diamonds or teardrop shapes.
+  - **Feather crest**: long quetzal plumes (green iridescent) cover the entire
+    body, radiating outward; individual feather shapes are distinctive
+    elongated curved forms.
+  - **Head**: open-jawed serpent with visible fangs; sometimes the head
+    emerges from a flower or cave opening.
+  - **Rattle**: rattlesnake tail often retained even on feathered versions.
+  - **Undulation**: body typically shown in a sweeping S or full-coil curl.
+  - **Venus association**: sometimes depicted with a star/eye symbol above the
+    head to indicate Morning Star identity.
+  - **At Teotihuacan**: pyramid façade shows alternating feathered-serpent
+    heads and rain-serpent (Tlaloc) heads in stone relief.
+  - **At Chichén Itzá**: equinox shadow-snake effect on the El Castillo staircase.
+
+  Used as: border element, central figure, throne symbol, ballcourt marker.
+tags:
+  culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+  medium: [stone_relief, ceramics, architecture, featherwork, codex_painting]
+  motif_type: [deity, animal]
+  geometry: [spiral, meander, symmetry]
+  surface: [carved, painted, inlaid]
+  palette: [jade_turquoise, mineral_pigments, full_ceremonial]
+  composition: [border_band, central_mask, emblem]
+  mood: [cosmic, mythic, ceremonial]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, palette_map]
+constraints:
+  do:
+    - Distinguish feathered-serpent from plain-serpent by covering body
+      with elongated curved plume shapes.
+    - Include visible rattle at tail and open-jaw head with fangs.
+    - Use iridescent blue-green for feathers; red-orange for interior mouth.
+    - Show in profile for codex-style; frontal head is acceptable for mask
+      / architectural usage.
+  avoid:
+    - Do not conflate with the Aztec Xiuhcoatl (turquoise fire-serpent) —
+      different colours and associations.
+    - Avoid depicting this as a Western dragon; maintain Mesoamerican
+      rattlesnake anatomy.
+parameters:
+  coil_complexity: 2             # number of full body curves (1–4)
+  feather_density: "high"        # low | medium | high
+  head_orientation: "profile"    # profile | frontal
+compat:
+  - meso.jade_turquoise_palette
+  - meso.classic_maya_relief_style
+  - meso.teotihuacan_mural_style
+  - meso.border_band_serpentine
+provenance:
+  period: "Teotihuacan through Postclassic, 200–1521 CE"
+  sources:
+    - "Ringle, W. et al. (1998). The Return of Quetzalcoatl. Ancient Mesoamerica 9."
+    - "Taube, K. (1992). The Iconography of Mirrors at Teotihuacan."
+version: "1.0"
+created_at: "2026-04-10"

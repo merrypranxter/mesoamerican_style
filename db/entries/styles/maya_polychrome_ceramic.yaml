@@ -1,0 +1,63 @@
+id: meso.maya_polychrome_ceramic_style
+type: style
+name: Maya Polychrome Ceramic Painting Style
+aliases:
+  - Classic Maya codex-style vessel
+  - Maya painted pottery
+culture_scope: [maya]
+summary: >
+  The elaborate painted-vessel tradition of the Classic Maya (250–900 CE),
+  featuring mythological narrative, deity portraits, and court scenes in
+  rich polychrome pigments on cylindrical ceramic forms.
+description: |
+  Classic Maya polychrome vessels — especially the "codex-style" corpus in
+  black-on-cream and the fully polychrome court-scene vessels — constitute
+  one of the richest surviving pictorial records:
+
+  - **Cylindrical or hemispherical form**: composition wraps 360° and reads
+    as a continuous frieze when unrolled.
+  - **Primary scene band**: major narrative or portrait zone bounded by
+    top and bottom register bands.
+  - **PSS band**: Primary Standard Sequence — a band of dedicatory glyphs
+    around the rim (often partially legible as dedication/owner text).
+  - **Figure style**: elongated proportions; S-curve posture; detailed
+    costume ornamentation.
+  - **Colour range**: rich reds, oranges, blacks, Maya Blue on cream slip;
+    "codex-style" = only black/orange/red on white cream.
+  - **Ground convention**: orange-red slip ground or cream slip; forest
+    of curved lines and dots filling background negative space.
+
+  Key corpora: Kerr Database rollout photographs; codex-style vessels.
+tags:
+  culture_scope: [maya]
+  medium: [ceramics]
+  motif_type: [deity, animal, mythic]
+  geometry: [banded, frieze]
+  surface: [painted]
+  palette: [mineral_pigments, full_ceremonial]
+  composition: [frieze, register]
+  mood: [mythic, ceremonial, vibrant]
+  remix: [none]
+  shader_ops: [palette_map, edge_ink, noise]
+constraints:
+  do:
+    - Wrap the scene composition as a cylindrical frieze (360°).
+    - Include at least one register band above and below the main scene.
+    - Use elongated S-curve figure postures.
+    - Fill negative space with hatched or dotted patterns.
+  avoid:
+    - Do not replicate the PSS glyph band verbatim; use abstracted marks.
+parameters:
+  vessel_aspect_ratio: 2.5    # height:circumference (unrolled)
+  scene_band_proportion: 0.65 # fraction of vessel height for main scene
+compat:
+  - meso.maya_blue_palette
+  - meso.underworld_scene_composition
+  - meso.feathered_serpent
+provenance:
+  period: "Classic Maya, 250–900 CE"
+  sources:
+    - "Kerr, J. (1989–2000). The Maya Vase Book. Kerr Associates."
+    - "Reents-Budet, D. (1994). Painting the Maya Universe. Duke UP."
+version: "1.0"
+created_at: "2026-04-10"

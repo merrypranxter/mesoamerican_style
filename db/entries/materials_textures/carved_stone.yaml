@@ -1,0 +1,79 @@
+id: meso.carved_stone_material
+type: material
+name: Carved Stone Surface
+aliases:
+  - Basalt carving
+  - Limestone relief surface
+  - Andesite
+culture_scope: [general_mesoamerican]
+summary: >
+  The visual qualities of Mesoamerican carved stone — from deep basalt
+  monoliths to finely incised limestone panels — including surface colour,
+  erosion patterns, chisel-mark texture, and light-response.
+description: |
+  Stone carving spans the full spectrum of Mesoamerican artistic production.
+  Key surface properties for rendering:
+
+  - **Material types**:
+    - *Basalt*: dark grey/black; coarse grain; matte surface; Aztec monuments.
+    - *Limestone*: warm buff to cream; fine grain; allows crisp detail; Maya stelae.
+    - *Sandstone*: warm ochre-tan; porous; Oaxacan tradition.
+    - *Trachyte/Andesite*: mid-grey; volcanic; Aztec sculpture.
+
+  - **Surface texture**: stone grain visible at close range; micro-pitting
+    from weathering; occasional lichen (grey-green) patches.
+
+  - **Light response**: relief surfaces catch raking light; proud surfaces
+    bright; recessed areas in deep shadow → high tonal contrast at the
+    carved edge.
+
+  - **Weathering**: outdoor monuments show dissolution (limestone), root
+    damage, surface loss; indoor protected carvings retain original
+    painted surfaces (sometimes still visible as ghost colour).
+
+  - **Ghost paint**: many carvings originally brightly painted; traces
+    (mineral pigment residue) visible in recesses — often red or blue.
+
+  - **Patina**: outdoor basalt develops a dark brown-black oxalate patina;
+    limestone may develop a cream-grey calcite skin.
+tags:
+  culture_scope: [general_mesoamerican]
+  medium: [stone_relief]
+  motif_type: [pattern]
+  geometry: [banded]
+  surface: [carved, weathered]
+  palette: [earthtones, obsidian_black]
+  composition: [frieze]
+  mood: [austere, ceremonial]
+  remix: [none]
+  shader_ops: [relief_shading, noise, normal_map, displacement]
+constraints:
+  do:
+    - Use a directional key light at 25–45° from one side to activate
+      the relief surface.
+    - Add grain noise layer (perlin or voronoi) at 3–8% intensity for
+      stone texture.
+    - Where ghost paint is appropriate, add faint red/blue pigment traces
+      in recessed areas.
+    - Vary surface value slightly across large flat areas (natural stone is
+      not uniformly lit).
+  avoid:
+    - Avoid mirror-smooth surfaces (obsidian is the only stone material
+      that should be specular).
+parameters:
+  stone_type: "limestone"   # basalt | limestone | sandstone | andesite
+  base_colour_hex: "#C8B89A"  # limestone buff
+  grain_intensity: 0.05
+  lichen_coverage: 0.1       # 0–1 fraction of surface with lichen
+  ghost_paint: false
+compat:
+  - meso.classic_maya_relief_style
+  - meso.shader_relief_chisel
+  - meso.shader_stone_weathering
+  - meso.earthtone_stone_palette
+provenance:
+  period: "General Mesoamerican, 1500 BCE – 1521 CE"
+  sources:
+    - "Kubler, G. (1984). The Art and Architecture of Ancient America. Penguin."
+version: "1.0"
+created_at: "2026-04-10"

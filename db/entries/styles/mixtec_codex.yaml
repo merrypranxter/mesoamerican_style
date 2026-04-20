@@ -1,0 +1,63 @@
+id: meso.mixtec_codex_style
+type: style
+name: Mixtec Codex Painting Style
+aliases:
+  - Mixtec screenfold tradition
+  - Ñudzavui pictographic style
+culture_scope: [mixtec]
+summary: >
+  The narrative pictographic tradition of the Mixtec people of Oaxaca
+  (950–1521 CE), known for genealogical and historical screenfold books with
+  detailed figures, place glyphs, and year-count sequences.
+description: |
+  Mixtec codices (Vindobonensis, Zouche-Nuttall, Bodley, etc.) record
+  dynastic genealogies and historical narratives with a distinctive style:
+
+  - **Narrative sequence**: figures read in a boustrophedon path guided by
+    red-line road/river borders.
+  - **Detailed costume**: more naturalistic limb proportions than Aztec
+    convention; intricate clothing and jewellery detail.
+  - **Place glyphs**: specific toponyms depicted as combined hill (mountain)
+    + qualifier symbol — compositionally compact and iconic.
+  - **Year-count strips**: A-O year sign + day number provides precise
+    calendar dating of events.
+  - **Palette**: similar to Aztec codex tradition but often lighter ground
+    (deer skin); warm ochres and turquoise prominent.
+  - **Border**: red line borders divide scenes; occasional stepped-fret
+    ornament at corners.
+
+  Primary codices: Zouche-Nuttall, Vindobonensis, Bodley, Selden.
+tags:
+  culture_scope: [mixtec]
+  medium: [codex_painting]
+  motif_type: [deity, animal, glyphlike]
+  geometry: [banded, grid]
+  surface: [painted]
+  palette: [mineral_pigments, earthtones]
+  composition: [register, frieze]
+  mood: [mythic, ceremonial]
+  remix: [none]
+  shader_ops: [palette_map, edge_ink]
+constraints:
+  do:
+    - Follow boustrophedon reading direction — mark path with red borders.
+    - Include place-hill glyphs for location context.
+    - Use warm deer-skin ground colour as background base.
+    - Keep figure proportions slightly taller/more naturalistic than Aztec style.
+  avoid:
+    - Do not fabricate genealogical sequences that could be mistaken for real
+      historical records.
+parameters:
+  ground_colour_hex: "#E8D5A3"
+  border_colour_hex: "#C0392B"
+compat:
+  - meso.aztec_mineral_palette
+  - meso.border_band_stepped_fret
+  - meso.calendar_glyph_guidance
+provenance:
+  period: "Postclassic Mixtec, 950–1521 CE"
+  sources:
+    - "Boone, E. H. (2000). Stories in Red and Black. U of Texas Press."
+    - "Anders, F. et al. (1992). Codex Zouche-Nuttall: Facsimile ed."
+version: "1.0"
+created_at: "2026-04-10"

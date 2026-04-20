@@ -1,0 +1,69 @@
+id: meso.radial_calendar_composition
+type: pattern
+name: Radial Calendar / Cosmogram Composition
+aliases:
+  - Sunstone composition
+  - Wheel composition
+  - Calendar round layout
+culture_scope: [aztec_mexica, maya, general_mesoamerican]
+summary: >
+  A radial composition derived from Mesoamerican calendar cosmograms —
+  concentric rings, fourfold or fivefold symmetry, cardinal-direction
+  arms, and a central focal motif.
+description: |
+  Mesoamerican calendar systems produce a distinctive radial visual logic
+  that translates powerfully to generative design:
+
+  - **Concentric ring structure**: from centre outward, each ring encodes
+    a different time unit, deity-direction association, or decorative band.
+  - **Fourfold cardinal symmetry**: four cardinal directions divide the
+    circle into quadrants, each with distinct colour/deity/day-sign
+    associations (e.g., East = yellow/red, North = black, West = red/black,
+    South = blue/yellow in Aztec tradition).
+  - **Central motif**: sun-face, earth-monster face, or deity portrait
+    occupies the innermost circle.
+  - **Day-sign ring**: the 20-day signs arranged in a ring (Aztec: around
+    the second or third ring from centre); can be abstracted as 20
+    decorative compartments.
+  - **Directional arms**: four radial bands (cross) connect the centre to
+    the outer edge, creating quadrant divisions.
+  - **Outer serpent/fire border**: one or two fire-serpent (xiuhcoatl) forms
+    frame the entire composition tail-to-head.
+
+  Use for: clock/timer UI, loading animation, poster centrePiece,
+  mandala generator, level-select screen.
+tags:
+  culture_scope: [aztec_mexica, maya, general_mesoamerican]
+  medium: [stone_relief, codex_painting, ceramics]
+  motif_type: [celestial, pattern, deity]
+  geometry: [radial, symmetry, grid]
+  surface: [carved, painted]
+  palette: [mineral_pigments, earthtones, full_ceremonial]
+  composition: [emblem, axial, central_mask]
+  mood: [cosmic, ceremonial, mythic]
+  remix: [none]
+  shader_ops: [relief_shading, edge_ink, palette_map, displacement]
+constraints:
+  do:
+    - Maintain strict fourfold or fivefold symmetry.
+    - Reserve innermost circle for the dominant central motif.
+    - Use 20 compartments if encoding day-sign ring.
+    - Let the outer ring be the most decorative / frame-like.
+  avoid:
+    - Avoid labelling as a "clock" or functional calendar without scholarly
+      context — these are cosmograms, not timekeepers.
+parameters:
+  ring_count: 5
+  symmetry_fold: 4         # 4 = cardinal; 5 = with centre; 8 = intercardinal
+  day_sign_ring: true
+  outer_border: "fire_serpent"   # fire_serpent | geometric | plain
+compat:
+  - meso.sun_disk_motif
+  - meso.aztec_codex_painting_style
+  - meso.shader_relief_chisel
+provenance:
+  period: "Aztec Late Postclassic, 1427 CE+"
+  sources:
+    - "Townsend, R. F. (1979). State and Cosmos in the Art of Tenochtitlan."
+version: "1.0"
+created_at: "2026-04-10"

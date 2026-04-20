@@ -1,0 +1,71 @@
+id: meso.underworld_scene_composition
+type: composition
+name: Underworld Scene Composition
+aliases:
+  - Xibalba scene
+  - Death-realm layout
+  - Nine-level underworld
+culture_scope: [maya, aztec_mexica, general_mesoamerican]
+summary: >
+  A compositional template for Mesoamerican underworld and death-realm
+  scenes — featuring a dark ground, skeletal or deity figures, water-realm
+  bands, and a cosmological axis connecting underworld to sky.
+description: |
+  The Mesoamerican underworld (Maya: Xibalba; Aztec: Mictlan) has a
+  consistent visual grammar:
+
+  - **Dark ground**: background is dark — black, dark blue, or dark red;
+    distinct from the light sky-realm ground.
+  - **Water-realm band**: a band of water glyphs (crossed bands, shells, fish)
+    often runs below the main scene; the underworld is located beneath
+    the sea in many traditions.
+  - **Skeletal figures**: death lords, skeletal supernaturals, and partially
+    decomposed figures populate the scene.
+  - **Maize-god rebirth axis**: a vertical central element (tree, serpent pole,
+    or maize stalk) connects underworld to surface — the cosmological axis mundi.
+  - **Turtle / earth monster base**: the floor of the scene is often the back
+    of the earth turtle or a crocodilian earth-monster body.
+  - **Dark star / black sun**: a black sun or darkened solar disc indicates
+    the sun in its underworld nighttime phase.
+  - **Directional colour**: underworld direction is north (Aztec) or down/west;
+    colour associations are black, yellow, or dark red depending on tradition.
+
+  Use for: vessel scene composition, game environment design, dark-theme
+  poster, narrative illustration.
+tags:
+  culture_scope: [maya, aztec_mexica, general_mesoamerican]
+  medium: [ceramics, codex_painting, stone_relief]
+  motif_type: [deity, celestial, pattern]
+  geometry: [banded, axial, register]
+  surface: [painted, carved]
+  palette: [obsidian_black, mineral_pigments]
+  composition: [register, axial, emblem]
+  mood: [mythic, cosmic, ceremonial]
+  remix: [none]
+  shader_ops: [palette_map, edge_ink, noise]
+constraints:
+  do:
+    - Use a dark (near-black or dark blue) background ground.
+    - Include a water-realm band as a lower register.
+    - Place the axial element (tree/pole/maize) at the horizontal centre.
+    - Populate with skeletal or partially decomposed supernatural figures.
+  avoid:
+    - Do not make this look like a generic horror scene — maintain
+      ceremonial dignity and cosmological framing.
+parameters:
+  ground_colour: "dark_blue"    # dark_blue | black | dark_red
+  has_water_band: true
+  has_axis_element: true
+  axis_type: "world_tree"       # world_tree | maize_stalk | serpent_pole
+compat:
+  - meso.death_god_skull_motif
+  - meso.maize_deity_motif
+  - meso.maya_polychrome_ceramic_style
+  - meso.obsidian_material
+provenance:
+  period: "Classic Maya and Aztec, 250–1521 CE"
+  sources:
+    - "Coe, M. D. (1973). The Maya Scribe and His World."
+    - "Taube, K. (1992). The Major Gods of Ancient Yucatan."
+version: "1.0"
+created_at: "2026-04-10"

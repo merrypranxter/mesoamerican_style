@@ -1,0 +1,67 @@
+id: meso.obsidian_material
+type: material
+name: Obsidian
+aliases:
+  - Itztli (Nahuatl)
+  - Volcanic glass
+  - Obsidian mirror
+culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+summary: >
+  Obsidian — volcanic glass — was the sharpest cutting material available
+  in Mesoamerica, with deep symbolic associations with darkness, sacrifice,
+  divination, and the night sky.
+description: |
+  Obsidian was one of the most traded raw materials in Mesoamerica, sourced
+  from major volcanic deposits and distributed across vast distances:
+
+  - **Colour**: pure black to dark smoky brown; can be translucent at thin
+    edges; rainbow sheen (iridescence) visible at grazing angles.
+  - **Lustre**: vitreous (glass-like), highly specular; conchoidal fracture
+    surfaces produce a pattern of curved ripples (hackle marks).
+  - **Mirror surfaces**: obsidian polished to a disc creates a deep dark
+    mirror with muted reflections — prophetic tool.
+  - **Blade form**: prismatic obsidian blades are extremely thin (1–2 mm)
+    and razor-sharp; parallel sides with a central ridge; used in bloodletting
+    and sacrifice rituals.
+  - **Mosaic use**: small obsidian tesserae used alongside pyrite (gold) in
+    mosaic masks and sculptures for eye pupils.
+  - **Symbolic register**: night, darkness, sacrifice, the smoking mirror,
+    Tezcatlipoca, volcanic earth power.
+
+  Shader properties: near-perfect mirror reflectance on polished faces;
+  dark background absorption; edge iridescence; conchoidal fracture normal map.
+tags:
+  culture_scope: [aztec_mexica, maya, teotihuacan, general_mesoamerican]
+  medium: [obsidian]
+  motif_type: [weapon, pattern]
+  geometry: [radial, spiral]
+  surface: [carved, inlaid]
+  palette: [obsidian_black]
+  composition: [emblem]
+  mood: [ceremonial, martial, cosmic]
+  remix: [none]
+  shader_ops: [relief_shading, normal_map, palette_map]
+constraints:
+  do:
+    - Use near-black base with high specular highlight for polished surfaces.
+    - Include conchoidal fracture pattern (curved ripple lines) on knapped edges.
+    - Blade forms: use parallel thin-slab silhouette with fine ridgeline.
+    - Mirror surfaces: muted reflection with a dark base rather than silver.
+  avoid:
+    - Avoid chrome/silver metallic treatment — obsidian is glass, not metal.
+parameters:
+  finish: "polished"       # polished | knapped | matte
+  colour_hex: "#0A0A0A"
+  specular_intensity: 0.7  # 0–1; 0.7 = glass-like
+  iridescence: "slight"    # none | slight | rainbow
+compat:
+  - meso.obsidian_mirror_motif
+  - meso.aztec_codex_painting_style
+  - meso.shader_stone_weathering
+provenance:
+  period: "General Mesoamerican, 1500 BCE – 1521 CE"
+  sources:
+    - "Spence, M. W. (1967). The Obsidian Industry of Teotihuacan. American Antiquity."
+    - "Clark, J. E. (2003). Mesoamerica Goes Public: Early Ceremonial Centers, Leaders, and Communities."
+version: "1.0"
+created_at: "2026-04-10"
